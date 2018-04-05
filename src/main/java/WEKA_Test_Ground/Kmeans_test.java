@@ -8,6 +8,8 @@ import weka.core.neighboursearch.CoverTree;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
+import java.util.TreeMap;
 
 
 public class Kmeans_test {
@@ -15,7 +17,9 @@ public class Kmeans_test {
         //CSVLoader parse given csv file to arff which is what WEKA uses.
         CSVLoader loader = new CSVLoader();
         try {
+//            File file = new File ("src/main/Mediamill_joint.csv");
             File file = new File ("src/main/Mediamill_dataset");
+//            File file = new File ("src/main/Mediamill_labelset");
             if (!file.exists())
                 System.exit(0);
             loader.setFile(file);
@@ -46,13 +50,24 @@ public class Kmeans_test {
 
             //To get individual instances which cluster did it went into if instance 1 is in cluster 5 then
             //assignments[0] = 5
+
             int[] assignments = kmeans.getAssignments();
             int i=0;
+
+            Map<Integer,Integer> clusterInstances = new TreeMap<Integer, Integer>();
             for(int clusterNum : assignments) {
                 System.out.println("Instance -> Cluster "+ i + "->"+ clusterNum);
+                if (clusterInstances.get(clusterNum) ==null){
+                    System.out.println(clusterNum + " is new so 1");
+                    clusterInstances.put(clusterNum,1);
+                }
+                else{
+                    int num =clusterInstances.get(clusterNum);
+                    System.out.println(clusterNum + " it has "+ num);
+                    clusterInstances.put(clusterNum,num+1);
+                }
                 i++;
             }
-            System.out.println();
         } catch (IOException e) {
             System.out.println(e);
             e.printStackTrace();

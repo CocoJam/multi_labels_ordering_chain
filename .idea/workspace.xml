@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java" afterPath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/train.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEKA_Test_Ground/test.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -28,8 +31,8 @@
       <file leaf-file-name="Kmeans_test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            <state relative-caret-position="546">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,14 +40,159 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Mediamill_labelset" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Mediamill_labelset">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mediamill_joint.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CC.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CC.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SimpleKMeans.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-205">
+            <state relative-caret-position="25557">
               <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
               <folding>
-                <element signature="e#55180#55181#0" expanded="true" />
-                <element signature="e#55230#55231#0" expanded="true" />
+                <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1522905707787" expanded="false" signature="139:1293" ph="..." />
+                <marker date="1522905707787" expanded="true" signature="3479:3561" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="3602:3793" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="3853:4347" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="4380:4706" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="4750:5066" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="5128:5928" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="6035:6888" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="6954:16848" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="16913:17779" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="17851:18046" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="18119:20856" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="20991:24679" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="24813:26281" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="26350:26736" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="26789:26831" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="26878:29627" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="29667:29678" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="29710:29716" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="29773:29932" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="29965:29976" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="30002:30008" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="30058:30161" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="30223:30366" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="30417:30501" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="30569:30683" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="30753:30764" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="30807:30813" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="30877:30888" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="30934:30940" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="30995:31145" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="31198:31209" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="31240:31246" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="31293:31304" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="31338:31344" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="31400:31583" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="31643:31654" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="31686:31692" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="31743:31754" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="31786:31792" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="31856:32255" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="32319:32330" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="32363:32369" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="32425:32436" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="32470:32476" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="32514:32692" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="32732:32743" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="32758:32764" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="32797:32808" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="32825:32831" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="32869:33013" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="33053:33064" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="33079:33085" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="33118:33129" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="33146:33152" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="33194:33205" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="33247:33253" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="33312:33483" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="33518:33529" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="33557:33563" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="33607:33711" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="33760:33771" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="33800:33806" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="33846:33857" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="33886:33892" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="33945:33956" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="34013:34019" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="34075:34086" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="34116:34122" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="34172:34183" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="34216:34222" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="34268:34388" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="34439:34450" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="34481:34487" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="34563:34839" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="34890:34901" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="34939:34945" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="34999:35010" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="35035:35041" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="35089:35100" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="35128:35134" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="35180:35372" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="35424:35435" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="35467:35473" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="35515:35526" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="35557:35563" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="35610:35730" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="35779:35790" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="35820:35826" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="35865:35876" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="35905:35911" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="35975:38631" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="38666:40228" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="40259:54449" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="54534:54943" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="54987:54998" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="55029:55035" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="55082:55093" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="55122:55128" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="55179:55190" ph=" { " />
+                <marker date="1522905707787" expanded="true" signature="55225:55231" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="55268:55279" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="55357:55363" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="55402:55413" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="55440:55446" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="55499:55828" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="55861:55872" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="55923:55929" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="55973:55984" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="56023:56029" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="56096:58244" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="56336:56503" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="56535:57168" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="57248:58238" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="58320:58731" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="58480:58579" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="58612:58725" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -62,7 +210,7 @@
       <file leaf-file-name="CSVLoader.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
+            <state relative-caret-position="7203">
               <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
               <folding>
                 <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
@@ -162,16 +310,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/train.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -240,13 +378,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CC" type="b2602c69:ProjectViewProjectNode" />
               <item name="CC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CC" type="b2602c69:ProjectViewProjectNode" />
@@ -282,20 +424,23 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\james\IdeaProjects\CC\src\main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\james\IdeaProjects\CC\src\main" />
       <recent name="C:\Users\james\IdeaProjects\CC\src\main\java" />
     </key>
   </component>
@@ -426,43 +571,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522905669959</updated>
-      <workItem from="1522905674086" duration="3040000" />
+      <workItem from="1522905674086" duration="4781000" />
+      <workItem from="1522971670201" duration="415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3040000" />
+    <option name="totallyTimeSpent" value="5196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24919441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +630,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/train.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_labelset">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -492,9 +638,158 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CC.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25557">
+          <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="139:1293" ph="..." />
+            <marker date="1522905707787" expanded="true" signature="3479:3561" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="3602:3793" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="3853:4347" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="4380:4706" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="4750:5066" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="5128:5928" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="6035:6888" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="6954:16848" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="16913:17779" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="17851:18046" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="18119:20856" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="20991:24679" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="24813:26281" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26350:26736" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26789:26831" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26878:29627" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="29667:29678" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="29710:29716" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="29773:29932" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="29965:29976" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="30002:30008" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="30058:30161" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="30223:30366" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="30417:30501" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="30569:30683" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="30753:30764" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="30807:30813" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="30877:30888" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="30934:30940" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="30995:31145" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="31198:31209" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31240:31246" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="31293:31304" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31338:31344" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="31400:31583" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="31643:31654" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31686:31692" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="31743:31754" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31786:31792" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="31856:32255" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="32319:32330" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32363:32369" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="32425:32436" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32470:32476" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="32514:32692" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="32732:32743" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32758:32764" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="32797:32808" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32825:32831" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="32869:33013" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="33053:33064" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33079:33085" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33118:33129" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33146:33152" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33194:33205" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33247:33253" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="33312:33483" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="33518:33529" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33557:33563" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="33607:33711" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="33760:33771" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33800:33806" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33846:33857" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33886:33892" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33945:33956" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34013:34019" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="34075:34086" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34116:34122" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="34172:34183" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34216:34222" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="34268:34388" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="34439:34450" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34481:34487" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="34563:34839" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="34890:34901" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34939:34945" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="34999:35010" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35035:35041" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="35089:35100" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35128:35134" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="35180:35372" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="35424:35435" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35467:35473" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="35515:35526" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35557:35563" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="35610:35730" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="35779:35790" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35820:35826" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="35865:35876" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35905:35911" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="35975:38631" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="38666:40228" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="40259:54449" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="54534:54943" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="54987:54998" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55029:55035" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55082:55093" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55122:55128" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="55179:55190" ph=" { " />
+            <marker date="1522905707787" expanded="true" signature="55225:55231" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55268:55279" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55357:55363" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55402:55413" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55440:55446" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="55499:55828" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="55861:55872" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55923:55929" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55973:55984" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="56023:56029" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="56096:58244" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="56336:56503" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="56535:57168" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="57248:58238" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="58320:58731" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="58480:58579" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="58612:58725" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
+        <state relative-caret-position="7203">
           <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
           <folding>
             <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
@@ -593,14 +888,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MM.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/train.csv" />
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7203">
+          <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="144:1050" ph="..." />
+            <marker date="1522905707787" expanded="false" signature="2469:2480" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2501:2507" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="2551:2562" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2599:2605" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="2638:3781" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="3819:3830" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="3852:3858" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="3899:3910" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="3955:3961" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4001:4012" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4036:4042" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4075:4086" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4114:4120" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4167:4178" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4238:4244" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4288:4299" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4325:4331" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4381:4392" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4415:4421" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4458:4469" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4496:4502" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4549:4560" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4588:4594" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4635:4646" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4707:4713" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4754:4765" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4808:4814" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4865:4876" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4917:4923" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="4969:5099" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="5141:5152" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="5196:5202" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="5254:5265" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="5307:5313" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="5360:5491" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="5533:5544" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="5588:5594" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="5646:5657" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="5699:5705" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="5752:5883" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="5918:5929" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="5954:5960" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="6006:6081" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="6120:6131" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6183:6189" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="6228:6239" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6280:6286" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="6335:6346" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6385:6391" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="6435:6558" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="6606:6617" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6685:6691" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="6735:6746" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6771:6777" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="6835:6846" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6876:6882" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="6921:6932" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6983:6989" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="7039:7370" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="7414:7517" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="7549:7560" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7585:7591" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="7632:7643" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7668:7674" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="7713:7724" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7790:7796" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="7840:7851" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7906:7912" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="7967:8224" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="8271:8820" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="8867:11303" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="11338:12630" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="12694:14628" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="14706:17058" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="17113:18063" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="18127:18923" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="18989:19171" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="19229:19267" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="19324:19686" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="19745:22253" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22290:23743" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="23794:30672" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="30728:31032" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="31092:31139" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="31194:31750" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="31810:32490" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="32569:36346" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="36391:36783" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="36806:36935" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="36918:36929" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MM.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="0">
@@ -612,33 +1012,172 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
+        <state relative-caret-position="25557">
           <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
           <folding>
-            <element signature="e#55180#55181#0" expanded="true" />
-            <element signature="e#55230#55231#0" expanded="true" />
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="139:1293" ph="..." />
+            <marker date="1522905707787" expanded="true" signature="3479:3561" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="3602:3793" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="3853:4347" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="4380:4706" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="4750:5066" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="5128:5928" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="6035:6888" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="6954:16848" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="16913:17779" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="17851:18046" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="18119:20856" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="20991:24679" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="24813:26281" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26350:26736" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26789:26831" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26878:29627" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="29667:29678" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="29710:29716" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="29773:29932" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="29965:29976" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="30002:30008" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="30058:30161" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="30223:30366" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="30417:30501" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="30569:30683" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="30753:30764" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="30807:30813" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="30877:30888" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="30934:30940" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="30995:31145" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="31198:31209" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31240:31246" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="31293:31304" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31338:31344" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="31400:31583" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="31643:31654" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31686:31692" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="31743:31754" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31786:31792" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="31856:32255" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="32319:32330" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32363:32369" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="32425:32436" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32470:32476" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="32514:32692" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="32732:32743" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32758:32764" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="32797:32808" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="32825:32831" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="32869:33013" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="33053:33064" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33079:33085" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33118:33129" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33146:33152" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33194:33205" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33247:33253" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="33312:33483" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="33518:33529" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33557:33563" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="33607:33711" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="33760:33771" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33800:33806" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33846:33857" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="33886:33892" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="33945:33956" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34013:34019" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="34075:34086" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34116:34122" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="34172:34183" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34216:34222" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="34268:34388" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="34439:34450" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34481:34487" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="34563:34839" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="34890:34901" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="34939:34945" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="34999:35010" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35035:35041" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="35089:35100" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35128:35134" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="35180:35372" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="35424:35435" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35467:35473" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="35515:35526" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35557:35563" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="35610:35730" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="35779:35790" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35820:35826" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="35865:35876" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="35905:35911" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="35975:38631" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="38666:40228" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="40259:54449" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="54534:54943" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="54987:54998" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55029:55035" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55082:55093" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55122:55128" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="55179:55190" ph=" { " />
+            <marker date="1522905707787" expanded="true" signature="55225:55231" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55268:55279" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55357:55363" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55402:55413" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55440:55446" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="55499:55828" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="55861:55872" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="55923:55929" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="55973:55984" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="56023:56029" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="56096:58244" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="56336:56503" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="56535:57168" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="57248:58238" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="58320:58731" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="58480:58579" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="58612:58725" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/LoaderClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/LoaderClass.java" />
+    <entry file="file://$PROJECT_DIR$/CC.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_labelset">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        <state relative-caret-position="546">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
