@@ -6,6 +6,8 @@ import weka.core.Instances;
 import weka.core.converters.CSVLoader;
 import weka.core.neighboursearch.CoverTree;
 
+
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
@@ -37,7 +39,7 @@ public class Kmeans_test {
             //Keep instance order since it is important for kmeans cluster
             kmeans.setPreserveInstancesOrder(true);
             //Cluster size
-            kmeans.setNumClusters(10);
+            kmeans.setNumClusters(24);
             kmeans.buildClusterer(data);
 
             //eval object for any clusters
