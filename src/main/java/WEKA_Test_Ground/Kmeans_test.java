@@ -18,7 +18,7 @@ public class Kmeans_test {
         CSVLoader loader = new CSVLoader();
         try {
 //            File file = new File ("src/main/Mediamill_joint.csv");
-            File file = new File ("src/main/Mediamill_dataset");
+            File file = new File ("src/main/Mediamill_joint.csv");
 //            File file = new File ("src/main/Mediamill_labelset");
             if (!file.exists())
                 System.exit(0);
