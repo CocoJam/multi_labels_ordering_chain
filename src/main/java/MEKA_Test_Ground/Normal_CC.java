@@ -18,8 +18,9 @@ public class Normal_CC {
 
         try {
 
-            BufferedReader reader = new BufferedReader(
+          reader = new BufferedReader(
                     new FileReader("src/main/mediamill.arff"));
+
             Instances data = new Instances(reader);
 
             MLUtils.prepareData(data);
