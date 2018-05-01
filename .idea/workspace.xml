@@ -2,58 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcmail_jdk14_138.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcprov_jdk14_138.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fracpete_jclipboardhelper_0_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fracpete_jfilechooser_bookmarks_0_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fracpete_multisearch_weka_package_2017_10_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_efficient_java_matrix_library_ejml_0_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jidesoft_jide_oss_3_6_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__gov_nist_math_jama_1_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_meka_meka_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_meka_thirdparty_mst_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_meka_thirdparty_mulan_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_trove4j_trove4j_3_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_weka_dev_3_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_2_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9_stable_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_graphstream_gs_algo_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_graphstream_gs_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_graphstream_gs_ui_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_graphstream_mbox2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_graphstream_pherd_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kramerlab_autoencoder_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kramerlab_bmad_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_markdownj_markdownj_core_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_swing_2_10_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_maven_plugin_1_0_M2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/graph_play.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CC.iml" afterPath="$PROJECT_DIR$/CC.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/CAL500.arff" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CC.iml" afterPath="$PROJECT_DIR$/CC.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java" afterPath="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEKA_Test_Ground/Kmeans_test.class" afterPath="$PROJECT_DIR$/target/classes/WEKA_Test_Ground/Kmeans_test.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,35 +18,272 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Normal_CC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="-777">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kmeans_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
+      <file leaf-file-name="Evaluation.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/Evaluation.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="172">
+              <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EM.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0-sources.jar!/weka/clusterers/EM.java">
+      <file leaf-file-name="NumericToNominal.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/attribute/NumericToNominal.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="166" column="7" lean-forward="true" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
+            <state relative-caret-position="193">
+              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Utils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="334" column="0" lean-forward="true" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Filter.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/Filter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="313" column="28" lean-forward="false" selection-start-line="313" selection-start-column="28" selection-end-line="313" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CAL500.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/CAL500.arff">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="singleCross_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/singleCross_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SMO.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/functions/SMO.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+              <folding>
+                <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1522905707787" expanded="false" signature="150:1445" ph="..." />
+                <marker date="1522905707787" expanded="true" signature="2767:2774" ph="{}" />
+                <marker date="1522905707787" expanded="true" signature="2807:3784" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="3844:6004" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="6037:6048" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="6078:6084" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="6116:6127" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="6158:6164" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="6208:6796" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="6864:10795" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="10873:13583" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="13646:14647" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="14689:15062" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="15101:15468" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="15499:15829" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="15871:15882" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="15923:15929" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="15973:16263" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="16306:17007" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="17054:19343" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="19407:21718" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="21753:22873" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="22925:23048" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="23089:23100" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23130:23136" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23180:23191" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23252:23258" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23293:23304" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23332:23338" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23379:23390" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23412:23418" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23449:23460" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23481:23487" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23526:23537" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23577:23583" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23632:23643" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23669:23675" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23714:23725" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23750:23756" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23786:23797" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23834:23840" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23866:23877" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23893:23899" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="23931:23942" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="23955:23961" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24008:24019" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24076:24082" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24125:24136" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24154:24160" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24209:24220" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24235:24241" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24277:24288" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24353:24359" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24391:24402" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24420:24426" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24464:24475" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24490:24496" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24535:24546" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24603:24609" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="24649:24660" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="24715:24721" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="24774:24906" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="24958:25074" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="25122:25133" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="25167:25173" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="25252:25323" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="25361:25511" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="25541:25552" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="25575:25581" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="25627:25638" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="25668:25674" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="25713:25724" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="25778:25784" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="25816:25827" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="25852:25858" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="25908:25919" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="25953:25959" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="25990:27447" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="27480:27491" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="27542:27548" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="27592:27603" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="27634:27640" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="27693:57939" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="28684:28695" ph="{}" />
+                <marker date="1522905707787" expanded="true" signature="28815:31056" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="31101:31116" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="31138:31148" ph=" }" />
+                <marker date="1522905707787" expanded="false" signature="31183:31198" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="31219:31229" ph=" }" />
+                <marker date="1522905707787" expanded="true" signature="31375:38316" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="38393:40068" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="40103:44438" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="44506:46240" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="46321:56523" ph="{...}" />
+                <marker date="1522905707787" expanded="true" signature="56583:57820" ph="{...}" />
+                <marker date="1522905707787" expanded="false" signature="57857:57872" ph=" { " />
+                <marker date="1522905707787" expanded="false" signature="57923:57933" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mediamill.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="0">
+              <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionUtils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/core/OptionUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <marker date="1524784336059" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1524784336059" expanded="false" signature="133:463" ph="..." />
+                <marker date="1524784336059" expanded="true" signature="517:524" ph="{}" />
+                <marker date="1524784336059" expanded="true" signature="616:677" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="771:904" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="998:1059" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="1155:1286" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="1382:1443" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="1541:1674" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="1772:1833" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="1933:2068" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="2166:2227" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="2327:2442" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="2536:2597" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="2693:2818" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="2930:2991" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="3105:3273" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="3356:3407" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="3492:3739" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="3835:3891" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="3991:4052" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="4154:4291" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="4389:5906" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="5980:5991" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="6024:6030" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="6107:6182" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="6257:6268" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="6301:6307" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="6385:6460" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="6536:6547" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="6580:6586" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="6665:6740" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="6817:6828" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="6861:6867" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="6947:7022" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="7099:7110" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="7143:7149" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="7229:7304" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="7382:7393" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="7426:7432" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="7513:7591" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="7666:7677" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="7710:7716" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="7794:7869" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="7953:7964" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="7997:8003" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="8090:8186" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="8263:8274" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="8307:8313" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="8393:8934" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="9007:9018" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="9062:9068" ph=" }" />
+                <marker date="1524784336059" expanded="false" signature="9140:9151" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="9185:9191" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="9266:9340" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="9434:9498" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="9594:9721" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="9792:9918" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="9977:10054" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="10115:10126" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="10152:10158" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="10247:10429" ph="{...}" />
+                <marker date="1524784336059" expanded="false" signature="10481:10492" ph=" { " />
+                <marker date="1524784336059" expanded="false" signature="10524:10530" ph=" }" />
+                <marker date="1524784336059" expanded="true" signature="10618:11567" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="11624:11775" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="11865:12889" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="12948:13101" ph="{...}" />
+                <marker date="1524784336059" expanded="true" signature="13166:13672" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,6 +300,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>assig</find>
+      <find>stream</find>
+      <find>get</find>
+      <find>init</find>
+      <find>_order</find>
+      <find>alter</find>
+      <find>read</find>
+      <find>base</find>
+      <find>set</find>
+      <find>option</find>
+      <find>classif</find>
+      <find>Class</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,10 +327,15 @@
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/LoaderClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/graph_play.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/CrossOver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/singleCross_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/CustomAlter.java" />
+        <option value="$PROJECT_DIR$/src/main/Music.arff" />
+        <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java" />
+        <option value="$PROJECT_DIR$/src/main/CAL500.arff" />
+        <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java" />
       </list>
     </option>
   </component>
@@ -145,11 +352,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-16" />
-    <option name="y" value="-16" />
-    <option name="width" value="3232" />
-    <option name="height" value="1832" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -167,202 +373,62 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: nz.ac.waikato.cms.weka:weka-stable:3.8.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-stable-3.8.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: nz.ac.waikato.cms.weka:weka-stable:3.8.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-stable-3.8.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clusterers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: nz.ac.waikato.cms.weka:weka-stable:3.8.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-stable-3.8.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEKA_Test_Ground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graph_Test_Ground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GA_Test_Ground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MEKA_Test_Ground" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Malmo-0.34.0-Windows-64bit_withBoost_Python3.6/Java_Examples" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -389,23 +455,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.graph_play">
-    <configuration default="false" name="Kmeans_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WEKA_Test_Ground.Kmeans_test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CC" />
-      <envs />
-      <method />
+  <component name="RunManager" selected="Application.Normal_CC">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
     </configuration>
-    <configuration default="false" name="Basic_GA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Basic_GA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="GA_Test_Ground.*" />
@@ -423,16 +481,15 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="CC" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="false" name="graph_play" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomAlter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Graph_Test_Ground.*" />
+          <option name="PATTERN" value="GA_Test_Ground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Graph_Test_Ground.graph_play" />
+      <option name="MAIN_CLASS_NAME" value="GA_Test_Ground.CustomAlter" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -443,77 +500,39 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="CC" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    <configuration name="Kmeans_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="WEKA_Test_Ground.Kmeans_test" />
+      <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CC" />
+      <envs />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
+    <configuration name="Normal_CC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="MEKA_Test_Ground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="MEKA_Test_Ground.Normal_CC" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CC" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -528,162 +547,25 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
+    <configuration name="singleCross_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="GA_Test_Ground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="GA_Test_Ground.singleCross_test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
+      <module name="CC" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -704,69 +586,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CC" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -774,13 +593,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -808,40 +620,27 @@
       <envs />
       <properties />
       <listeners />
-      <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Kmeans_test" />
       <item index="1" class="java.lang.String" itemvalue="Application.Basic_GA" />
-      <item index="2" class="java.lang.String" itemvalue="Application.graph_play" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CustomAlter" />
+      <item index="3" class="java.lang.String" itemvalue="Application.singleCross_test" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Normal_CC" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.graph_play" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.Normal_CC" />
         <item index="1" class="java.lang.String" itemvalue="Application.Basic_GA" />
         <item index="2" class="java.lang.String" itemvalue="Application.Kmeans_test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.singleCross_test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CustomAlter" />
       </list>
     </recent_temporary>
   </component>
@@ -862,43 +661,68 @@
       <workItem from="1522971670201" duration="1336000" />
       <workItem from="1523054875119" duration="605000" />
       <workItem from="1523416437559" duration="2064000" />
-      <workItem from="1524603807835" duration="6936000" />
-      <workItem from="1524780808471" duration="2996000" />
-      <workItem from="1525037155165" duration="128000" />
-      <workItem from="1525147191230" duration="1057000" />
+      <workItem from="1524603807835" duration="19771000" />
+      <workItem from="1524719757616" duration="2108000" />
+      <workItem from="1524784292048" duration="4051000" />
+      <workItem from="1524810263905" duration="1199000" />
+      <workItem from="1524900800996" duration="1234000" />
+      <workItem from="1524982522336" duration="946000" />
+      <workItem from="1525042317190" duration="8712000" />
+      <workItem from="1525071876006" duration="3856000" />
+      <workItem from="1525083493683" duration="3731000" />
     </task>
-    <task id="LOCAL-00001" summary="Add dependency of MEKA and GraphStream">
-      <created>1524781593556</created>
+    <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
+      <created>1524611550042</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1524781593556</updated>
+      <updated>1524611550042</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Mediamill data set as arff and attempt to build BR with meka.">
+      <created>1524803772597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524803772597</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Bug fixed for loading Arff files it requires -C label numbers">
+      <created>1525044302219</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525044302219</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bug discover of numberic class not supported by weka tree">
+      <created>1525049224861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1525049224861</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19903000" />
+    <option name="totallyTimeSpent" value="54394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3232" height="1832" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.057366364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26741937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24812031" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -911,335 +735,755 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24812031" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add dependency of MEKA and GraphStream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dependency of MEKA and GraphStream" />
+    <MESSAGE value="Testing on GA normal functions might require for custom alters but fuck it not now" />
+    <MESSAGE value="Added Mediamill data set as arff and attempt to build BR with meka." />
+    <MESSAGE value="Bug fixed for loading Arff files it requires -C label numbers" />
+    <MESSAGE value="Bug discover of numberic class not supported by weka tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug discover of numberic class not supported by weka tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CC.iml">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/internal/math/comb.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/stream/Stream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27636">
-          <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
+        <state relative-caret-position="387">
+          <caret line="84" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/engine/EvolutionStreamable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7203">
-          <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
+        <state relative-caret-position="-66">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/engine/EvolutionStream.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="53" column="56" lean-forward="true" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_labelset">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CC.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25557">
-          <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7203">
-          <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_labelset">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CC.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27636">
-          <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9177">
-          <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_labelset">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CC.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25557">
-          <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7203">
-          <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/train.csv" />
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/CSVLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7203">
-          <caret line="437" column="54" lean-forward="false" selection-start-line="437" selection-start-column="54" selection-end-line="437" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MM.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/attribute/ReplaceMissingValues.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/MultiPointCrossover.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <caret line="15" column="101" lean-forward="false" selection-start-line="15" selection-start-column="101" selection-end-line="15" selection-end-column="101" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/SimpleKMeans.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/AbstractAlterer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25557">
-          <caret line="1316" column="42" lean-forward="false" selection-start-line="1316" selection-start-column="22" selection-end-line="1316" selection-end-column="42" />
+        <state relative-caret-position="126">
+          <caret line="12" column="106" lean-forward="false" selection-start-line="12" selection-start-column="106" selection-end-line="12" selection-end-column="106" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/LoaderClass.java" />
-    <entry file="file://$PROJECT_DIR$/CC.iml">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/engine/Engine.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="6699">
+          <caret line="387" column="74" lean-forward="false" selection-start-line="387" selection-start-column="74" selection-end-line="387" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_labelset">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/Alterer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/Genotype.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/DoubleGene.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/util/Factory.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/Gene.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/engine/Engine.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/Alterer.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/SinglePointCrossover.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/CompositeAlterer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/Recombinator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/Crossover.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="98" lean-forward="false" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/SinglePointCrossover.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/CustomAlter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Music.arff" />
+    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="231">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="231">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_dataset">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/MultiLabelClassifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0-sources.jar!/weka/clusterers/EM.java">
+    <entry file="file://$USER_HOME$/Malmo-0.34.0-Windows-64bit_withBoost_Python3.6/Java_Examples/src/JavaExamples_run_mission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="166" column="7" lean-forward="true" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
+        <state relative-caret-position="1743">
+          <caret line="107" column="46" lean-forward="false" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="489">
+          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Mediamill_joint.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/ConverterUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1374">
+          <caret line="341" column="39" lean-forward="false" selection-start-line="341" selection-start-column="39" selection-end-line="341" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/core/MLUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="957" column="69" lean-forward="false" selection-start-line="957" selection-start-column="69" selection-end-line="957" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill-test.arff">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/graph_play.java">
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill-train.arff">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-4200">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/trees/J48.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="172">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/ProblemTransformationMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1330">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/BCC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multitarget/BCC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.9.2/weka-dev-3.9.2.jar!/weka/classifiers/trees/j48/C45PruneableClassifierTree.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.9.2/weka-dev-3.9.2.jar!/weka/core/Capabilities.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="834" column="0" lean-forward="false" selection-start-line="834" selection-start-column="0" selection-end-line="834" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/cc/CNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.9.2/weka-dev-3.9.2.jar!/weka/classifiers/trees/J48.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/thirdparty/mulan/1.4.0/mulan-1.4.0.jar!/mulan/classifier/MultiLabelLearner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/Classifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/thirdparty/mulan/1.4.0/mulan-1.4.0.jar!/mulan/classifier/transformation/TransformationBasedMultiLabelLearner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1524784337664" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1524784337664" expanded="false" signature="155:393" ph="..." />
+            <marker date="1524784337664" expanded="false" signature="577:588" ph=" { " />
+            <marker date="1524784337664" expanded="false" signature="604:610" ph=" }" />
+            <marker date="1524784337664" expanded="false" signature="686:697" ph=" { " />
+            <marker date="1524784337664" expanded="false" signature="734:740" ph=" }" />
+            <marker date="1524784337664" expanded="false" signature="783:794" ph=" { " />
+            <marker date="1524784337664" expanded="false" signature="821:827" ph=" }" />
+            <marker date="1524784337664" expanded="true" signature="887:1528" ph="{...}" />
+            <marker date="1524784337664" expanded="true" signature="1561:1758" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/thirdparty/mulan/1.4.0/mulan-1.4.0.jar!/mulan/classifier/transformation/ClassifierChain.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state relative-caret-position="126">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <marker date="1524784337664" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1524784337664" expanded="false" signature="155:683" ph="..." />
+            <marker date="1524784337664" expanded="true" signature="863:1021" ph="{...}" />
+            <marker date="1524784337664" expanded="true" signature="1081:1642" ph="{...}" />
+            <marker date="1524784337664" expanded="false" signature="1672:1683" ph=" { " />
+            <marker date="1524784337664" expanded="false" signature="1700:1706" ph=" }" />
+            <marker date="1524784337664" expanded="true" signature="1772:1835" ph="{...}" />
+            <marker date="1524784337664" expanded="false" signature="1886:1897" ph=" { " />
+            <marker date="1524784337664" expanded="false" signature="1915:1921" ph=" }" />
+            <marker date="1524784337664" expanded="true" signature="2000:3370" ph="{...}" />
+            <marker date="1524784337664" expanded="true" signature="3462:4611" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/pmml/consumer/SupportVectorMachineModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="154:718" ph="..." />
+            <marker date="1522905707787" expanded="true" signature="1556:5391" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="5469:9549" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="9582:9593" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="9643:9649" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="9680:10907" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="10946:11069" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="11052:11063" ph="{}" />
+            <marker date="1522905707787" expanded="true" signature="11106:11210" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="11193:11204" ph="{}" />
+            <marker date="1522905707787" expanded="true" signature="11274:19702" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="12174:14182" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="14402:18620" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="18655:19696" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="19800:22273" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="19994:20009" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="20040:20050" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="20113:21490" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="21576:21806" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="21886:22116" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22151:22267" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22375:24020" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="22543:22558" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="22592:22602" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="22672:23387" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="23473:23637" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="23717:23881" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="23915:23930" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24004:24014" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="24121:27184" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="24351:24366" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24395:24405" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="24469:26565" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26651:26791" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="26871:27011" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="27046:27178" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="27281:27874" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="27398:27413" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="27424:27434" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="27465:27480" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="27500:27510" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="27596:27643" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="27723:27770" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="27804:27819" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="27858:27868" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="27933:29722" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="28087:28102" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="28119:28129" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="28453:29716" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/pmml/jaxbbindings/SupportVectorMachine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="151:475" ph="..." />
+            <marker date="1522905707787" expanded="true" signature="477:658" ph="@{...}" />
+            <marker date="1522905707787" expanded="true" signature="699:820" ph="@{...}" />
+            <marker date="1522905707787" expanded="true" signature="866:967" ph="@{...}" />
+            <marker date="1522905707787" expanded="true" signature="1017:1141" ph="@{...}" />
+            <marker date="1522905707787" expanded="true" signature="1387:1394" ph="{}" />
+            <marker date="1522905707787" expanded="true" signature="1438:1571" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="1618:1629" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="1656:1662" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="1719:1730" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="1758:1764" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="1807:1818" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="1843:1849" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="1902:1913" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="1939:1945" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="1993:2004" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2040:2046" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="2104:2115" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2152:2158" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="2197:2208" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2235:2241" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="2290:2301" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2329:2335" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="2369:2380" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2402:2408" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="2452:2463" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="2486:2492" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/CC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3255">
+          <caret line="181" column="28" lean-forward="false" selection-start-line="181" selection-start-column="23" selection-end-line="181" selection-end-column="28" />
+          <folding>
+            <marker date="1524784336059" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1524784336059" expanded="false" signature="151:766" ph="..." />
+            <marker date="1524784336059" expanded="true" signature="1179:1186" ph="{}" />
+            <marker date="1524784336059" expanded="true" signature="1227:1538" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="1582:1766" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="1800:1811" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="1831:1837" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="1901:2702" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="2740:2751" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="2775:2781" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="2856:3175" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="3254:3660" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="3735:4089" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="4175:4633" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="4704:4732" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="4821:5224" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="5307:5314" ph="{}" />
+            <marker date="1524784336059" expanded="false" signature="5347:5358" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="5367:5373" ph=" }" />
+            <marker date="1524784336059" expanded="false" signature="5399:5410" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="5426:5432" ph=" }" />
+            <marker date="1524784336059" expanded="false" signature="5464:5475" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="5488:5494" ph=" }" />
+            <marker date="1524784336059" expanded="false" signature="5527:5538" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="5588:5594" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="5633:5874" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="5938:6058" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="6093:6298" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="6331:6447" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="6507:7561" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="7608:7989" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="8048:8424" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="8455:8985" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="9015:9026" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="9071:9077" ph=" }" />
+            <marker date="1524784336059" expanded="false" signature="9121:9132" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="9187:9193" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/functions/SMO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="150:1445" ph="..." />
+            <marker date="1522905707787" expanded="true" signature="2767:2774" ph="{}" />
+            <marker date="1522905707787" expanded="true" signature="2807:3784" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="3844:6004" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="6037:6048" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6078:6084" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="6116:6127" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6158:6164" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="6208:6796" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="6864:10795" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="10873:13583" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="13646:14647" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="14689:15062" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="15101:15468" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="15499:15829" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="15871:15882" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="15923:15929" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="15973:16263" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="16306:17007" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="17054:19343" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="19407:21718" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="21753:22873" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22925:23048" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="23089:23100" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23130:23136" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23180:23191" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23252:23258" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23293:23304" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23332:23338" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23379:23390" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23412:23418" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23449:23460" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23481:23487" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23526:23537" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23577:23583" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23632:23643" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23669:23675" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23714:23725" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23750:23756" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23786:23797" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23834:23840" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23866:23877" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23893:23899" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="23931:23942" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23955:23961" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24008:24019" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24076:24082" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24125:24136" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24154:24160" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24209:24220" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24235:24241" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24277:24288" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24353:24359" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24391:24402" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24420:24426" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24464:24475" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24490:24496" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24535:24546" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24603:24609" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="24649:24660" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="24715:24721" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="24774:24906" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="24958:25074" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="25122:25133" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="25167:25173" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="25252:25323" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="25361:25511" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="25541:25552" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="25575:25581" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="25627:25638" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="25668:25674" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="25713:25724" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="25778:25784" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="25816:25827" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="25852:25858" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="25908:25919" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="25953:25959" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="25990:27447" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="27480:27491" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="27542:27548" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="27592:27603" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="27634:27640" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="27693:57939" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="28684:28695" ph="{}" />
+            <marker date="1522905707787" expanded="true" signature="28815:31056" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="31101:31116" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31138:31148" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="31183:31198" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="31219:31229" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="31375:38316" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="38393:40068" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="40103:44438" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="44506:46240" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="46321:56523" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="56583:57820" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="57857:57872" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="57923:57933" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/singleCross_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/core/OptionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <marker date="1524784336059" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1524784336059" expanded="false" signature="133:463" ph="..." />
+            <marker date="1524784336059" expanded="true" signature="517:524" ph="{}" />
+            <marker date="1524784336059" expanded="true" signature="616:677" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="771:904" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="998:1059" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="1155:1286" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="1382:1443" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="1541:1674" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="1772:1833" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="1933:2068" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="2166:2227" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="2327:2442" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="2536:2597" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="2693:2818" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="2930:2991" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="3105:3273" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="3356:3407" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="3492:3739" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="3835:3891" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="3991:4052" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="4154:4291" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="4389:5906" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="5980:5991" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="6024:6030" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="6107:6182" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="6257:6268" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="6301:6307" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="6385:6460" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="6536:6547" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="6580:6586" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="6665:6740" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="6817:6828" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="6861:6867" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="6947:7022" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="7099:7110" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="7143:7149" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="7229:7304" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="7382:7393" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="7426:7432" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="7513:7591" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="7666:7677" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="7710:7716" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="7794:7869" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="7953:7964" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="7997:8003" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="8090:8186" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="8263:8274" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="8307:8313" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="8393:8934" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="9007:9018" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="9062:9068" ph=" }" />
+            <marker date="1524784336059" expanded="false" signature="9140:9151" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="9185:9191" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="9266:9340" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="9434:9498" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="9594:9721" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="9792:9918" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="9977:10054" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="10115:10126" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="10152:10158" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="10247:10429" ph="{...}" />
+            <marker date="1524784336059" expanded="false" signature="10481:10492" ph=" { " />
+            <marker date="1524784336059" expanded="false" signature="10524:10530" ph=" }" />
+            <marker date="1524784336059" expanded="true" signature="10618:11567" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="11624:11775" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="11865:12889" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="12948:13101" ph="{...}" />
+            <marker date="1524784336059" expanded="true" signature="13166:13672" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/Filter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="313" column="28" lean-forward="false" selection-start-line="313" selection-start-column="28" selection-end-line="313" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/attribute/NumericToNominal.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="334" column="0" lean-forward="true" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/Evaluation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500.arff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

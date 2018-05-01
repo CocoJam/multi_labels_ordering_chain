@@ -5,11 +5,15 @@ import io.jenetics.engine.Engine;
 import io.jenetics.engine.EvolutionResult;
 import io.jenetics.engine.EvolutionStatistics;
 import io.jenetics.util.Factory;
+import io.jenetics.util.Seq;
+
+import static io.jenetics.engine.EvolutionResult.toBestEvolutionResult;
+import static io.jenetics.engine.EvolutionResult.toBestPhenotype;
 
 
 public class Basic_GA {
 
-    private static int eval (final Genotype<IntegerGene> genotype){
+    public static int eval(final Genotype<IntegerGene> genotype){
         return summationOfGene(genotype);
     }
 
@@ -35,12 +39,23 @@ public class Basic_GA {
                 .offspringSelector(new TournamentSelector<>())
                 .build();
 
-        final Phenotype<IntegerGene, Integer> results = engine.stream().limit(1000)
-                .peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getBestPhenotype()))
-                .collect(EvolutionResult.toBestPhenotype());
+        EvolutionStatistics<Integer, ?> statistics = EvolutionStatistics.ofNumber();
+        final EvolutionResult<IntegerGene, Integer> results = engine.stream().limit(1000)
+                .peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes()))
+                .peek(statistics)
+                .collect(toBestEvolutionResult());
 
+
+        Seq<Phenotype<IntegerGene, Integer>> a1 = results.getPopulation();
+
+        System.out.println(a1);
+        System.out.println(statistics);
+        System.out.println(statistics.getAltered());
+
+        System.out.println(engine.getPopulationSize());
         System.out.println(engine.getAlterer());
-        System.out.println(engine.getFitnessFunction().getClass());
+        System.out.println(engine.getFitnessFunction().toString());
+
         System.out.println(results);
     }
 }
