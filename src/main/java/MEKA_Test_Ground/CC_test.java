@@ -30,6 +30,7 @@ public class CC_test {
         Instances train = new Instances(data, 0, trainSize);
         Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
         System.out.println("Build CC classifier");
+
         CC cc = new CC();
         MLUtils.prepareData(data2);
         cc.buildClassifier(data2);
