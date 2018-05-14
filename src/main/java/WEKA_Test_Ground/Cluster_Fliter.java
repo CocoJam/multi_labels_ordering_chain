@@ -5,45 +5,25 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 import weka.filters.Filter;
 import weka.filters.unsupervised.instance.RemoveWithValues;
+import weka.filters.unsupervised.instance.SubsetByExpression;
 
 public class Cluster_Fliter {
-    public static Instances importArff(String file){
-        ConverterUtils.DataSource source = null;
+
+    public static Instances filter(Instances source,int value){
+        SubsetByExpression subsetByExpression =new SubsetByExpression();
+        subsetByExpression.setExpression("ATT1="+value);
         try {
-            source = new ConverterUtils.DataSource("src/main/CAL500.arff");
-            return source.getDataSet();
+            subsetByExpression.setInputFormat(source);
+            return SubsetByExpression.useFilter(source, subsetByExpression);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
-    };
-
-    public static Instances filter(int value, Attribute attribute){
         return null;
     }
 
-    public static void main(String[] args) {
-        ConverterUtils.DataSource source = null;
-        Instances data =null;
-        try {
-            source = new ConverterUtils.DataSource("src/main/CAL500_clustered.arff");
-            data = source.getDataSet();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-//        Attribute a = new Attribute("Cluster");
-        RemoveWithValues filter = new RemoveWithValues();
-        filter.setAttributeIndex("1");
-        try {
-            filter.setSplitPoint(2);
-//            System.out.println(data);
-//            filter.setInvertSelection(true);
-            filter.setInputFormat(data);
-            Instances newData = Filter.useFilter(data, filter);
-            System.out.println(newData);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+    public static void main(String[] args) throws Exception {
+        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered.arff");
+        Instances data = source.getDataSet();
+        System.out.println( Cluster_Fliter.filter(data,2));
     }
 }
