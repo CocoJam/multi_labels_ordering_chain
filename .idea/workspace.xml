@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/CAL500_clustered_blah.arff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java" afterPath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,33 +17,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Kmeans_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
+      <file leaf-file-name="Normal_CC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="22" column="49" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="22" selection-end-column="49" />
+            <state relative-caret-position="147">
+              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cluster_Fliter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="mediamill.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="0">
+              <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Normal_CC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
+      <file leaf-file-name="CAL500_clustered_blah.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_blah.arff">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+            <state relative-caret-position="475">
+              <caret line="748" column="950" lean-forward="false" selection-start-line="748" selection-start-column="950" selection-end-line="748" selection-end-column="950" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cluster_Fliter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -51,32 +59,19 @@
       <file leaf-file-name="CAL500_clustered.arff" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered.arff">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57908">
-              <caret line="242" column="40" lean-forward="false" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
+            <state relative-caret-position="97">
+              <caret line="746" column="473" lean-forward="true" selection-start-line="746" selection-start-column="473" selection-end-line="746" selection-end-column="473" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubsetByExpression.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/instance/SubsetByExpression.class">
+      <file leaf-file-name="CAL500.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/CAL500.arff">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1844">
-              <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+            <state relative-caret-position="0">
+              <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="25" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoveWithValues.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/instance/RemoveWithValues.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-269">
-              <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-              <folding>
-                <element signature="e#1392#1393#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +79,8 @@
       <file leaf-file-name="EM_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state relative-caret-position="363">
+              <caret line="83" column="43" lean-forward="false" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1526254846218" expanded="true" signature="1570:1713" ph="..." />
@@ -94,42 +89,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Instance.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Instance.class">
+      <file leaf-file-name="CC_test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="178">
+              <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
               <folding>
-                <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Basic_GA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java">
+      <file leaf-file-name="Instances.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Instances.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="81" column="149" lean-forward="false" selection-start-line="81" selection-start-column="149" selection-end-line="81" selection-end-column="149" />
-              <folding>
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
-                <element signature="e#974#975#0" expanded="true" />
-                <element signature="e#1022#1023#0" expanded="true" />
-                <element signature="e#3659#3660#0" expanded="true" />
-                <element signature="e#3722#3723#0" expanded="true" />
-                <element signature="e#3798#3799#0" expanded="true" />
-                <element signature="e#3850#3851#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-458">
+              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CAL500.arff" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/CAL500.arff">
+      <file leaf-file-name="ConverterLibSVM.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/thirdparty/mulan/1.4.0/mulan-1.4.0.jar!/mulan/data/ConverterLibSVM.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15687">
-              <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="600" />
+            <state relative-caret-position="-3640">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -160,6 +146,9 @@
       <find>Class</find>
       <find>kmeans</find>
       <find>cluster</find>
+      <find>classifi</find>
+      <find>attribute</find>
+      <find>type</find>
     </findStrings>
     <replaceStrings>
       <replace>EM_test</replace>
@@ -190,6 +179,9 @@
         <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" />
+        <option value="$PROJECT_DIR$/src/main/CAL500_clustered_blah.arff" />
+        <option value="$PROJECT_DIR$/src/main/CAL500_clustered.arff" />
       </list>
     </option>
   </component>
@@ -333,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Cluster_Fliter">
+  <component name="RunManager" selected="Application.CC_test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -349,6 +341,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="GA_Test_Ground.Basic_GA" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CC" />
+      <envs />
+    </configuration>
+    <configuration name="CC_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="MEKA_Test_Ground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="MEKA_Test_Ground.CC_test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -387,25 +398,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="WEKA_Test_Ground.EM_test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CC" />
-      <envs />
-    </configuration>
-    <configuration name="EM_test_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="WEKA_Test_Ground.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="WEKA_Test_Ground.EM_test_test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -806,17 +798,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Kmeans_test" />
       <item index="1" class="java.lang.String" itemvalue="Application.Basic_GA" />
-      <item index="2" class="java.lang.String" itemvalue="Application.EM_test_test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.EM_test" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Cluster_Fliter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.EM_test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Cluster_Fliter" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CC_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Cluster_Fliter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.EM_test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Basic_GA" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Kmeans_test" />
-        <item index="4" class="java.lang.String" itemvalue="Application.EM_test_test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CC_test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Cluster_Fliter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.EM_test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Basic_GA" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Kmeans_test" />
       </list>
     </recent_temporary>
   </component>
@@ -846,7 +838,7 @@
       <workItem from="1525042317190" duration="8712000" />
       <workItem from="1525071876006" duration="3856000" />
       <workItem from="1525083493683" duration="3731000" />
-      <workItem from="1526335787794" duration="791000" />
+      <workItem from="1526335787794" duration="6179000" />
     </task>
     <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
       <created>1524611550042</created>
@@ -890,11 +882,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526264055192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cluster flitering function done">
+      <created>1526336597742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526336597742</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70667000" />
+    <option name="totallyTimeSpent" value="76055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -908,13 +907,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518797" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46414602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -928,7 +928,6 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46414602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1000,7 +999,8 @@
     <MESSAGE value="Bug fixed for loading Arff files it requires -C label numbers" />
     <MESSAGE value="Bug discover of numberic class not supported by weka tree" />
     <MESSAGE value="Added EM_test clustering&#10;&#10;Tried running EM clustering with CAL500 dataset&#10;The optimized output cluster number is 8.&#10;The log likelihood is 33.47" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added EM_test clustering&#10;&#10;Tried running EM clustering with CAL500 dataset&#10;The optimized output cluster number is 8.&#10;The log likelihood is 33.47" />
+    <MESSAGE value="Cluster flitering function done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cluster flitering function done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1011,7 +1011,7 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1020,50 +1020,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/converters/ConverterUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1374">
-          <caret line="341" column="39" lean-forward="false" selection-start-line="341" selection-start-column="39" selection-end-line="341" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/core/MLUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="957" column="69" lean-forward="false" selection-start-line="957" selection-start-column="69" selection-end-line="957" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mediamill-test.arff" />
-    <entry file="file://$PROJECT_DIR$/src/main/mediamill-train.arff" />
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/trees/J48.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/ProblemTransformationMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1330">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/BCC.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multitarget/BCC.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.9.2/weka-dev-3.9.2.jar!/weka/classifiers/trees/j48/C45PruneableClassifierTree.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1127,38 +1083,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/pmml/jaxbbindings/SupportVectorMachine.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/CC.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3255">
-          <caret line="181" column="28" lean-forward="false" selection-start-line="181" selection-start-column="23" selection-end-line="181" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/functions/SMO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/core/OptionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1517,38 +1445,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CAL500.arff">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15687">
-          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="600" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1526254846218" expanded="true" signature="1570:1713" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="81" column="149" lean-forward="false" selection-start-line="81" selection-start-column="149" selection-end-line="81" selection-end-column="149" />
           <folding>
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#3659#3660#0" expanded="true" />
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#3798#3799#0" expanded="true" />
-            <element signature="e#3850#3851#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
+            <element signature="e#3659#3660#0" expanded="false" />
+            <element signature="e#3722#3723#0" expanded="false" />
+            <element signature="e#3798#3799#0" expanded="false" />
+            <element signature="e#3850#3851#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1572,34 +1481,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered.arff">
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/SingleClassifierEnhancer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57908">
-          <caret line="242" column="40" lean-forward="false" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
+        <state relative-caret-position="-1701">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Kmeans_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="231">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="22" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/CC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4627">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/ProblemTransformationMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/pmml/jaxbbindings/SupportVectorMachine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/functions/SMO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Attribute.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="172" column="19" lean-forward="false" selection-start-line="172" selection-start-column="15" selection-end-line="172" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/attribute/NumericToBinary.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1204">
+          <caret line="105" column="30" lean-forward="false" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500.arff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/thirdparty/mulan/1.4.0/mulan-1.4.0.jar!/mulan/data/ConverterLibSVM.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3640">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Instances.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-458">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="83" column="43" lean-forward="false" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1526254846218" expanded="true" signature="1570:1713" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="147">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered.arff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="746" column="473" lean-forward="true" selection-start-line="746" selection-start-column="473" selection-end-line="746" selection-end-column="473" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_blah.arff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="748" column="950" lean-forward="false" selection-start-line="748" selection-start-column="950" selection-end-line="748" selection-end-column="950" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="181">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
