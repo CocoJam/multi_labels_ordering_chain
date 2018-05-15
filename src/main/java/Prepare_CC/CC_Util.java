@@ -41,7 +41,46 @@ public class CC_Util {
 
     public static void ccRun(Cluster_CC_Builder cluster_cc_builder, int splitRate) throws Exception {
         Instances data = cluster_cc_builder.parsedCluster;
-        ccRunAndBuildAndEval(splitRate, data,cluster_cc_builder.labelChain);
+        System.out.println(data);
+        ccRunAndBuildAndEval(splitRate, cluster_cc_builder.parsedCluster ,cluster_cc_builder.labelChain);
+    }
+
+    private static void ccRunAndBuildAndEval(Cluster_CC_Builder cluster_cc_builder) throws Exception {
+        Instances data = cluster_cc_builder.parsedCluster;
+        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+        Matcher matcher = pattern.matcher(data.relationName());
+        int numLabels = 0;
+        if(matcher.find()){
+            data.setRelationName(matcher.group(0));
+            numLabels = Integer.parseInt(matcher.group(2));
+        }
+        long time1= System.nanoTime();
+
+        int[] ar = new int[numLabels];
+        for (int i = 0; i < numLabels; i++) {
+            ar[i] = i;
+        }
+        Random rnd = ThreadLocalRandom.current();
+        for (int i = ar.length - 1; i > 0; i--)
+        {
+            int index = rnd.nextInt(i + 1);
+            int a = ar[index];
+            ar[index] = ar[i];
+            ar[i] = a;
+        }
+        CC cc = new CC();
+        MLUtils.prepareData(data);
+        cc.buildClassifier(data);
+        cc.rebuildClassifier(cluster_cc_builder.labelChain,cluster_cc_builder.parsedCluster);
+        String top = "PCut1";
+        String vop = "3";
+        int numOfCV = data.numInstances()>10? 10:data.numInstances();
+        Result result = Evaluation.cvModel(cc, data, numOfCV, top, vop);
+        System.out.println(result);
+        System.out.println(Arrays.toString(cc.retrieveChain()));
+        long time2 = TimeUnit.SECONDS.convert(System.nanoTime()-time1, TimeUnit.NANOSECONDS);
+        System.out.println(time2);
+        result.getInfo("");
     }
 
     private static void ccRunAndBuildAndEval(int splitRate, Instances data, int[] ints) throws Exception {
@@ -56,7 +95,7 @@ public class CC_Util {
             numLabels = Integer.parseInt(matcher.group(2));
         }
         long time1= System.nanoTime();
-        CC cc = new CC();
+
         int[] ar = new int[numLabels];
         for (int i = 0; i < numLabels; i++) {
             ar[i] = i;
@@ -69,7 +108,7 @@ public class CC_Util {
             ar[index] = ar[i];
             ar[i] = a;
         }
-
+        CC cc = new CC();
         cc.prepareChain(ints);
         MLUtils.prepareData(data);
         cc.buildClassifier(data);
@@ -81,6 +120,7 @@ public class CC_Util {
         System.out.println(Arrays.toString(cc.retrieveChain()));
         long time2 = TimeUnit.SECONDS.convert(System.nanoTime()-time1, TimeUnit.NANOSECONDS);
         System.out.println(time2);
+        result.getInfo("");
     }
 
     public static List<Integer[]> labelOrderChains(String file, int clusterAmount) throws Exception {
@@ -123,13 +163,14 @@ public class CC_Util {
     }
 
     public static void main(String[] args) throws Exception {
-        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered_adjusted.arff");
-        Instances data = source.getDataSet();
-        List<Integer[]> integers  = CC_Util.getChainsList(8,data);
-        for (int i = 0; i < 8; i++) {
-            System.out.println(Arrays.toString(integers.get(i)));
-            Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",i,0);
-            System.out.println(Arrays.toString(cluster_cc_builder.labelChain));
-        }
+//        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered_adjusted.arff");
+//        Instances data = source.getDataSet();
+//        List<Integer[]> integers  = CC_Util.getChainsList(8,data);
+//        for (int i = 0; i < 8; i++) {
+//            System.out.println(Arrays.toString(integers.get(i)));
+            Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",1,0);
+//            CC_Util.ccRun(cluster_cc_builder,66);
+//            System.out.println(Arrays.toString(cluster_cc_builder.labelChain));
+//        }
     }
 }

@@ -1,6 +1,8 @@
 package MEKA_Test_Ground;
 
 import WEKA_Test_Ground.Cluster_Fliter;
+import meka.classifiers.multilabel.CC;
+import meka.core.MLUtils;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 
@@ -21,6 +23,9 @@ public String dataSource;
         Instances data = source.getDataSet();
         this.cluster=Cluster_Fliter.filter(data, clusterNum);
         this.parsedCluster = new Instances(this.cluster);
+        MLUtils.prepareData(this.parsedCluster);
+        CC cc  = new CC();
+        cc.buildClassifier(this.parsedCluster);
         Pattern pattern = Pattern.compile("(.+-C (\\d+))");
         Matcher matcher = pattern.matcher(data.relationName());
         int numLabels = 0;

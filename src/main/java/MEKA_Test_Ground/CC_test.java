@@ -6,8 +6,6 @@ import meka.classifiers.multilabel.CC;
 import meka.classifiers.multilabel.Evaluation;
 import meka.core.MLUtils;
 import meka.core.Result;
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.factory.Nd4j;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 
@@ -22,7 +20,7 @@ import java.util.regex.Pattern;
 
 public class CC_test {
 
-    public static void ccRun(int clusterNum, int splitRate, String file, int[] ints) throws Exception {
+    public static void ccRun(int clusterNum, int splitRate, String file) throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(file);
         Instances data = source.getDataSet();
         data = CC_Util.filter(data,clusterNum);
@@ -54,7 +52,7 @@ public class CC_test {
         }
 //        ints = ints == null? ar: ints;
 //        System.out.println(Arrays.toString(ar));
-        cc.prepareChain(ints);
+//        cc.prepareChain(ints);
         MLUtils.prepareData(data);
         cc.buildClassifier(data);
         String top = "PCut1";
@@ -124,7 +122,7 @@ public class CC_test {
 //        long time2 = TimeUnit.SECONDS.convert(System.nanoTime()-time1, TimeUnit.NANOSECONDS);
 //        System.out.println(time2);
 //       int[] label = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 40, 43, 53, 56, 59, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 75, 79, 81, 82, 84, 86, 87, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 116, 117, 120, 121, 124, 125, 126, 130, 136, 138, 141, 143, 147, 148, 149, 150, 157, 160, 161, 164, 166, 170, 172};
-//        CC_test.ccRun(2,66,"src/main/CAL500_clustered_adjusted.arff",label);
+        CC_test.ccRun(2,66,"src/main/CAL500_clustered_adjusted.arff");
 
 
         
