@@ -23,6 +23,8 @@ import java.util.Enumeration;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import weka.core.converters.ConverterUtils.DataSource;
 
@@ -35,24 +37,14 @@ public class EM_test {
     public static void main(String[] args) throws Exception {
         try {
             long time1 = System.nanoTime();
-            DataSource source = new DataSource("src/main/mediamil_adjusted.arff");
+            DataSource source = new DataSource("src/main/CAL500.arff");
             Instances data = source.getDataSet();
             // setting class attribute if the data format does not provide this information
             // For example, the XRFF format saves the class attribute information as well
-
-//            if (data.classIndex() == -1){
-//                data.setClassIndex(data.numAttributes() - 1);
-//            };
-//            System.out.println(data.numAttributes());
-
-            //Set up the EM_test cluster
             EM EM_test = new EM();
             //Seeding for eval
             EM_test.setSeed(10);
-
-
             EM_test.buildClusterer(data);
-
             //eval object for any clusters
             ClusterEvaluation eval = new ClusterEvaluation();
             eval.setClusterer(EM_test);
@@ -61,38 +53,19 @@ public class EM_test {
             //Print the overall results
             System.out.println("# of clusters: " + eval.getNumClusters());
             System.out.println(eval.clusterResultsToString());
-            long time2 = TimeUnit.SECONDS.convert(System.nanoTime()-time1, TimeUnit.NANOSECONDS);
-            System.out.println( time2);
-            SimpleKMeans kmeans = new SimpleKMeans();
-            //Seeding for eval
-            kmeans.setSeed(10);
-            kmeans.setPreserveInstancesOrder(true);
-            kmeans.setNumClusters(eval.getNumClusters());
-            kmeans.buildClusterer(data);
-            ClusterEvaluation eval2 = new ClusterEvaluation();
-            eval2.setClusterer(kmeans);
-            eval2.evaluateClusterer(data);
-
-            //Print the overall results
-            System.out.println(eval2.clusterResultsToString());
-            int[] assignments = kmeans.getAssignments();
-            int i=0;
-
-//            Map<Integer,Integer> clusterInstances = new TreeMap<Integer, Integer>();
+            System.out.println( EM_test.clusterInstance(data.get(1)));
             Instances newData = new Instances(data);
             Attribute attribute = new Attribute("Cluster");
-            newData.insertAttributeAt(attribute,0);
-            for(int clusterNum : assignments) {
-                System.out.println("Instance -> Cluster "+ i + "->"+ clusterNum);
-                Instance j= newData.get(i);
-                j.setValue(j.attribute(j.numAttributes()-1),clusterNum);
-                System.out.println(j);
-                i++;
+            newData.insertAttributeAt(attribute,newData.numAttributes());
+            for (int i = 0; i < newData.numInstances(); i++) {
+                System.out.println(newData.get(i).attribute(data.get(i).numAttributes()));
+//                System.out.println(EM_test.clusterInstance(newData.get(i)));
+                newData.get(i).setValue(newData.get(i).attribute(newData.get(i).numAttributes()-1), EM_test.clusterInstance(data.get(i)));
             }
             ArffSaver saver = new ArffSaver();
+            System.out.println(newData);
             saver.setInstances(newData);
-            saver.setFile(new File("src/main/mediamil_clustered_adjusted.arff"));
-//            saver.setDestination(new File("./data/test.arff"));   // **not** necessary in 3.5.4 and later
+            saver.setFile(new File("src/main/CAL500_clustered_adjusted.arff"));
             saver.writeBatch();
 
         } catch (IOException e) {
