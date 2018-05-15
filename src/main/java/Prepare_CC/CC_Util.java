@@ -96,13 +96,25 @@ public class CC_Util {
         }
         long time1= System.nanoTime();
 
-        CC cc = new CC();
-
+        Base_CC cc = new Base_CC();
+        int[] ar = new int[numLabels];
+        for (int i = 0; i < numLabels; i++) {
+            ar[i] = i;
+        }
+//        Random rnd = ThreadLocalRandom.current();
+//        for (int i = ar.length - 1; i > 0; i--)
+//        {
+//            int index = rnd.nextInt(i + 1);
+//            int a = ar[index];
+//            ar[index] = ar[i];
+//            ar[i] = a;
+//        }
+        cc.prepareChain(ar);
         MLUtils.prepareData(data);
+        System.out.println("Building");
         cc.buildClassifier(data);
-//        cc.prepareChain(ints);
+
 //        cc.rebuildClassifier(ints,data);
-        cc.prepareChain(ints);
         String top = "PCut1";
         String vop = "3";
         int numOfCV = data.numInstances()>10? 10:data.numInstances();
@@ -111,7 +123,18 @@ public class CC_Util {
         System.out.println(Arrays.toString(cc.retrieveChain()));
         long time2 = TimeUnit.SECONDS.convert(System.nanoTime()-time1, TimeUnit.NANOSECONDS);
         System.out.println(time2);
-        result.getInfo("");
+        for (String s : result.availableMetrics()) {
+            System.out.print(s+": ");
+            System.out.println(result.getMeasurement(s));
+        }
+        System.out.println(result.getMeasurement("Hamming score"));
+        System.out.println(result.getMeasurement("Exact match"));
+        System.out.println(result.getMeasurement("Accuracy"));
+        double hamming_loss= Double.parseDouble(result.getMeasurement("Hamming score").toString());
+        double exact_match= Double.parseDouble(result.getMeasurement("Exact match").toString());
+        double accuracy= Double.parseDouble(result.getMeasurement("Accuracy").toString());
+        double averaging = ((1-hamming_loss)+ exact_match +accuracy)/3;
+
     }
 
     public static List<Integer[]> labelOrderChains(String file, int clusterAmount) throws Exception {
