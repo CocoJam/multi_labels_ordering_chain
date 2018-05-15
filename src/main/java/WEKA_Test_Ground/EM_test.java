@@ -35,7 +35,7 @@ public class EM_test {
     public static void main(String[] args) throws Exception {
         try {
             long time1 = System.nanoTime();
-            DataSource source = new DataSource("src/main/CAL500.arff");
+            DataSource source = new DataSource("src/main/mediamil_adjusted.arff");
             Instances data = source.getDataSet();
             // setting class attribute if the data format does not provide this information
             // For example, the XRFF format saves the class attribute information as well
@@ -85,13 +85,13 @@ public class EM_test {
             for(int clusterNum : assignments) {
                 System.out.println("Instance -> Cluster "+ i + "->"+ clusterNum);
                 Instance j= newData.get(i);
-                j.setValue(j.attribute(0),clusterNum);
+                j.setValue(j.attribute(j.numAttributes()-1),clusterNum);
                 System.out.println(j);
                 i++;
             }
             ArffSaver saver = new ArffSaver();
             saver.setInstances(newData);
-            saver.setFile(new File("src/main/CAL500_clustered.arff"));
+            saver.setFile(new File("src/main/mediamil_clustered_adjusted.arff"));
 //            saver.setDestination(new File("./data/test.arff"));   // **not** necessary in 3.5.4 and later
             saver.writeBatch();
 

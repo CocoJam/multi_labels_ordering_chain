@@ -1,38 +1,29 @@
 package MEKA_Test_Ground;
 
+import WEKA_Test_Ground.Cluster_Fliter;
 import meka.classifiers.multilabel.CC;
-import meka.classifiers.multilabel.Evaluation;
 import meka.core.MLUtils;
-import meka.core.Result;
-import scala.Enumeration;
-import scala.math.Numeric;
-import weka.classifiers.functions.SMO;
-import weka.core.Attribute;
-import weka.core.Instance;
 import weka.core.Instances;
-import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils;
-import weka.core.pmml.jaxbbindings.SupportVectorMachine;
-import weka.filters.unsupervised.attribute.NumericToBinary;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class CC_test {
     public static void main(String[] args) throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered_adjusted.arff");
-        Instances data2 = source.getDataSet();
-        Instances data = new Instances(data2);
+        Instances data = source.getDataSet();
+        data = Cluster_Fliter.filter(data,7);
+//        System.out.println(data.instance(0).attribute(i-1));
         double splitRate = 66;
         int trainSize = (int) (data.numInstances() * splitRate / 100.0);
         Instances train = new Instances(data, 0, trainSize);
         Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
         System.out.println("Build CC classifier");
-
+        long time1= System.nanoTime();
         CC cc = new CC();
-        MLUtils.prepareData(data2);
-        cc.buildClassifier(data2);
+        MLUtils.prepareData(data);
+        cc.buildClassifier(data);
+        long time2 = TimeUnit.SECONDS.convert(System.nanoTime()-time1, TimeUnit.NANOSECONDS);
+        System.out.println(time2);
     }
 }

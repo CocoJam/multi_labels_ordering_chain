@@ -11,7 +11,7 @@ public class Cluster_Fliter {
 
     public static Instances filter(Instances source,int value){
         SubsetByExpression subsetByExpression =new SubsetByExpression();
-        subsetByExpression.setExpression("ATT1="+value);
+        subsetByExpression.setExpression("ATT"+(source.attribute("Cluster").index()+1)+"="+value);
         try {
             subsetByExpression.setInputFormat(source);
             return SubsetByExpression.useFilter(source, subsetByExpression);
@@ -22,8 +22,9 @@ public class Cluster_Fliter {
     }
 
     public static void main(String[] args) throws Exception {
-        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered.arff");
+        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered_adjusted.arff");
         Instances data = source.getDataSet();
+        System.out.println(data.attribute("Cluster").index());
         System.out.println( Cluster_Fliter.filter(data,2));
     }
 }
