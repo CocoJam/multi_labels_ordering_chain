@@ -7,6 +7,7 @@ import mst.In;
 import scala.Int;
 import weka.core.Instances;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.function.Function;
 import java.util.stream.IntStream;
@@ -24,9 +25,9 @@ public class GA_CC implements Problem<ISeq<Integer>, EnumGene<Integer>, Integer>
         return of(cluster_cc_builder);
     }
     public static GA_CC of( Cluster_CC_Builder cluster_cc_builder) {
-        final MSeq<Integer> points = MSeq.ofLength(cluster_cc_builder.labelChain.length);
+        final MSeq<Integer> points = MSeq.ofLength(cluster_cc_builder.sqeuenceChain.length);
         for (int i = 0; i < cluster_cc_builder.labelChain.length; ++i) {
-            points.set(i,cluster_cc_builder.labelChain[i]);
+            points.set(i,cluster_cc_builder.sqeuenceChain[i]);
         }
         return new GA_CC(points.toISeq(), cluster_cc_builder);
     }
@@ -40,8 +41,17 @@ public class GA_CC implements Problem<ISeq<Integer>, EnumGene<Integer>, Integer>
     public Function<ISeq<Integer>, Integer> fitness() {
         return p->
         {
-            System.out.println(p);
+//            System.out.println(p.getClass());
+            int[] q = Arrays.stream(p.toArray(new Integer[p.size()])).mapToInt(Integer::intValue).toArray();
+            System.out.println(Arrays.toString(q));
+            try {
+                CC_Util.ccRun(cluster_cc_builder,66,q);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return 0;
+            }
             //Need to run eval here will do later
+
             return IntStream.range(0, p.length()).sum();
         };
     }
@@ -57,8 +67,8 @@ public class GA_CC implements Problem<ISeq<Integer>, EnumGene<Integer>, Integer>
         GA_CC basic_ga = GA_CC.of(cluster_cc_builder);
         Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(10).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
         EvolutionStatistics<Integer,?> statistics =  EvolutionStatistics.ofNumber();
-        Phenotype<EnumGene<Integer>,Integer> best = engine.stream().limit(250).peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes())).peek(statistics).collect(toBestPhenotype());
+        Phenotype<EnumGene<Integer>,Integer> best = engine.stream().limit(1).peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes())).peek(statistics).collect(toBestPhenotype());
         System.out.println(statistics);
-        System.out.println(best.getGenotype().getChromosome().getGene());
+        System.out.println(best.getGenotype());
     }
 }

@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 
 public class Cluster_CC_Builder {
 public int[] labelChain;
+public int[] sqeuenceChain;
 public Instances cluster;
 public Instances parsedCluster;
 public int clusterNum;
@@ -82,6 +83,10 @@ public String dataSource;
         System.out.println("building");
         System.out.println(data.relationName());
         this.labelChain= Arrays.stream(ListOfInt.toArray(new Integer[ListOfInt.size()])).mapToInt(Integer::intValue).toArray();
+        this.sqeuenceChain = new int[this.labelChain.length];
+        for (int i = 0; i < this.labelChain.length; i++) {
+            this.sqeuenceChain[i] = i;
+        }
         System.out.println(Arrays.toString(this.labelChain));
     }
 
