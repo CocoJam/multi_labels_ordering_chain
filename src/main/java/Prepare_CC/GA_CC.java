@@ -61,14 +61,42 @@ public class GA_CC implements Problem<ISeq<Integer>, EnumGene<Integer>, Integer>
         return Codecs.ofPermutation(_points);
     }
 
+    public int[] GARun(String file, int clusterNum, int threadshold, int popSize, int iterations) throws Exception {
+        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(file,clusterNum,threadshold);
+        GA_CC basic_ga = GA_CC.of(cluster_cc_builder);
+        Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(popSize).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
+        EvolutionStatistics<Integer,?> statistics =  EvolutionStatistics.ofNumber();
+        Phenotype<EnumGene<Integer>,Integer> best = engine.stream().limit(iterations).peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes())).peek(statistics).collect(toBestPhenotype());
+        System.out.println(statistics);
+        Chromosome<EnumGene<Integer>> enumGene = best.getGenotype().getChromosome();
+        int[] blah = new int[enumGene.length()];
+        for (int i = 0; i < enumGene.length(); i++) {
+            blah[i] = Integer.parseInt(enumGene.getGene(i).toString());
+
+        }
+        System.out.println(Arrays.toString(blah));
+        return blah;
+    }
+
     public static void main(String[] args) throws Exception {
 
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",0,0);
-        GA_CC basic_ga = GA_CC.of(cluster_cc_builder);
-        Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(10).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
-        EvolutionStatistics<Integer,?> statistics =  EvolutionStatistics.ofNumber();
-        Phenotype<EnumGene<Integer>,Integer> best = engine.stream().limit(1).peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes())).peek(statistics).collect(toBestPhenotype());
-        System.out.println(statistics);
-        System.out.println(best.getGenotype());
+
+//        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",0,0);
+//        GA_CC basic_ga = GA_CC.of(cluster_cc_builder);
+//        Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(1).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
+//        EvolutionStatistics<Integer,?> statistics =  EvolutionStatistics.ofNumber();
+//        Phenotype<EnumGene<Integer>,Integer> best = engine.stream().limit(1).peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes())).peek(statistics).collect(toBestPhenotype());
+//        System.out.println(statistics);
+//        Chromosome<EnumGene<Integer>> enumGene = best.getGenotype().getChromosome();
+//        System.out.println(enumGene.length());
+//        int[] blah = new int[enumGene.length()];
+//        for (int i = 0; i < enumGene.length(); i++) {
+//            blah[i] = Integer.parseInt(enumGene.getGene(i).toString());
+//
+//        }
+//        System.out.println(Arrays.toString(blah));
+//        enumGene.stream().peek(p-> {System.out.println(p);});
+//        best.getGenotype().stream().mapToInt(Integer::intValue);
+//        CC_Util.ccRun(cluster_cc_builder,66,best.getGenotype())
     }
 }
