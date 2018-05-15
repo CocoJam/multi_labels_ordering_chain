@@ -96,22 +96,13 @@ public class CC_Util {
         }
         long time1= System.nanoTime();
 
-        int[] ar = new int[numLabels];
-        for (int i = 0; i < numLabels; i++) {
-            ar[i] = i;
-        }
-        Random rnd = ThreadLocalRandom.current();
-        for (int i = ar.length - 1; i > 0; i--)
-        {
-            int index = rnd.nextInt(i + 1);
-            int a = ar[index];
-            ar[index] = ar[i];
-            ar[i] = a;
-        }
         CC cc = new CC();
-        cc.prepareChain(ints);
+
         MLUtils.prepareData(data);
         cc.buildClassifier(data);
+//        cc.prepareChain(ints);
+//        cc.rebuildClassifier(ints,data);
+        cc.prepareChain(ints);
         String top = "PCut1";
         String vop = "3";
         int numOfCV = data.numInstances()>10? 10:data.numInstances();
@@ -168,8 +159,8 @@ public class CC_Util {
 //        List<Integer[]> integers  = CC_Util.getChainsList(8,data);
 //        for (int i = 0; i < 8; i++) {
 //            System.out.println(Arrays.toString(integers.get(i)));
-            Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",1,0);
-//            CC_Util.ccRun(cluster_cc_builder,66);
+            Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",0,0);
+            CC_Util.ccRun(cluster_cc_builder,66);
 //            System.out.println(Arrays.toString(cluster_cc_builder.labelChain));
 //        }
     }

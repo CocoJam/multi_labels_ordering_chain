@@ -46,13 +46,14 @@ public String dataSource;
     }
 
     private void setUp(Instances data ,double threadshold) throws Exception {
-        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+        Pattern pattern = Pattern.compile("((.+-C )(\\d+))");
         Matcher matcher = pattern.matcher(data.relationName());
         int numLabels = 0;
+        String group2 = "";
         if(matcher.find()){
             data.setRelationName(matcher.group(0));
-            System.out.println(data.relationName());
-            numLabels = Integer.parseInt(matcher.group(2));
+            group2 = matcher.group(2);
+            numLabels = Integer.parseInt(matcher.group(3));
         }
         int[] listList = new int[numLabels];
         for (int j = 0; j < cluster.numInstances(); j++) {
@@ -63,26 +64,25 @@ public String dataSource;
 
         List<Integer> ListOfInt = new ArrayList<>();
         double degrees = cluster.numInstances() * threadshold;
+        int missingLabelCount = 0;
         for (int i = 0; i < listList.length; i++) {
             if(listList[i]<degrees){
                 ListOfInt.add(i);
             }else{
                 this.parsedCluster.deleteAttributeAt(i);
+                missingLabelCount++;
             }
         }
+        data.setRelationName(group2+(numLabels-(missingLabelCount)));
         //Bug found mis match in the parsed Cluster with the orginal will try to fix it.
 //        CC cc = new CC();
-//        Matcher matcher2 = pattern.matcher(cluster.relationName());
-//        if(matcher2.find()){
-//            cluster.setRelationName(matcher.group(0));
-//            System.out.println(cluster.relationName());
-//            numLabels = Integer.parseInt(matcher.group(2));
-//        }
-//        System.out.println(data);
-//        MLUtils.prepareData(cluster);
-//        cc.buildClassifier(cluster);
-//        System.out.println("building");
+//
+//        MLUtils.prepareData(data);
+//        cc.buildClassifier(data);
+        System.out.println("building");
+        System.out.println(data.relationName());
         this.labelChain= Arrays.stream(ListOfInt.toArray(new Integer[ListOfInt.size()])).mapToInt(Integer::intValue).toArray();
+        System.out.println(Arrays.toString(this.labelChain));
     }
 
 
