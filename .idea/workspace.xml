@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
+    <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="SetUp almost done">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Cluster_CC_Builder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff" afterPath="$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff" />
+      <change beforePath="$PROJECT_DIR$/CC.iml" afterPath="$PROJECT_DIR$/CC.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" afterPath="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" afterPath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,11 +23,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Cluster_CC_Builder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Cluster_CC_Builder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Normal_CC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-183">
+            <state relative-caret-position="21">
               <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cluster_Fliter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CC_Util.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="130" column="122" lean-forward="false" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="122" />
               <folding />
             </state>
           </provider>
@@ -31,7 +68,7 @@
       <file leaf-file-name="EM_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="678">
               <caret line="62" column="118" lean-forward="false" selection-start-line="62" selection-start-column="118" selection-end-line="62" selection-end-column="118" />
               <folding>
                 <marker date="1526365289723" expanded="true" signature="1407:1550" ph="..." />
@@ -40,60 +77,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Instances.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Instances.class">
+      <file leaf-file-name="Basic_GA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="226">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
+      <file leaf-file-name="GA_CC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="106" column="13" lean-forward="false" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="258">
+              <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1735#1736#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/AbstractList.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mediamill.arff" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="475">
-              <caret line="1206" column="1015" lean-forward="false" selection-start-line="1206" selection-start-column="1015" selection-end-line="1206" selection-end-column="1015" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mediamil_clustered_adjusted.arff" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/mediamil_clustered_adjusted.arff">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CAL500_clustered_adjusted.arff" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="491" column="593" lean-forward="false" selection-start-line="491" selection-start-column="593" selection-end-line="491" selection-end-column="593" />
+            <state relative-caret-position="286">
+              <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -102,8 +116,8 @@
       <file leaf-file-name="CC_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+            <state relative-caret-position="84">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="116" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,116 +125,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EM.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/EM.class">
+      <file leaf-file-name="Cluster_CC_Builder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="27" selection-end-line="381" selection-end-column="32" />
-              <folding>
-                <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1522905707787" expanded="false" signature="139:884" ph="..." />
-                <marker date="1522905707787" expanded="true" signature="2390:3402" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="3449:5245" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="5309:7163" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="7205:7216" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="7267:7273" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="7308:7319" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="7347:7353" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="7401:7412" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="7444:7450" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="7488:7613" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="7653:7664" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="7687:7693" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="7723:7734" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="7756:7762" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="7821:8026" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="8088:8099" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="8142:8148" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="8202:8213" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="8257:8263" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="8329:8455" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="8525:8591" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="8652:8663" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="8714:8720" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="8767:8887" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="8936:8947" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="8977:8983" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="9022:9033" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="9062:9068" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="9121:9310" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="9365:9376" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="9411:9417" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="9466:9477" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="9515:9521" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="9559:9570" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="9620:9626" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="9666:9677" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="9698:9704" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="9752:9763" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="9790:9796" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="9830:9841" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="9865:9871" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="9912:10028" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="10085:10487" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="10520:10531" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="10564:10570" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="10621:10632" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="10667:10673" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="10718:10729" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="10767:10773" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="10826:10956" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="10998:11009" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="11047:11053" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="11112:11284" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="11319:11330" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="11359:11365" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="11399:11410" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="11488:11494" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="11531:11542" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="11561:11567" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="11598:11609" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="11631:11637" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="11672:12680" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="12740:15884" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="15952:16387" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="16460:16590" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="16626:17428" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="17469:17660" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="17708:19560" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="19614:20511" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="20591:21093" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="21111:21181" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="21217:21628" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="21683:21694" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="21720:21726" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="21766:21777" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="21798:21804" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="21835:28544" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="28629:29038" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="29080:30466" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="30511:31776" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="31825:35093" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="35146:35329" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="35380:35722" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="35766:35897" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="35963:37016" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="37054:37194" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="37280:38026" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="38069:39332" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="39401:40527" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="40594:43224" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="43302:45488" ph="{...}" />
-                <marker date="1522905707787" expanded="false" signature="45521:45532" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="45583:45589" ph=" }" />
-                <marker date="1522905707787" expanded="false" signature="45633:45644" ph=" { " />
-                <marker date="1522905707787" expanded="false" signature="45673:45679" ph=" }" />
-                <marker date="1522905707787" expanded="true" signature="45735:47206" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="46040:46236" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="46269:47200" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="47262:48424" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="47503:47679" ph="{...}" />
-                <marker date="1522905707787" expanded="true" signature="47712:48418" ph="{...}" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -255,6 +165,10 @@
       <find>type</find>
       <find>model</find>
       <find>,2$</find>
+      <find>,7$</find>
+      <find>,0$</find>
+      <find>value</find>
+      <find>,1$</find>
     </findStrings>
     <replaceStrings>
       <replace>EM_test</replace>
@@ -274,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/LoaderClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/test.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/CrossOver.java" />
         <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/CustomAlter.java" />
         <option value="$PROJECT_DIR$/src/main/Music.arff" />
@@ -286,8 +199,14 @@
         <option value="$PROJECT_DIR$/src/main/CAL500_clustered.arff" />
         <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Cluster_CC_Builder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_Fliter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -381,6 +300,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Prepare_CC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="WEKA_Test_Ground" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,16 +324,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\james\IdeaProjects\CC\src\main" />
       <recent name="C:\Users\james\IdeaProjects\CC" />
       <recent name="C:\Users\james\IdeaProjects\CC\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Prepare_CC" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\james\IdeaProjects\CC\src\main" />
@@ -424,7 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EM_test">
+  <component name="RunManager" selected="Application.GA_CC">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -432,14 +363,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Basic_GA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CC_Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="GA_Test_Ground.*" />
+          <option name="PATTERN" value="Prepare_CC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="GA_Test_Ground.Basic_GA" />
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.CC_Util" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -470,14 +401,14 @@
       <module name="CC" />
       <envs />
     </configuration>
-    <configuration name="Cluster_Fliter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Cluster_CC_Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="WEKA_Test_Ground.*" />
+          <option name="PATTERN" value="Prepare_CC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="WEKA_Test_Ground.Cluster_Fliter" />
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.Cluster_CC_Builder" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -508,9 +439,14 @@
       <module name="CC" />
       <envs />
     </configuration>
-    <configuration name="Kmeans_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WEKA_Test_Ground.Kmeans_test" />
+    <configuration name="GA_CC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Prepare_CC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.GA_CC" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -895,19 +831,19 @@
       <envs />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Kmeans_test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Basic_GA" />
-      <item index="2" class="java.lang.String" itemvalue="Application.EM_test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Cluster_Fliter" />
-      <item index="4" class="java.lang.String" itemvalue="Application.CC_test" />
+      <item index="0" class="java.lang.String" itemvalue="Application.EM_test" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CC_test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CC_Util" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GA_CC" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.EM_test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CC_test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Cluster_Fliter" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Basic_GA" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Kmeans_test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GA_CC" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CC_Util" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CC_test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.EM_test" />
       </list>
     </recent_temporary>
   </component>
@@ -937,7 +873,7 @@
       <workItem from="1525042317190" duration="8712000" />
       <workItem from="1525071876006" duration="3856000" />
       <workItem from="1525083493683" duration="3731000" />
-      <workItem from="1526335787794" duration="19663000" />
+      <workItem from="1526335787794" duration="26130000" />
     </task>
     <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
       <created>1524611550042</created>
@@ -1016,14 +952,22 @@
       <option name="project" value="LOCAL" />
       <updated>1526359539066</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed clustering dataset to EM instead of K-means">
+      <created>1526365582150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1526365582150</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89539000" />
+    <option name="totallyTimeSpent" value="96006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1038,7 +982,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518797" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518797" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46319366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1129,11 +1073,13 @@
     <MESSAGE value="Adjusted file" />
     <MESSAGE value="Adjusted file orginal file too" />
     <MESSAGE value="Filter Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filter Fixed" />
+    <MESSAGE value="Fixed clustering dataset to EM instead of K-means" />
+    <MESSAGE value="SetUp almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="SetUp almost done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1142,36 +1088,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/Filter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5565">
-          <caret line="313" column="28" lean-forward="false" selection-start-line="313" selection-start-column="28" selection-end-line="313" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/attribute/NumericToNominal.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Utils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6216">
-          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0-sources.jar!/weka/core/Instances.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0-sources.jar!/weka/clusterers/SimpleKMeans.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0-sources.jar!/weka/clusterers/EM.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/CustomAlter.java">
@@ -1361,16 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Instance.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/instance/RemoveWithValues.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-269">
@@ -1407,14 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Attribute.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="172" column="19" lean-forward="false" selection-start-line="172" selection-start-column="15" selection-end-line="172" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1487,34 +1385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/filters/unsupervised/instance/SubsetByExpression.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="125" column="45" lean-forward="true" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered.arff">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1626,14 +1500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1770,23 +1636,273 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="133:612" ph="..." />
+            <marker date="1522905707787" expanded="true" signature="1327:1672" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="1678:1696" ph="/**...*/" />
+            <marker date="1522905707787" expanded="true" signature="1782:2000" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2042:2160" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2216:2293" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2358:2712" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2776:3059" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="3139:4261" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="4306:5299" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="5343:5510" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="5562:5715" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="5758:5769" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="5816:5822" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="5868:6011" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="6067:6278" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="6325:6336" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6373:6379" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="6433:7130" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="7170:7381" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="7410:7421" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7446:7452" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="7482:7493" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7523:7529" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="7555:7566" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7601:7607" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="7642:7653" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7684:7690" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="7740:9370" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="9421:9659" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="9701:9712" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="9740:9746" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="9796:10113" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="10163:10174" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="10210:10216" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="10259:10471" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="10529:10610" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="10665:10676" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="10721:10727" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="10782:11501" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="11553:11564" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="11609:11615" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="11652:11663" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="11704:11710" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="11766:11937" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="12002:13879" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="13920:13931" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="13976:13982" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="14018:14029" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="14074:14080" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="14138:14149" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="14194:14200" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="14258:15064" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="15100:15111" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="15178:15184" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="15229:16364" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="16409:16420" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="16456:16462" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="16494:16505" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="16537:16543" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="16573:16825" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="16874:17249" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="17298:17309" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="17352:17358" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="17389:17400" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="17431:17437" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="17460:17471" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="17502:17508" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="17551:17677" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="17683:17701" ph="/**...*/" />
+            <marker date="1522905707787" expanded="true" signature="17784:18120" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="18186:19954" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="19988:19999" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="20026:20032" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="20071:20082" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="20130:20136" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="20192:21278" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="21339:21350" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="21390:21396" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="21466:21975" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22054:22279" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22326:22578" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="22635:22646" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="22693:22699" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="22776:22848" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22937:23033" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="23141:23412" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="23488:23570" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="23665:23746" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="23872:27146" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="27202:27453" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="27494:27505" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="27537:27543" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="27591:27805" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="27854:27865" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="27895:27901" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="27964:28969" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="29006:29850" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="29887:29898" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="29921:29927" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="29970:30616" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="30659:30670" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="30699:30705" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="30746:31709" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="31744:31911" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="31968:32798" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="32829:33248" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="33293:33586" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="33644:34595" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="34668:34789" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="34823:36622" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="36665:37977" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="38020:38031" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="38065:38071" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="38125:39565" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="39621:39826" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="39864:44777" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="44847:44951" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="44996:45323" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="45368:45707" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="45744:45903" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="45983:47018" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="47063:55071" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="55116:58931" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="58964:58975" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="59026:59032" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Instance.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Attribute.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="100" column="73" lean-forward="false" selection-start-line="100" selection-start-column="68" selection-end-line="100" selection-end-column="73" />
+          <folding>
+            <marker date="1522905707787" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522905707787" expanded="false" signature="133:319" ph="..." />
+            <marker date="1522905707787" expanded="false" signature="1656:1667" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="1714:1720" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="1795:2017" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2081:2156" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2250:2563" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2638:2718" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="2823:3259" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="3321:3332" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="3387:3393" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="3486:4014" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="4040:4051" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4081:4087" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="4144:4771" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="4405:4754" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="4455:4478" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4506:4524" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="4570:4740" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="4818:4829" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4866:4872" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="4905:4916" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="4946:4952" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="5002:6800" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="6854:6865" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="6897:6903" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="6953:7437" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="7496:7507" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="7544:7550" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="7605:8052" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="8082:8093" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="8113:8119" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="8169:8771" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="8809:8820" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="8844:8850" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="8888:8899" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="8943:8949" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="8994:9005" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="9029:9035" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="9072:9083" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="9107:9113" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="9148:9159" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="9183:9189" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="9221:9232" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="9251:9257" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="9292:9448" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="9485:10840" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="10869:10880" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="10899:10905" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="10947:11058" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="11104:11465" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="11505:11619" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="11671:11810" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="11866:11932" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="12007:12085" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="12171:12254" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="12328:12402" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="12448:13400" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="13447:13740" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="13798:14508" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="14554:15456" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="15496:15844" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="15894:16157" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="16192:17575" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="17620:18168" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="18204:18215" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="18236:18242" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="18294:19504" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="19557:20299" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="20343:20627" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="20694:21010" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="21063:21164" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="21197:21208" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="21290:21296" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="21335:21437" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="21479:21584" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="21626:21731" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="21765:21776" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="21797:21803" ph=" }" />
+            <marker date="1522905707787" expanded="false" signature="21844:21855" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="21877:21883" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="21932:22055" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22108:22217" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22266:22388" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22441:22550" ph="{...}" />
+            <marker date="1522905707787" expanded="true" signature="22601:23792" ph="{...}" />
+            <marker date="1522905707787" expanded="false" signature="23825:23836" ph=" { " />
+            <marker date="1522905707787" expanded="false" signature="23887:23893" ph=" }" />
+            <marker date="1522905707787" expanded="true" signature="23937:27132" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered.arff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="678">
           <caret line="62" column="118" lean-forward="false" selection-start-line="62" selection-start-column="118" selection-end-line="62" selection-end-column="118" />
           <folding>
             <marker date="1526365289723" expanded="true" signature="1407:1550" ph="..." />
@@ -1794,10 +1910,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="491" column="593" lean-forward="false" selection-start-line="491" selection-start-column="593" selection-end-line="491" selection-end-column="593" />
+        <state relative-caret-position="21">
+          <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="116" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Cluster_CC_Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="130" column="122" lean-forward="false" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding />
         </state>
       </provider>
