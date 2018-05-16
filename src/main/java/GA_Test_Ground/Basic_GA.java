@@ -1,61 +1,98 @@
 package GA_Test_Ground;
 
 import io.jenetics.*;
-import io.jenetics.engine.Engine;
-import io.jenetics.engine.EvolutionResult;
-import io.jenetics.engine.EvolutionStatistics;
-import io.jenetics.util.Factory;
-import io.jenetics.util.Seq;
+import io.jenetics.engine.*;
+import io.jenetics.util.*;
+import mst.In;
+import scala.Int;
+
+import java.util.Random;
+import java.util.function.Function;
+import java.util.stream.IntStream;
 
 import static io.jenetics.engine.EvolutionResult.toBestEvolutionResult;
 import static io.jenetics.engine.EvolutionResult.toBestPhenotype;
+import static java.util.Objects.requireNonNull;
 
 
-public class Basic_GA {
+public class Basic_GA implements Problem<ISeq<Integer>, EnumGene<Integer>, Integer> {
+    private final ISeq<Integer> _points;
 
-    public static int eval(final Genotype<IntegerGene> genotype){
+    public static Basic_GA of( int[] range) {
+        final MSeq<Integer> points = MSeq.ofLength(range.length);
+        for (int i = 0; i < range.length; ++i) {
+            points.set(i,range[i]);
+        }
+        return new Basic_GA(points.toISeq());
+    }
+
+    public Basic_GA(ISeq<Integer> _points) {
+        this._points =requireNonNull(_points);
+    }
+
+    public static int eval(final Genotype<IntegerGene> genotype) {
         return summationOfGene(genotype);
     }
 
-    private static int summationOfGene (Genotype<IntegerGene> genotype){
-       int sum = 0;
+    private static int summationOfGene(Genotype<IntegerGene> genotype) {
+        int sum = 0;
         for (Chromosome<IntegerGene> integerGenes : genotype) {
             for (IntegerGene integerGene : integerGenes) {
-               sum+= integerGene.getAllele();
+                sum += integerGene.getAllele();
             }
         }
-        return  sum;
+        return sum;
     }
+
     public static void main(String[] args) {
 
-        Factory< Genotype<IntegerGene> > factory = Genotype.of(
-                IntegerChromosome.of(1,10, 8),
-                IntegerChromosome.of(5,20,5),
-                IntegerChromosome.of(3,6,10),
-                IntegerChromosome.of(1,5,20),
-                IntegerChromosome.of(5,5,5));
-        final Engine<IntegerGene, Integer> engine = Engine.builder(Basic_GA::eval, factory).offspringFraction(0.7)
-                .survivorsSelector(new RouletteWheelSelector<>()).populationSize(500).alterers(new Mutator<>(0.05),new SinglePointCrossover<>(0.125))
-                .offspringSelector(new TournamentSelector<>())
-                .build();
+//        Factory<Genotype<IntegerGene>> factory = Genotype.of(
+//                IntegerChromosome.of(1, 10, 8),
+//                IntegerChromosome.of(5, 20, 5),
+//                IntegerChromosome.of(3, 6, 10),
+//                IntegerChromosome.of(1, 5, 20),
+//                IntegerChromosome.of(5, 5, 5));
+//        final Engine<IntegerGene, Integer> engine = Engine.builder(Basic_GA::eval, factory).offspringFraction(0.7)
+//                .survivorsSelector(new RouletteWheelSelector<>()).populationSize(500).alterers(new Mutator<>(0.05), new SinglePointCrossover<>(0.125))
+//                .offspringSelector(new TournamentSelector<>())
+//                .build();
+//
+//        EvolutionStatistics<Integer, ?> statistics = EvolutionStatistics.ofNumber();
+//        final EvolutionResult<IntegerGene, Integer> results = engine.stream().limit(1000)
+//                .peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes()))
+//                .peek(statistics)
+//                .collect(toBestEvolutionResult());
+//
+//
+//        Seq<Phenotype<IntegerGene, Integer>> a1 = results.getPopulation();
+//
+//        System.out.println(a1);
+//        System.out.println(statistics);
+//        System.out.println(statistics.getAltered());
+//
+//        System.out.println(engine.getPopulationSize());
+//        System.out.println(engine.getAlterer());
+//        System.out.println(engine.getFitnessFunction().toString());
+//
+//        System.out.println(results);
 
-        EvolutionStatistics<Integer, ?> statistics = EvolutionStatistics.ofNumber();
-        final EvolutionResult<IntegerGene, Integer> results = engine.stream().limit(1000)
-                .peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes()))
-                .peek(statistics)
-                .collect(toBestEvolutionResult());
 
-
-        Seq<Phenotype<IntegerGene, Integer>> a1 = results.getPopulation();
-
-        System.out.println(a1);
+        int [] ints = new int[]{1,3,2,5,6,7,8,10,9};
+        Basic_GA basic_ga = Basic_GA.of( ints);
+        Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(10).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
+        EvolutionStatistics<Integer,?> statistics =  EvolutionStatistics.ofNumber();
+        Phenotype<EnumGene<Integer>,Integer> best = engine.stream().limit(250).peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes())).peek(statistics).collect(toBestPhenotype());
         System.out.println(statistics);
-        System.out.println(statistics.getAltered());
+        System.out.println(best.getGenotype().getChromosome().getGene());
+    }
 
-        System.out.println(engine.getPopulationSize());
-        System.out.println(engine.getAlterer());
-        System.out.println(engine.getFitnessFunction().toString());
+    @Override
+    public Function<ISeq<Integer>, Integer> fitness() {
+        return p-> IntStream.range(0, p.length()).sum();
+    }
 
-        System.out.println(results);
+    @Override
+    public Codec<ISeq<Integer>, EnumGene<Integer>> codec() {
+        return Codecs.ofPermutation(_points);
     }
 }

@@ -24,10 +24,10 @@ public class singleCross_test {
 
         EvolutionStatistics<Integer, ?> statistics = EvolutionStatistics.ofNumber();
 
-        final Phenotype<IntegerGene, Integer> results = engine.stream().limit(2)
-                .peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes()))
-//                .peek(statistics)
-                .collect(toBestPhenotype());
+//        final Phenotype<IntegerGene, Integer> results = engine.stream().limit(2)
+//                .peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes()))
+////                .peek(statistics)
+//                .collect(toBestPhenotype());
         System.out.println(engine.getAlterer().toString());
         if(engine.getAlterer() instanceof SinglePointCrossover){
             System.out.println("Asd");
