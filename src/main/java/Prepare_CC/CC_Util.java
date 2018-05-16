@@ -177,7 +177,7 @@ public class CC_Util {
 //        for (int i = 0; i < 8; i++) {
 //            System.out.println(Arrays.toString(integers.get(i)));
             Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",0,0);
-            CC_Util.ccRun(cluster_cc_builder,66);
+//            CC_Util.ccRun(cluster_cc_builder,66);
 //            System.out.println(Arrays.toString(cluster_cc_builder.labelChain));
 //        }
     }

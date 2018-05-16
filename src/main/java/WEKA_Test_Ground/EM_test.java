@@ -37,7 +37,7 @@ public class EM_test {
     public static void main(String[] args) throws Exception {
         try {
             long time1 = System.nanoTime();
-            DataSource source = new DataSource("src/main/CAL500.arff");
+            DataSource source = new DataSource("src/main/mediamill.arff");
             Instances data = source.getDataSet();
             // setting class attribute if the data format does not provide this information
             // For example, the XRFF format saves the class attribute information as well
@@ -65,7 +65,7 @@ public class EM_test {
             ArffSaver saver = new ArffSaver();
             System.out.println(newData);
             saver.setInstances(newData);
-            saver.setFile(new File("src/main/CAL500_clustered_adjusted.arff"));
+            saver.setFile(new File("src/main/medialmill_clustered_adjusted.arff"));
             saver.writeBatch();
 
         } catch (IOException e) {

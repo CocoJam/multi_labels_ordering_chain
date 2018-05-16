@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" afterPath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,8 +21,8 @@
       <file leaf-file-name="CC_Util.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1251">
-              <caret line="47" column="105" lean-forward="false" selection-start-line="47" selection-start-column="105" selection-end-line="47" selection-end-column="105" />
+            <state relative-caret-position="135">
+              <caret line="176" column="39" lean-forward="true" selection-start-line="176" selection-start-column="39" selection-end-line="176" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GA_CC.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GA_CC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+            <state relative-caret-position="300">
+              <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2128#2129#0" expanded="true" />
@@ -75,15 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Phenotype.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/Phenotype.class">
+      <file leaf-file-name="EM_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+            <state relative-caret-position="223">
+              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
               <folding>
-                <element signature="e#1933#1934#0" expanded="true" />
-                <element signature="e#1970#1971#0" expanded="true" />
+                <marker date="1526425608290" expanded="true" signature="1410:1553" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mediamill.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="475">
+              <caret line="1206" column="1015" lean-forward="false" selection-start-line="1206" selection-start-column="1015" selection-end-line="1206" selection-end-column="1015" />
             </state>
           </provider>
         </entry>
@@ -113,24 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Seq.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/util/Seq.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="76" column="34" lean-forward="false" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
-              <folding>
-                <element signature="e#1873#1874#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cluster_CC_Builder.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cluster_CC_Builder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="85" column="61" lean-forward="false" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
+            <state relative-caret-position="247">
+              <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,8 +174,8 @@
       <find>static</find>
       <find>predic</find>
       <find>output</find>
-      <find>System</find>
       <find>map</find>
+      <find>System</find>
     </findStrings>
     <replaceStrings>
       <replace>EM_test</replace>
@@ -209,15 +206,15 @@
         <option value="$PROJECT_DIR$/src/main/CAL500_clustered.arff" />
         <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_Fliter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Cluster_CC_Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Base_CC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
       </list>
     </option>
   </component>
@@ -366,7 +363,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GA_CC">
+  <component name="RunManager" selected="Application.CC_Util">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -431,14 +428,14 @@
       <module name="CC" />
       <envs />
     </configuration>
-    <configuration name="Cluster_CC_Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="EM_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Prepare_CC.*" />
+          <option name="PATTERN" value="WEKA_Test_Ground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Prepare_CC.Cluster_CC_Builder" />
+      <option name="MAIN_CLASS_NAME" value="WEKA_Test_Ground.EM_test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -843,18 +840,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.CC_test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CC_Util" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GA_CC" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Base_CC" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CC_Util" />
+      <item index="2" class="java.lang.String" itemvalue="Application.GA_CC" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Base_CC" />
+      <item index="4" class="java.lang.String" itemvalue="Application.EM_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.GA_CC" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CC_Util" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Base_CC" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CC_test" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CC_Util" />
+        <item index="1" class="java.lang.String" itemvalue="Application.EM_test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GA_CC" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Base_CC" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CC_test" />
       </list>
     </recent_temporary>
   </component>
@@ -885,7 +882,7 @@
       <workItem from="1525071876006" duration="3856000" />
       <workItem from="1525083493683" duration="3731000" />
       <workItem from="1526335787794" duration="31854000" />
-      <workItem from="1526422058902" duration="2709000" />
+      <workItem from="1526422058902" duration="5237000" />
     </task>
     <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
       <created>1524611550042</created>
@@ -1013,11 +1010,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526423267100</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Finish merging GA and CC and extraction of best fitted label chain">
+      <created>1526424801541</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1526424801541</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104439000" />
+    <option name="totallyTimeSpent" value="106967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1032,7 +1036,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1133,7 +1137,8 @@
     <MESSAGE value="There is a probelm with the prepare chain method" />
     <MESSAGE value="finish most thinks and found the way to find CV results" />
     <MESSAGE value="Merged GA and CC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged GA and CC" />
+    <MESSAGE value="Finish merging GA and CC and extraction of best fitted label chain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish merging GA and CC and extraction of best fitted label chain" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1296,13 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="475">
-          <caret line="1206" column="1015" lean-forward="false" selection-start-line="1206" selection-start-column="1015" selection-end-line="1206" selection-end-column="1015" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/clusterers/EM.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1379,17 +1377,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/mediamil_clustered_adjusted.arff" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1526365289723" expanded="true" signature="1407:1550" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1176">
@@ -1547,27 +1534,7 @@
         <state relative-caret-position="163">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="85" column="61" lean-forward="false" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1251">
-          <caret line="47" column="105" lean-forward="false" selection-start-line="47" selection-start-column="105" selection-end-line="47" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1642,14 +1609,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <marker date="1526425608290" expanded="true" signature="1410:1553" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="475">
+          <caret line="1206" column="1015" lean-forward="false" selection-start-line="1206" selection-start-column="1015" selection-end-line="1206" selection-end-column="1015" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="176" column="39" lean-forward="true" selection-start-line="176" selection-start-column="39" selection-end-line="176" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2128#2129#0" expanded="true" />
             <element signature="e#2180#2181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
