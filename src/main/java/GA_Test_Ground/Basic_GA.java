@@ -46,37 +46,6 @@ public class Basic_GA implements Problem<ISeq<Integer>, EnumGene<Integer>, Integ
 
     public static void main(String[] args) {
 
-//        Factory<Genotype<IntegerGene>> factory = Genotype.of(
-//                IntegerChromosome.of(1, 10, 8),
-//                IntegerChromosome.of(5, 20, 5),
-//                IntegerChromosome.of(3, 6, 10),
-//                IntegerChromosome.of(1, 5, 20),
-//                IntegerChromosome.of(5, 5, 5));
-//        final Engine<IntegerGene, Integer> engine = Engine.builder(Basic_GA::eval, factory).offspringFraction(0.7)
-//                .survivorsSelector(new RouletteWheelSelector<>()).populationSize(500).alterers(new Mutator<>(0.05), new SinglePointCrossover<>(0.125))
-//                .offspringSelector(new TournamentSelector<>())
-//                .build();
-//
-//        EvolutionStatistics<Integer, ?> statistics = EvolutionStatistics.ofNumber();
-//        final EvolutionResult<IntegerGene, Integer> results = engine.stream().limit(1000)
-//                .peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes()))
-//                .peek(statistics)
-//                .collect(toBestEvolutionResult());
-//
-//
-//        Seq<Phenotype<IntegerGene, Integer>> a1 = results.getPopulation();
-//
-//        System.out.println(a1);
-//        System.out.println(statistics);
-//        System.out.println(statistics.getAltered());
-//
-//        System.out.println(engine.getPopulationSize());
-//        System.out.println(engine.getAlterer());
-//        System.out.println(engine.getFitnessFunction().toString());
-//
-//        System.out.println(results);
-
-
         int [] ints = new int[]{1,3,2,5,6,7,8,10,9};
         Basic_GA basic_ga = Basic_GA.of( ints);
         Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(10).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
