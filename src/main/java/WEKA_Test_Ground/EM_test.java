@@ -37,7 +37,7 @@ public class EM_test {
     public static void main(String[] args) throws Exception {
         try {
             long time1 = System.nanoTime();
-            DataSource source = new DataSource("src/main/mediamill_adjusted.arff");
+            DataSource source = new DataSource("src/main/mediamil_adjusted.arff");
             Instances data = source.getDataSet();
             // setting class attribute if the data format does not provide this information
             // For example, the XRFF format saves the class attribute information as well

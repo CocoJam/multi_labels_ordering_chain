@@ -3,6 +3,7 @@ package Prepare_CC;
 import WEKA_Test_Ground.Cluster_Fliter;
 import meka.classifiers.multilabel.CC;
 import meka.core.MLUtils;
+import scala.Int;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 
@@ -59,22 +60,33 @@ public class Cluster_CC_Builder {
             numLabels = Integer.parseInt(matcher.group(3));
         }
         int[] listList = new int[numLabels];
+
         double[] featureList = new double[data.numAttributes() - numLabels-1];
+//        System.out.println(featureList.length);
+//        System.out.println(cluster.numAttributes());
+//        System.out.println(cluster.numAttributes()-numLabels);
         for (int j = 0; j < cluster.numInstances(); j++) {
             for (int i = 0; i < data.numAttributes()-1; i++) {
-                if (i < numLabels) {
+                if (i < (numLabels)) {
                     listList[i] -= (int) cluster.get(j).value(i);
+//                    System.out.println(i);
                 } else {
+//                    System.out.println("asd");
+//                    System.out.println(i-numLabels);
                     featureList[i-numLabels] += cluster.get(j).value(i)/data.numInstances();
                 }
+//                System.out.println(i);
             }
         }
 //        System.out.println(Arrays.toString(listList));
         this.featureVector = featureList;
         List<Integer> ListOfInt = new ArrayList<>();
-        double degrees = cluster.numInstances() * threadshold;
+        double degrees = (cluster.numInstances() * threadshold)*-1;
         int missingLabelCount = 0;
-        for (int i = 0; i < listList.length; i++) {
+        System.out.println(Arrays.toString(listList));
+        System.out.println(listList.length);
+        System.out.println(this.parsedCluster.numAttributes());
+        for (int i = listList.length-1; i >=0; i--) {
             if (listList[i] < degrees) {
                 ListOfInt.add(i);
             } else {
@@ -82,6 +94,13 @@ public class Cluster_CC_Builder {
                 missingLabelCount++;
             }
         }
+
+        int[] blah = Arrays.stream(listList).map(p-> {if(p==0){return p;} return 1;}).toArray();
+        System.out.println(Arrays.stream(blah).sum());
+        System.out.println("drop");
+        System.out.println(missingLabelCount);
+        System.out.println(ListOfInt.size());
+        System.out.println(this.parsedCluster.numAttributes());
         data.setRelationName(group2 + (numLabels - (missingLabelCount)));
         //Bug found mis match in the parsed Cluster with the orginal will try to fix it.
 //        CC cc = new CC();
@@ -98,5 +117,8 @@ public class Cluster_CC_Builder {
 //        System.out.println(Arrays.toString(this.labelChain));
     }
 
-
+    public static void main(String[] args) throws Exception {
+        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",3,0.1);
+        System.out.println(cluster_cc_builder.labelChain.length);
+    }
 }

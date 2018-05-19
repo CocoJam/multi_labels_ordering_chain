@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/CC.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_0Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_0_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_1Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_1_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_2Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_2_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_3Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_3_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_4Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_4_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_5Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_5_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_6Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_6_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_7Information.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cluster_7_Information" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/test.arff" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CC.iml" afterPath="$PROJECT_DIR$/CC.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff" afterPath="$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" afterPath="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" afterPath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEKA_Test_Ground/Kmeans_test.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="GA_CC.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GA_CC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+            <state relative-caret-position="111">
+              <caret line="163" column="115" lean-forward="false" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="115" />
               <folding>
                 <element signature="e#3174#3175#0" expanded="true" />
                 <element signature="e#3226#3227#0" expanded="true" />
@@ -67,10 +45,10 @@
       <file leaf-file-name="EM_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+            <state relative-caret-position="-362">
+              <caret line="39" column="64" lean-forward="true" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
               <folding>
-                <marker date="1526681814292" expanded="true" signature="1419:1562" ph="..." />
+                <marker date="1526681903838" expanded="true" signature="1418:1561" ph="..." />
               </folding>
             </state>
           </provider>
@@ -79,8 +57,47 @@
       <file leaf-file-name="mediamil_adjusted.arff" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/mediamil_adjusted.arff">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-4655">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mediamill.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="-1100">
+              <caret line="1206" column="1015" lean-forward="false" selection-start-line="1206" selection-start-column="1015" selection-end-line="1206" selection-end-column="1015" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CAL500_clustered_adjusted.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="378" column="950" lean-forward="false" selection-start-line="378" selection-start-column="950" selection-end-line="378" selection-end-column="950" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mediamill-test.arff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mediamill-test.arff">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-441">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cluster_CC_Builder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="120" column="118" lean-forward="false" selection-start-line="120" selection-start-column="118" selection-end-line="120" selection-end-column="118" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,26 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cluster_6Information.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cluster_6Information.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cluster_7Information.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cluster_7Information.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -136,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>alter</find>
       <find>read</find>
       <find>base</find>
       <find>set</find>
@@ -166,6 +162,7 @@
       <find>System</find>
       <find>&quot;Accuracy averages</find>
       <find>Generate:</find>
+      <find>,$</find>
     </findStrings>
     <replaceStrings>
       <replace>EM_test</replace>
@@ -200,12 +197,12 @@
         <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/CC_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Cluster_CC_Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Base_CC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
         <option value="$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
       </list>
     </option>
   </component>
@@ -336,7 +333,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -367,7 +364,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EM_test">
+  <component name="RunManager" selected="Application.Cluster_CC_Builder">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -413,14 +410,14 @@
       <module name="CC" />
       <envs />
     </configuration>
-    <configuration name="CC_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Cluster_CC_Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="MEKA_Test_Ground.*" />
+          <option name="PATTERN" value="Prepare_CC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="MEKA_Test_Ground.CC_test" />
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.Cluster_CC_Builder" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -843,19 +840,19 @@
       <envs />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.CC_test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CC_Util" />
-      <item index="2" class="java.lang.String" itemvalue="Application.GA_CC" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Base_CC" />
-      <item index="4" class="java.lang.String" itemvalue="Application.EM_test" />
+      <item index="0" class="java.lang.String" itemvalue="Application.CC_Util" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GA_CC" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Base_CC" />
+      <item index="3" class="java.lang.String" itemvalue="Application.EM_test" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.EM_test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GA_CC" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CC_Util" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Base_CC" />
-        <item index="4" class="java.lang.String" itemvalue="Application.CC_test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
+        <item index="1" class="java.lang.String" itemvalue="Application.EM_test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GA_CC" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CC_Util" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Base_CC" />
       </list>
     </recent_temporary>
   </component>
@@ -889,7 +886,7 @@
       <workItem from="1526422058902" duration="9993000" />
       <workItem from="1526510562302" duration="50000" />
       <workItem from="1526538756091" duration="23619000" />
-      <workItem from="1526681755208" duration="78000" />
+      <workItem from="1526681755208" duration="5591000" />
     </task>
     <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
       <created>1524611550042</created>
@@ -1038,29 +1035,37 @@
       <option name="project" value="LOCAL" />
       <updated>1526437542583</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Bencmarking it took around 1031 to run 8 cluster of CAL500 qith 10 individuals and 100 iterations.">
+      <created>1526681845142</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1526681845142</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135470000" />
+    <option name="totallyTimeSpent" value="140983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1174,13 +1179,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/core/Instances.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="170" column="18" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/mediamil_clustered_adjusted.arff" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1269,13 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="45948">
-          <caret line="1206" column="1015" lean-forward="false" selection-start-line="1206" selection-start-column="1015" selection-end-line="1206" selection-end-column="1015" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/CC.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3255">
@@ -1303,6 +1294,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="50" column="86" lean-forward="false" selection-start-line="50" selection-start-column="86" selection-end-line="50" selection-end-column="86" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1418,25 +1410,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2743">
-          <caret line="749" column="0" lean-forward="true" selection-start-line="749" selection-start-column="0" selection-end-line="749" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Cluster_CC_Builder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1526,29 +1503,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/mediamil_adjusted.arff">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-4655">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill.arff">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-1100">
+          <caret line="1206" column="1015" lean-forward="false" selection-start-line="1206" selection-start-column="1015" selection-end-line="1206" selection-end-column="1015" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mediamill-test.arff">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-          <folding>
-            <marker date="1526681814292" expanded="true" signature="1419:1562" ph="..." />
-          </folding>
+        <state relative-caret-position="-441">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        <state relative-caret-position="111">
+          <caret line="163" column="115" lean-forward="false" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="115" />
           <folding>
             <element signature="e#3174#3175#0" expanded="true" />
             <element signature="e#3226#3227#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="378" column="950" lean-forward="false" selection-start-line="378" selection-start-column="950" selection-end-line="378" selection-end-column="950" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-362">
+          <caret line="39" column="64" lean-forward="true" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+          <folding>
+            <marker date="1526681903838" expanded="true" signature="1418:1561" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="120" column="118" lean-forward="false" selection-start-line="120" selection-start-column="118" selection-end-line="120" selection-end-column="118" />
+          <folding />
         </state>
       </provider>
     </entry>
