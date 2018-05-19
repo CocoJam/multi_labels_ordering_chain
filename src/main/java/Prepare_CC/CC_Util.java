@@ -112,7 +112,7 @@ public class CC_Util {
         String top = "PCut1";
         String vop = "3";
         int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
-        Result result = Evaluation.cvModel(cc, data, numOfCV, top, vop);
+        Result result = Evaluation.cvModel(cc, data, 3, top, vop);
 //        System.out.println(result);
 //        System.out.println(Arrays.toString(cc.retrieveChain()));
         long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);

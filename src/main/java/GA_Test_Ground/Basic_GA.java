@@ -48,7 +48,7 @@ public class Basic_GA implements Problem<ISeq<Integer>, EnumGene<Integer>, Integ
 
         int [] ints = new int[]{1,3,2,5,6,7,8,10,9};
         Basic_GA basic_ga = Basic_GA.of( ints);
-        Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(10).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
+        Engine<EnumGene<Integer>, Integer> engine  = Engine.builder(basic_ga.fitness(),basic_ga).optimize(Optimize.MAXIMUM).populationSize(10).alterers(new SwapMutator<>(),new PartiallyMatchedCrossover<>(0.35)).build();
         EvolutionStatistics<Integer,?> statistics =  EvolutionStatistics.ofNumber();
         Phenotype<EnumGene<Integer>,Integer> best = engine.stream().limit(250).peek(r -> System.out.println(r.getTotalGenerations() + ": " + r.getGenotypes())).peek(statistics).collect(toBestPhenotype());
         System.out.println(statistics);
