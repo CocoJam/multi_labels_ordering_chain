@@ -2,7 +2,10 @@ package Prepare_CC;
 
 import WEKA_Test_Ground.Cluster_Fliter;
 import meka.classifiers.multilabel.CC;
+import meka.classifiers.multilabel.Evaluation;
+import meka.classifiers.multilabel.meta.BaggingML;
 import meka.core.MLUtils;
+import meka.core.Result;
 import scala.Int;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
@@ -22,13 +25,19 @@ public class Cluster_CC_Builder {
     public int clusterNum;
     public String dataSource;
     public double[] featureVector;
+    public int parsedLabelNum;
+    public int overallLabelNum;
 
     public Cluster_CC_Builder(String dataSource, int clusterNum, double threadshold) throws Exception {
         this.clusterNum = clusterNum;
         this.dataSource = dataSource;
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(dataSource);
         Instances data = source.getDataSet();
-        this.cluster = Cluster_Fliter.filter(data, clusterNum);
+        if(clusterNum !=-1){
+        this.cluster = Cluster_Fliter.filter(data, clusterNum);}
+        else{
+            this.cluster = data;
+        }
         this.parsedCluster = new Instances(this.cluster);
 
         setUp(this.parsedCluster, threadshold);
@@ -59,34 +68,25 @@ public class Cluster_CC_Builder {
             group2 = matcher.group(2);
             numLabels = Integer.parseInt(matcher.group(3));
         }
+        overallLabelNum = numLabels;
         int[] listList = new int[numLabels];
 
-        double[] featureList = new double[data.numAttributes() - numLabels-1];
-//        System.out.println(featureList.length);
-//        System.out.println(cluster.numAttributes());
-//        System.out.println(cluster.numAttributes()-numLabels);
+        double[] featureList = new double[data.numAttributes() - numLabels - 1];
         for (int j = 0; j < cluster.numInstances(); j++) {
-            for (int i = 0; i < data.numAttributes()-1; i++) {
+            for (int i = 0; i < data.numAttributes() - 1; i++) {
                 if (i < (numLabels)) {
                     listList[i] -= (int) cluster.get(j).value(i);
-//                    System.out.println(i);
                 } else {
-//                    System.out.println("asd");
-//                    System.out.println(i-numLabels);
-                    featureList[i-numLabels] += cluster.get(j).value(i)/data.numInstances();
+                    featureList[i - numLabels] += cluster.get(j).value(i) / data.numInstances();
                 }
-//                System.out.println(i);
             }
         }
-//        System.out.println(Arrays.toString(listList));
         this.featureVector = featureList;
         List<Integer> ListOfInt = new ArrayList<>();
-        double degrees = (cluster.numInstances() * threadshold)*-1;
+        double degrees = (cluster.numInstances() * threadshold) * -1;
         int missingLabelCount = 0;
-        System.out.println(Arrays.toString(listList));
-        System.out.println(listList.length);
-        System.out.println(this.parsedCluster.numAttributes());
-        for (int i = listList.length-1; i >=0; i--) {
+
+        for (int i = listList.length - 1; i >= 0; i--) {
             if (listList[i] < degrees) {
                 ListOfInt.add(i);
             } else {
@@ -95,30 +95,51 @@ public class Cluster_CC_Builder {
             }
         }
 
-        int[] blah = Arrays.stream(listList).map(p-> {if(p==0){return p;} return 1;}).toArray();
-        System.out.println(Arrays.stream(blah).sum());
-        System.out.println("drop");
-        System.out.println(missingLabelCount);
-        System.out.println(ListOfInt.size());
-        System.out.println(this.parsedCluster.numAttributes());
+        int[] blah = Arrays.stream(listList).map(p -> {
+            if (p == 0) {
+                return p;
+            }
+            return 1;
+        }).toArray();
         data.setRelationName(group2 + (numLabels - (missingLabelCount)));
-        //Bug found mis match in the parsed Cluster with the orginal will try to fix it.
-//        CC cc = new CC();
-//
-//        MLUtils.prepareData(data);
-//        cc.buildClassifier(data);
-//        System.out.println("building");
-//        System.out.println(data.relationName());
         this.labelChain = Arrays.stream(ListOfInt.toArray(new Integer[ListOfInt.size()])).mapToInt(Integer::intValue).toArray();
+        parsedLabelNum = this.labelChain.length;
         this.sqeuenceChain = new int[this.labelChain.length];
         for (int i = 0; i < this.labelChain.length; i++) {
             this.sqeuenceChain[i] = i;
         }
-//        System.out.println(Arrays.toString(this.labelChain));
     }
 
     public static void main(String[] args) throws Exception {
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",3,0.1);
-        System.out.println(cluster_cc_builder.labelChain.length);
+        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", 0, 0.1);
+
+        System.out.println(Arrays.toString(cluster_cc_builder.featureVector));
+        System.out.println(cluster_cc_builder.featureVector.length);
+
+//        System.out.println(cluster_cc_builder.labelChain.length);
+//        for (int i = 0; i < cluster_cc_builder.labelChain.length; i++) {
+//            System.out.println(cluster_cc_builder.parsedCluster.attribute(i+1));
+//        }
+//        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500.arff");
+//        Instances data = source.getDataSet();
+//        BaggingML baggingML = new BaggingML();
+//        CC base_cc = new CC();
+////        base_cc.prepareChain(cluster_cc_builder.sqeuenceChain);
+////        baggingML.setClassifier();
+//        MLUtils.prepareData(data);
+//
+//        baggingML.buildClassifier(data);
+//
+//        String top = "PCut1";
+//        String vop = "3";
+////        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
+//        Result result = Evaluation.cvModel(baggingML,data, 10, top, vop);
+//        double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming score").toString());
+//        double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
+//        double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
+//        double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
+//        System.out.println(result);
+//        System.out.println(averaging);
+
     }
 }

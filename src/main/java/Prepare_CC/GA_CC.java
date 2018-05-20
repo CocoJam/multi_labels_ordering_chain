@@ -3,6 +3,7 @@ package Prepare_CC;
 import io.jenetics.*;
 import io.jenetics.engine.*;
 import io.jenetics.util.*;
+import meka.core.Result;
 import mst.In;
 import scala.Int;
 import weka.core.Instances;
@@ -29,17 +30,19 @@ import static java.util.Objects.requireNonNull;
 
 public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Integer>, Double> {
     private final ISeq<Integer> _points;
-    private final Cluster_CC_Builder cluster_cc_builder;
+    public final Cluster_CC_Builder cluster_cc_builder;
     public final Thread thread;
     public String trackingString = "";
+    public Result result;
+    public int[] trainedChain;
 
     public EvolutionStatistics<Double, ?> statistics;
 //    public File file;
     public  BufferedWriter bufferedWriter;
-    public static GA_CC of(Instances data, double threadhold, int iteration, int popSize) throws Exception {
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(data, threadhold);
-        return of(cluster_cc_builder, iteration, popSize);
-    }
+//    public static GA_CC of(Instances data, double threadhold, int iteration, int popSize) throws Exception {
+//        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(data, threadhold);
+//        return of(cluster_cc_builder, iteration, popSize);
+//    }
 
     public static GA_CC of(Cluster_CC_Builder cluster_cc_builder, int iteration, int popSize) throws IOException {
         final MSeq<Integer> points = MSeq.ofLength(cluster_cc_builder.sqeuenceChain.length);
@@ -58,7 +61,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
             @Override
             public void run() {
                 try {
-                    getOptimalChain(cluster_cc_builder, popSize, iteration);
+                 trainedChain = getOptimalChain(cluster_cc_builder, popSize, iteration);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -73,11 +76,16 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         {
             int[] q = Arrays.stream(p.toArray(new Integer[p.size()])).mapToInt(Integer::intValue).toArray();
             try {
-//                System.out.println(q);
-                double num = (CC_Util.ccRun(cluster_cc_builder, 66, q) * 100);
-               trackingString+=( "Accuracy averages: " + num+"\n");
+//                System.out.println(Arrays.toString(q));
+
+                result = (CC_Util.ccRun(cluster_cc_builder, 66, q));
+                double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming score").toString());
+                double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
+                double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
+                double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
+                trackingString+=( "Accuracy averages: " + averaging);
 //                this.trackingString +=
-                return num;
+                return averaging;
             } catch (Exception e) {
                 e.printStackTrace();
                 return 0.0;
@@ -93,7 +101,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
     private int[] getOptimalChain(Cluster_CC_Builder cluster_cc_builder, int popSize, int iterations) throws IOException {
         long time1 = System.nanoTime();
         GA_CC basic_ga = GA_CC.of(cluster_cc_builder, iterations, popSize);
-        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MINIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>()).alterers(new SwapMutator<>(0.35), new PartiallyMatchedCrossover<>(0.35)).build();
+        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(1)).build();
         statistics = EvolutionStatistics.ofNumber();
         Phenotype<EnumGene<Integer>, Double> best = engine.stream().limit(iterations).peek(r ->
                 {
@@ -126,7 +134,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         long time1 = System.nanoTime();
         ExecutorService executorService = Executors.newFixedThreadPool(threads);
         GA_CC basic_ga = GA_CC.of(cluster_cc_builder, iterations, popSize);
-        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MINIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>()).alterers(new SwapMutator<>(0.35), new PartiallyMatchedCrossover<>(0.35)).executor(executorService).build();
+        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(1)).executor(executorService).build();
         statistics = EvolutionStatistics.ofNumber();
         Phenotype<EnumGene<Integer>, Double> best = engine.stream().limit(iterations).peek(r ->
                 {
@@ -162,7 +170,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         List<GA_CC> ga_ccs = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
             Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", i, 0);
-            GA_CC ga_cc = GA_CC.of(cluster_cc_builder, 100, 100);
+            GA_CC ga_cc = GA_CC.of(cluster_cc_builder, 20, 10);
             ga_cc.thread.start();
             ga_ccs.add(ga_cc);
         }
@@ -174,10 +182,5 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
         System.out.println(time2);
 
-//        for (int i = 0; i < 8; i++) {
-//            Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", i, 0);
-//            GA_CC ga_cc = GA_CC.of(cluster_cc_builder, 100, 10);
-//           ga_cc.getOptimalChainEx(cluster_cc_builder,10,10,10);
-//        }
     }
 }
