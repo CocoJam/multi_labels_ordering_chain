@@ -18,12 +18,28 @@ public class graph_play
 
         graph.setStrict(false);
         graph.setAutoCreate( true );
-        graph.addEdge("AB", "A", "B");
-        graph.addEdge("BC", "B", "C");
-        graph.addEdge("CA", "C", "A");
+//        graph.addEdge("AB", "A", "B");
+//        graph.addEdge("BC", "B", "C");
+//        graph.addEdge("CA", "C", "A");
+//
+//        Node A = graph.getNode("A");
+//        Edge E =graph.getEdge("AB");
 
-        Node A = graph.getNode("A");
-        Edge E =graph.getEdge("AB");
+
+
+
+        Node a = graph.addNode("A");
+        Node b = graph.addNode("B");
+
+
+
+        a.setAttribute("xy", 0, 0);
+        a.setAttribute("xy", 1, 1);
+
+        graph.addEdge("AB", "A", "B", true);
+
+
+        graph.display(false);
 
         /*
         what is the unique identifier of the node or edge (Node.getId(), Edge.getId()),
@@ -35,21 +51,21 @@ public class graph_play
          */
 
 
-        for(Node n:graph) {
-            System.out.println(n.getId());
-        }
-
-
-        int n = graph.getNodeCount();
-        byte adjacencyMatrix[][] = new byte[n][n];
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-                adjacencyMatrix[i][j] = (byte) (graph.getNode(i).hasEdgeBetween(j) ? 1 : 0);
-
-        System.out.println(adjacencyMatrix[1][1]);
-
-
-        graph.display();
+//        for(Node n:graph) {
+//            System.out.println(n.getId());
+//        }
+//
+//
+//        int n = graph.getNodeCount();
+//        byte adjacencyMatrix[][] = new byte[n][n];
+//        for (int i = 0; i < n; i++)
+//            for (int j = 0; j < n; j++)
+//                adjacencyMatrix[i][j] = (byte) (graph.getNode(i).hasEdgeBetween(j) ? 1 : 0);
+//
+//        System.out.println(adjacencyMatrix[1][1]);
+//
+//
+//        graph.display();
 
 
 
