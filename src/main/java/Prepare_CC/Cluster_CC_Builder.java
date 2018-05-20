@@ -111,35 +111,7 @@ public class Cluster_CC_Builder {
     }
 
     public static void main(String[] args) throws Exception {
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", 0, 0.1);
-
-        System.out.println(Arrays.toString(cluster_cc_builder.featureVector));
-        System.out.println(cluster_cc_builder.featureVector.length);
-
-//        System.out.println(cluster_cc_builder.labelChain.length);
-//        for (int i = 0; i < cluster_cc_builder.labelChain.length; i++) {
-//            System.out.println(cluster_cc_builder.parsedCluster.attribute(i+1));
-//        }
-//        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500.arff");
-//        Instances data = source.getDataSet();
-//        BaggingML baggingML = new BaggingML();
-//        CC base_cc = new CC();
-////        base_cc.prepareChain(cluster_cc_builder.sqeuenceChain);
-////        baggingML.setClassifier();
-//        MLUtils.prepareData(data);
-//
-//        baggingML.buildClassifier(data);
-//
-//        String top = "PCut1";
-//        String vop = "3";
-////        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
-//        Result result = Evaluation.cvModel(baggingML,data, 10, top, vop);
-//        double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming score").toString());
-//        double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
-//        double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
-//        double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
-//        System.out.println(result);
-//        System.out.println(averaging);
-
+        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",3,0.1);
+        System.out.println(cluster_cc_builder.labelChain.length);
     }
 }
