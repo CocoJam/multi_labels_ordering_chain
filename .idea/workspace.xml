@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_0Information.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_1Information.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_2Information.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_3Information.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_4Information.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_5Information.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_6Information.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_7Information.csv" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_0Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_0_Information" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_1Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_1_Information" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_2Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_2_Information" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_3Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_3_Information" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_4Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_4_Information" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_5Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_5_Information" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_6Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_6_Information" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_7Information.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cluster_7_Information" afterPath="" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -156,18 +143,28 @@
       <file leaf-file-name="Cluster_CC_Builder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-267">
+            <state relative-caret-position="-183">
               <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CC_Util.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CC_Util.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="95" column="28" lean-forward="true" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
+            <state relative-caret-position="447">
+              <caret line="178" column="41" lean-forward="false" selection-start-line="178" selection-start-column="41" selection-end-line="178" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -188,16 +185,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cluster_7Information.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cluster_7Information.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -280,13 +267,13 @@
         <option value="$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java" />
         <option value="$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CCResults.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -336,6 +323,12 @@
               <item name="CC" type="b2602c69:ProjectViewProjectNode" />
               <item name="CC" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="trail_0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CC" type="b2602c69:ProjectViewProjectNode" />
@@ -965,7 +958,7 @@
       <workItem from="1526422058902" duration="9993000" />
       <workItem from="1526510562302" duration="50000" />
       <workItem from="1526538756091" duration="23619000" />
-      <workItem from="1526681755208" duration="32819000" />
+      <workItem from="1526681755208" duration="32991000" />
     </task>
     <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
       <created>1524611550042</created>
@@ -1128,11 +1121,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526697899431</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Bencmarking it took around 1031 to run 8 cluster of CAL500 qith 10 individuals and 100 iterations.">
+      <created>1526783547064</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1526783547064</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168211000" />
+    <option name="totallyTimeSpent" value="168383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1146,8 +1146,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1413,14 +1413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-519">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1709,7 +1701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
+        <state relative-caret-position="-183">
           <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
           <folding />
         </state>
@@ -1717,8 +1709,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="95" column="28" lean-forward="true" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
+        <state relative-caret-position="447">
+          <caret line="178" column="41" lean-forward="false" selection-start-line="178" selection-start-column="41" selection-end-line="178" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
