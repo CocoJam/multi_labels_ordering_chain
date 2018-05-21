@@ -24,13 +24,13 @@ public class Cluster_CC_GA_Wrapper {
     public List<Cluster_CC_Builder> listOfClusterBuilder = new ArrayList<>();
     public Instances test;
     public Instances train;
-
-    public Cluster_CC_GA_Wrapper(String file) throws Exception {
+    public String string="";
+    public Cluster_CC_GA_Wrapper(String file,int seed) throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(file);
         Instances data = source.getDataSet();
         EM EM_test = new EM();
         //Seeding for eval
-        EM_test.setSeed(10);
+        EM_test.setSeed(seed);
 
         EM_test.buildClusterer(data);
         //eval object for any clusters
@@ -40,7 +40,7 @@ public class Cluster_CC_GA_Wrapper {
         evaluation = eval;
         clusterNumber = eval.getNumClusters();
         BufferedWriter bufferedWriter;
-        bufferedWriter = new BufferedWriter(new FileWriter(new File("Clustering_Log")));
+        bufferedWriter = new BufferedWriter(new FileWriter(new File("T_"+seed+"/Clustering_Log")));
 //        System.out.println(eval.clusterResultsToString());
         bufferedWriter.write(eval.clusterResultsToString());
         bufferedWriter.close();
@@ -64,7 +64,7 @@ public class Cluster_CC_GA_Wrapper {
             if (cluster_cc_builder.cluster.numInstances() >= newData.numInstances() * 0.1) {
                 listOfClusterBuilder.add(cluster_cc_builder);
             } else {
-                System.out.println("Missed cluster: " + i);
+                string+=("Missed cluster: " + i+"\n");
             }
 
         }
@@ -110,37 +110,50 @@ public class Cluster_CC_GA_Wrapper {
     }
 
     public static void main(String[] args) throws Exception {
-        Cluster_CC_GA_Wrapper cluster_cc_ga_wrapper = new Cluster_CC_GA_Wrapper("src/main/CAL500.arff");
-        List<Result> results = cluster_cc_ga_wrapper.EvaluationFeatureVector(cluster_cc_ga_wrapper.runAndReturn(cluster_cc_ga_wrapper.listOfClusterBuilder));
-        double overallHamming_loss=0;
-        double overallExact_match=0;
-        double overallAccuracy = 0;
-        double overallAverage = 0;
-        System.out.println(results.size());
-        for (int i = 0; i < results.size(); i++) {
-            Result result = results.get(i);
-            System.out.println("");
-            double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming loss").toString());
-            double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
-            double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
-            overallExact_match+=exact_match/results.size();
-            overallHamming_loss+=hamming_loss/results.size();
-            overallAccuracy+=accuracy/results.size();
+        String overallCSV = "Hamming_Loss,Exact_match,Accuracy,Average";
+        for (int j = 20; j < 30; j++) {
+            File file = new File("T_"+j);
+            if (!file.exists()){
+                file.mkdir();
+            }
+            Cluster_CC_GA_Wrapper cluster_cc_ga_wrapper = new Cluster_CC_GA_Wrapper("src/main/CAL500.arff",j);
+            List<Result> results = cluster_cc_ga_wrapper.EvaluationFeatureVector(cluster_cc_ga_wrapper.runAndReturn(cluster_cc_ga_wrapper.listOfClusterBuilder));
+            double overallHamming_loss=0;
+            double overallExact_match=0;
+            double overallAccuracy = 0;
+            double overallAverage = 0;
+            System.out.println(results.size());
+            for (int i = 0; i < results.size(); i++) {
+                Result result = results.get(i);
+                System.out.println("");
+                double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming loss").toString());
+                double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
+                double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
+                overallExact_match+=exact_match/results.size();
+                overallHamming_loss+=hamming_loss/results.size();
+                overallAccuracy+=accuracy/results.size();
 
-            double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
-            overallAverage+= averaging/results.size();
+                double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
+                overallAverage+= averaging/results.size();
+                BufferedWriter bufferedWriter;
+                bufferedWriter = new BufferedWriter(new FileWriter(new File("T_"+j+"/Logging_"+i+"_results")));
+                bufferedWriter.write(result.toString());
+                bufferedWriter.write("Averaging: "+averaging);
+                bufferedWriter.close();
+            }
             BufferedWriter bufferedWriter;
-            bufferedWriter = new BufferedWriter(new FileWriter(new File("Logging_"+i+"_results")));
-            bufferedWriter.write(result.toString());
-            bufferedWriter.write("Averaging: "+averaging);
+            bufferedWriter = new BufferedWriter(new FileWriter(new File("T_"+j+"/Logging_OverallResults")));
+            bufferedWriter.write(cluster_cc_ga_wrapper.string);
+            bufferedWriter.write("Hamming_loss: "+overallHamming_loss+"\n");
+            bufferedWriter.write("Exact_match: "+overallExact_match+"\n");
+            bufferedWriter.write("Accuracy: "+overallAccuracy+"\n");
+            bufferedWriter.write("Averaging: "+overallAverage);
             bufferedWriter.close();
+            overallCSV+=overallAverage+","+overallExact_match+","+overallHamming_loss+","+overallAccuracy+"\n";
         }
         BufferedWriter bufferedWriter;
-        bufferedWriter = new BufferedWriter(new FileWriter(new File("Logging_OverallResults")));
-        bufferedWriter.write("Hamming_loss: "+overallHamming_loss+"\n");
-        bufferedWriter.write("Exact_match: "+overallExact_match+"\n");
-        bufferedWriter.write("Accuracy: "+overallAccuracy+"\n");
-        bufferedWriter.write("Averaging: "+overallAverage);
+        bufferedWriter = new BufferedWriter(new FileWriter(new File("Overall.csv")));
+        bufferedWriter.write(overallCSV);
         bufferedWriter.close();
     }
 }
