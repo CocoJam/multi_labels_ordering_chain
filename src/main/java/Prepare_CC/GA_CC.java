@@ -79,7 +79,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
 //                System.out.println(Arrays.toString(q));
 
                 result = (CC_Util.ccRun(cluster_cc_builder, 66, q));
-                double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming score").toString());
+                double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming loss").toString());
                 double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
                 double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
                 double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;

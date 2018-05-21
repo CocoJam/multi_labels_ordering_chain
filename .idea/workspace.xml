@@ -2,41 +2,222 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_0Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_1Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_2Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_3Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_4Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_5Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_6Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/trail_0/cluster_7Information.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Floyd_Warshall.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Tarjon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_0Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_0_Information" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_1Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_1_Information" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_2Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_2_Information" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_3Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_3_Information" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_4Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_4_Information" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_5Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_5_Information" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_6Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_6_Information" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_7Information.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/cluster_7_Information" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_0/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_0/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_0/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_0/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_0/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_0/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_0/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Logging_5_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_1/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_10/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_10/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_10/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_10/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_10/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_10/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_10/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Logging_5_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_11/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_12/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_12/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_12/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_12/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_12/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_12/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_13/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_13/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_13/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_13/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_13/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_13/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_13/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Logging_5_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_14/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_15/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_15/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_15/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_15/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_15/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_16/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_16/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_16/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_16/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_16/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_16/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_17/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_17/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_17/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_17/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_17/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_17/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_17/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Logging_5_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_18/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_19/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_19/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_19/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_19/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_19/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_19/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_2/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_2/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_2/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_2/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_2/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_2/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_2/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_20/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_20/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_20/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_20/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_20/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_20/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_20/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Logging_5_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_21/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_22/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_22/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_22/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_22/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_22/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_22/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_22/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_23/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_23/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_23/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_23/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_23/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_23/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_23/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_24/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_24/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_24/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_24/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_24/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_24/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_24/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_25/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_25/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_25/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_25/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_25/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_25/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_26/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_26/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_26/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_26/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_26/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_27/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_27/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_27/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_27/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_27/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_27/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_28/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_28/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_28/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_28/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_28/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_28/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_29/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_29/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_29/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_29/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_29/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_29/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_29/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_3/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_3/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_3/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_3/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_3/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_3/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_3/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_4/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_4/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_4/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_4/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_4/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_4/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_5/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_5/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_5/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_5/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_5/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_5/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_5/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_6/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_6/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_6/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_6/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_6/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_6/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_7/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_7/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_7/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_7/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_7/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_7/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_8/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_8/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_8/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_8/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_8/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_8/Logging_4_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_8/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_9/Clustering_Log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_9/Logging_0_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_9/Logging_1_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_9/Logging_2_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_9/Logging_3_results" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CGACC/T_9/Logging_OverallResults" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yeast.arff" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_0Information.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_1Information.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_2Information.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_3Information.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_4Information.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_5Information.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_6Information.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trail_0/cluster_7Information.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CC.iml" afterPath="$PROJECT_DIR$/CC.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/cluster_trial.java" afterPath="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/cluster_trial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/prim_Graph.java" afterPath="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/prim_Graph.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,78 +232,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="cluster_trial.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cluster_trial.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/cluster_trial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6569">
-              <caret line="164" column="10" lean-forward="false" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Centroid.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3-sources.jar!/org/graphstream/algorithm/Centroid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="139" column="21" lean-forward="false" selection-start-line="139" selection-start-column="21" selection-end-line="139" selection-end-column="21" />
-              <folding>
-                <element signature="e#8951#8952#0" expanded="true" />
-                <element signature="e#8977#8978#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/1.3/gs-core-1.3-sources.jar!/org/graphstream/graph/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
-              <caret line="443" column="0" lean-forward="true" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APSP.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3-sources.jar!/org/graphstream/algorithm/APSP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9254">
-              <caret line="251" column="39" lean-forward="false" selection-start-line="251" selection-start-column="39" selection-end-line="251" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Floyd_Warshall.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Floyd_Warshall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="75" column="12" lean-forward="false" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph_play.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/graph_play.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prim_Graph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/prim_Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="1871">
+              <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -131,8 +245,28 @@
       <file leaf-file-name="Base_CC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Base_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="942">
-              <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            <state relative-caret-position="395">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CC_Util.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="112" column="22" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="116" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cluster_CC_Builder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -149,10 +283,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classif</find>
-      <find>Class</find>
-      <find>kmeans</find>
-      <find>cluster</find>
       <find>classifi</find>
       <find>attribute</find>
       <find>type</find>
@@ -179,6 +309,10 @@
       <find>Classif</find>
       <find>Clas</find>
       <find>buffer</find>
+      <find>126</find>
+      <find>hamming</find>
+      <find>prepar</find>
+      <find>cluster</find>
     </findStrings>
     <replaceStrings>
       <replace>EM_test</replace>
@@ -216,15 +350,16 @@
         <option value="$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff" />
         <option value="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CCResults.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Tarjon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/prim_Graph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Floyd_Warshall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
+        <option value="$PROJECT_DIR$/data/T1/Logging_OverallResults" />
+        <option value="$PROJECT_DIR$/Logging_OverallResults" />
+        <option value="$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java" />
+        <option value="$PROJECT_DIR$/Overall.csv" />
+        <option value="$PROJECT_DIR$/yeast.arff" />
         <option value="$PROJECT_DIR$/src/main/java/Graph_Test_Ground/cluster_trial.java" />
       </list>
     </option>
@@ -264,7 +399,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -370,41 +505,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi_labels_ordering_chain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trail_0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -419,16 +522,16 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\james\IdeaProjects\CC" />
       <recent name="C:\Users\james\IdeaProjects\CC\src\main" />
+      <recent name="C:\Users\james\IdeaProjects\CC\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Prepare_CC" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\james\IdeaProjects\CC\src\main" />
-      <recent name="C:\Users\james\IdeaProjects\CC" />
-      <recent name="C:\Users\james\IdeaProjects\CC\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -444,14 +547,74 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.cluster_trial">
-    <configuration default="false" name="Tarjon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="GA_CC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Graph_Test_Ground.*" />
+          <option name="PATTERN" value="Prepare_CC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Graph_Test_Ground.Tarjon" />
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.GA_CC" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CC" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Cluster_CC_Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Prepare_CC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.Cluster_CC_Builder" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CC" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Feature_Vector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Prepare_CC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.Feature_Vector" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CC" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Cluster_CC_GA_Wrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Prepare_CC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Prepare_CC.Cluster_CC_GA_Wrapper" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -472,66 +635,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Graph_Test_Ground.cluster_trial" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CC" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="prim_Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Graph_Test_Ground.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Graph_Test_Ground.prim_Graph" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CC" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Floyd_Warshall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Graph_Test_Ground.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Graph_Test_Ground.Floyd_Warshall" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CC" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="KruskalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Graph_Test_Ground.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Graph_Test_Ground.KruskalTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -932,19 +1035,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Tarjon" />
-      <item index="1" class="java.lang.String" itemvalue="Application.cluster_trial" />
-      <item index="2" class="java.lang.String" itemvalue="Application.prim_Graph" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Floyd_Warshall" />
-      <item index="4" class="java.lang.String" itemvalue="Application.KruskalTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.GA_CC" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Feature_Vector" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Cluster_CC_GA_Wrapper" />
+      <item index="4" class="java.lang.String" itemvalue="Application.cluster_trial" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.cluster_trial" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Floyd_Warshall" />
-        <item index="2" class="java.lang.String" itemvalue="Application.prim_Graph" />
-        <item index="3" class="java.lang.String" itemvalue="Application.KruskalTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Tarjon" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Cluster_CC_GA_Wrapper" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Feature_Vector" />
+        <item index="4" class="java.lang.String" itemvalue="Application.GA_CC" />
       </list>
     </recent_temporary>
   </component>
@@ -978,8 +1081,9 @@
       <workItem from="1526422058902" duration="9993000" />
       <workItem from="1526510562302" duration="50000" />
       <workItem from="1526538756091" duration="23619000" />
-      <workItem from="1526681755208" duration="32991000" />
-      <workItem from="1526801998986" duration="25134000" />
+      <workItem from="1526681755208" duration="52336000" />
+      <workItem from="1526813562538" duration="13181000" />
+      <workItem from="1526876144808" duration="3987000" />
     </task>
     <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
       <created>1524611550042</created>
@@ -1149,42 +1253,46 @@
       <option name="project" value="LOCAL" />
       <updated>1526783547064</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Bencmarking it took around 1031 to run 8 cluster of CAL500 qith 10 individuals and 100 iterations.">
+      <created>1526783714742</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1526783714742</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Bencmarking it took around 1031 to run 8 cluster of CAL500 qith 10 individuals and 100 iterations.">
+      <created>1526811571303</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1526811571303</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193517000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="204896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="2" width="3226" height="1736" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32684284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21418637" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1689847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.189847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24822237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25694895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46319366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1196,6 +1304,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46319366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1220,10 +1329,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21418637" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27117002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46319366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1285,23 +1394,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Tarjon.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Floyd_Warshall.java</url>
-          <line>51</line>
-          <properties class="Graph_Test_Ground.Floyd_Warshall" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1310,345 +1403,149 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/Evaluation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5544">
+          <caret line="280" column="94" lean-forward="true" selection-start-line="280" selection-start-column="94" selection-end-line="280" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/trail_1.arff" />
     <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/meta/BaggingML.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-742">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="126">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/meta/MetaProblemTransformationMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="126">
+          <caret line="43" column="53" lean-forward="false" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CAL500.arff">
+    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_0Information.csv" />
+    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_1Information.csv" />
+    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_2Information.csv" />
+    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_4Information.csv" />
+    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_5Information.csv" />
+    <entry file="file://$PROJECT_DIR$/data/CC.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/Function.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/core/Result.class">
+    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_7Information.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/engine/Problem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="82" lean-forward="false" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CCResults.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jenetics/jenetics/4.1.0/jenetics-4.1.0.jar!/io/jenetics/engine/EvolutionResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3108">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MEKA_Test_Ground/Normal_CC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="51" column="93" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="51" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Iterator.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/stream/Stream.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/meka/meka/1.9.2/meka-1.9.2.jar!/meka/classifiers/multilabel/Evaluation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2849">
-          <caret line="372" column="35" lean-forward="true" selection-start-line="372" selection-start-column="35" selection-end-line="372" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cluster_0Information.csv" />
-    <entry file="file://$PROJECT_DIR$/cluster_1Information.csv" />
-    <entry file="file://$PROJECT_DIR$/cluster_2Information.csv" />
-    <entry file="file://$PROJECT_DIR$/cluster_4Information.csv" />
-    <entry file="file://$PROJECT_DIR$/cluster_5Information.csv" />
-    <entry file="file://$PROJECT_DIR$/cluster_7Information.csv" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Collection.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0.jar!/weka/classifiers/lazy/IBk.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4080">
-          <caret line="103" column="1" lean-forward="false" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+        <state relative-caret-position="570">
+          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="672">
+          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cluster_6Information.csv" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_0Information.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/T1/Logging_1_results" />
+    <entry file="file://$PROJECT_DIR$/data/trail_0/cluster_6Information.csv" />
+    <entry file="file://$PROJECT_DIR$/data/T1/Logging_OverallResults" />
+    <entry file="file://$PROJECT_DIR$/data/T1/Logging_0_results" />
+    <entry file="file://$PROJECT_DIR$/data/T1/Logging_2_results" />
+    <entry file="file://$PROJECT_DIR$/Logging_5_results" />
+    <entry file="file://$PROJECT_DIR$/Clustering_Log" />
+    <entry file="file://$PROJECT_DIR$/Logging_0_results" />
+    <entry file="file://$PROJECT_DIR$/Logging_1_results" />
+    <entry file="file://$PROJECT_DIR$/Logging_2_results" />
+    <entry file="file://$PROJECT_DIR$/Logging_3_results" />
+    <entry file="file://$PROJECT_DIR$/Logging_4_results" />
+    <entry file="file://$PROJECT_DIR$/Logging_OverallResults" />
+    <entry file="file://$PROJECT_DIR$/data/T1/Logging_3_results" />
+    <entry file="file://$PROJECT_DIR$/data/T1/Logging_4_results" />
+    <entry file="file://$PROJECT_DIR$/T_0/Clustering_Log" />
+    <entry file="file://$PROJECT_DIR$/T_1/Logging_OverallResults" />
+    <entry file="file://$PROJECT_DIR$/T_21/Logging_0_results" />
+    <entry file="file://$PROJECT_DIR$/T_21/Logging_1_results" />
+    <entry file="file://$PROJECT_DIR$/T_20/Logging_1_results" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_GA_Wrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="94" column="107" lean-forward="false" selection-start-line="94" selection-start-column="107" selection-end-line="94" selection-end-column="107" />
+        <state relative-caret-position="150">
+          <caret line="124" column="25" lean-forward="false" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
+    <entry file="file://$PROJECT_DIR$/T_0/Logging_4_results" />
+    <entry file="file://$PROJECT_DIR$/T_0/Logging_OverallResults" />
+    <entry file="file://$PROJECT_DIR$/T_0/Logging_3_results" />
+    <entry file="file://$PROJECT_DIR$/T_0/Logging_2_results" />
+    <entry file="file://$PROJECT_DIR$/T_0/Logging_1_results" />
+    <entry file="file://$PROJECT_DIR$/T_28/Logging_0_results" />
+    <entry file="file://$PROJECT_DIR$/T_28/Clustering_Log" />
+    <entry file="file://$PROJECT_DIR$/T_28/Logging_OverallResults" />
+    <entry file="file://$PROJECT_DIR$/T_29/Logging_OverallResults" />
+    <entry file="file://$PROJECT_DIR$/Overall.csv" />
+    <entry file="file://$PROJECT_DIR$/yeast.arff">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="178" column="41" lean-forward="false" selection-start-line="178" selection-start-column="41" selection-end-line="178" selection-end-column="41" />
+        <state relative-caret-position="84">
+          <caret line="121" column="5" lean-forward="false" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Base_CC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        <state relative-caret-position="395">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.0/weka-stable-3.8.0-sources.jar!/weka/classifiers/lazy/IBk.java">
+    <entry file="file://$PROJECT_DIR$/src/main/CAL500_clustered_adjusted.arff">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/cluster_trial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1871">
+          <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Feature_Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="126" column="1" lean-forward="false" selection-start-line="126" selection-start-column="1" selection-end-line="128" selection-end-column="31" />
+        <state relative-caret-position="2669">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3.jar!/org/graphstream/algorithm/TarjanStronglyConnectedComponents.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="282">
+          <caret line="112" column="22" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="116" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/1.3/gs-core-1.3.jar!/org/graphstream/graph/Element.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Cluster_CC_Builder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="440">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Mtrix_play.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Tarjon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/KruskalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1022">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/GraphExplore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1087">
-          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GA_Test_Ground/Basic_GA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="50" column="59" lean-forward="false" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#853#854#0" expanded="false" />
-            <element signature="e#906#907#0" expanded="false" />
-            <element signature="e#974#975#0" expanded="false" />
-            <element signature="e#1022#1023#0" expanded="false" />
-            <element signature="e#2187#2188#0" expanded="false" />
-            <element signature="e#2250#2251#0" expanded="false" />
-            <element signature="e#2326#2327#0" expanded="false" />
-            <element signature="e#2378#2379#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/Base_CC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="942">
-          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3.jar!/org/graphstream/algorithm/Prim.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3.jar!/org/graphstream/algorithm/APSP.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/graph_play.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/prim_Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/1.3/gs-core-1.3.jar!/org/graphstream/graph/Path.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/1.3/gs-core-1.3.jar!/org/graphstream/graph/Graph.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/1.3/gs-core-1.3-sources.jar!/org/graphstream/graph/Path.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="153" column="6" lean-forward="true" selection-start-line="153" selection-start-column="6" selection-end-line="153" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3-sources.jar!/org/graphstream/algorithm/Prim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5508">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/1.3/gs-core-1.3-sources.jar!/org/graphstream/graph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="443" column="0" lean-forward="true" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3-sources.jar!/org/graphstream/algorithm/APSP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9254">
-          <caret line="251" column="39" lean-forward="false" selection-start-line="251" selection-start-column="39" selection-end-line="251" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Floyd_Warshall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="75" column="12" lean-forward="false" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-algo/1.3/gs-algo-1.3-sources.jar!/org/graphstream/algorithm/Centroid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="139" column="21" lean-forward="false" selection-start-line="139" selection-start-column="21" selection-end-line="139" selection-end-column="21" />
-          <folding>
-            <element signature="e#8951#8952#0" expanded="true" />
-            <element signature="e#8977#8978#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/cluster_trial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6569">
-          <caret line="164" column="10" lean-forward="false" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

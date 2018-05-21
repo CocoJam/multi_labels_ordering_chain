@@ -8,6 +8,8 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class Feature_Vector {
@@ -29,18 +31,33 @@ public class Feature_Vector {
         this.trainedLabelChain = trainedLabelChain;
         this.preparedTrainedLabelChain = preparedTrainedLabelChain(trainedLabelChain, orginalChain,orginalLabelNum);
         base_cc = new Base_CC();
+
+        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+        Matcher matcher = pattern.matcher(instances.relationName());
+        int numLabels = 0;
+        if (matcher.find()) {
+            instances.setRelationName(matcher.group(0));
+            numLabels = Integer.parseInt(matcher.group(2));
+        }
         this.instances = instances;
+        base_cc.prepareChain(this.preparedTrainedLabelChain);
         MLUtils.prepareData(instances);
         base_cc.buildClassifier(instances);
     }
     public int[] preparedTrainedLabelChain(int[] trained, int[] orginalChain, int orginalLabelNum){
-        int[] preparedLabelChain = new int[orginalLabelNum];
+        int[] preparedLabelChain = new int[trained.length];
         int[] orginalLabelSet = new int[orginalLabelNum];
         for (int i = 0; i < orginalLabelNum; i++) {
             orginalLabelSet[i] = i;
         }
-        for (int i = 0; i < preparedLabelChain.length; i++) {
-            preparedLabelChain[i] = orginalChain[trained[i]];
+        System.out.println(Arrays.toString(orginalChain));
+        System.out.println(orginalChain.length);
+        System.out.println(Arrays.toString(trained));
+        System.out.println(trained.length);
+        for (int i = 0; i < trained.length; i++) {
+            int tr = trained[i];
+            int or = orginalChain[tr];
+            preparedLabelChain[i] = or;
         }
         List<Integer> UnionSet = new ArrayList<>();
         for (int i : preparedLabelChain) {
@@ -55,13 +72,7 @@ public class Feature_Vector {
     }
 
     public static void main(String[] args) throws Exception {
-        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered_adjusted.arff");
-        Instances data = source.getDataSet();
 
-        double split = 66;
-        int trainSize = (int) (data.numInstances() * split / 100.0);
-        Instances train = new Instances(data, 0, trainSize);
-        Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
 
     }
 }

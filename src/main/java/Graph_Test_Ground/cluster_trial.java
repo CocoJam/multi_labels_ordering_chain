@@ -1,7 +1,11 @@
 package Graph_Test_Ground;
 
+import Prepare_CC.Base_CC;
 import Prepare_CC.Cluster_CC_Builder;
 import WEKA_Test_Ground.Cluster_Fliter;
+import meka.classifiers.multilabel.Evaluation;
+import meka.core.MLUtils;
+import meka.core.Result;
 import org.ejml.simple.SimpleMatrix;
 import org.graphstream.algorithm.*;
 import org.graphstream.graph.Edge;
@@ -16,6 +20,8 @@ import weka.core.converters.ConverterUtils;
 
 import java.lang.reflect.Array;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.lang.Float.NaN;
 
@@ -29,12 +35,24 @@ public class cluster_trial {
     public static void main(String[] args) throws Exception {
 
 
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", 7, 0);
-
-        int[] labels = cluster_cc_builder.labelChain;
+        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", 4, 0);
+        Instances cluster = cluster_cc_builder.cluster;
+        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+        Matcher matcher = pattern.matcher(cluster.relationName());
+        int numLabels = 0;
+        if (matcher.find()) {
+            cluster.setRelationName(matcher.group(0));
+            numLabels = Integer.parseInt(matcher.group(2));
+            System.out.println(numLabels);
+        }
+        int[] labels =cluster_cc_builder.labelChain;
+//        for (int i = 0; i < numLabels; i++) {
+//            labels[i] =i;
+//        }
+//        int[] labels = cluster_cc_builder.labelChain;
         System.out.println("Label chain: " + labels.length);
         int[] seqIndex = cluster_cc_builder.sqeuenceChain;
-        Instances cluster = cluster_cc_builder.cluster;
+
         int intNum = cluster.numInstances();
         int labNum = labels.length;
         int[] finalisedOrder = new int[labNum];
@@ -126,6 +144,7 @@ public class cluster_trial {
 //                        }
 
 
+                            //System.out.println(dependency);
                             Edge dependence = graph.addEdge(node1.getId() + "_" + node2.getId(), node1, node2, false);
                             dependence.setAttribute("weight", dependency);
                         }
@@ -180,8 +199,8 @@ public class cluster_trial {
         Node root= tree.getNode(0);
         ArrayList<Node> nodeSet = new ArrayList<>();
 
+        //Find cnetroid root
         for(Node n: tree.getEachNode()){
-
             nodeSet.add(n);
             if ((boolean)n.getAttribute("centroid")){
                 root = n;
@@ -189,7 +208,7 @@ public class cluster_trial {
             }
         }
 
-
+        // Calculate distance to roo
         for(Node n: nodeSet){
             if (n == root){
                 n.setAttribute("dis", 0.0);
@@ -199,18 +218,31 @@ public class cluster_trial {
             }
         }
 
+        //Ranking
         Collections.sort(nodeSet, Comparator.comparing(s -> s.getAttribute("dis")));
 
+        //Pack to array
        for(int i =0; i < labNum; i++){
            int ind = Integer.parseInt(nodeSet.get(i).getId());
            finalisedOrder[i] = ind;
        }
-
+        System.out.println(Arrays.toString(finalisedOrder));
 
         graph.display();
         tree.display();
-        System.out.println(Arrays.toString(finalisedOrder));
-
+//        Base_CC cc = new Base_CC();
+//
+//        System.out.println(cluster);
+//        System.out.println(finalisedOrder.length);
+//        cc.prepareChain(finalisedOrder);
+//        MLUtils.prepareData(cluster);
+//        cc.buildClassifier(cluster);
+//
+//        String top = "PCut1";
+//        String vop = "3";
+//        Result r = Evaluation.cvModel(cc, cluster,10,top, vop );
+//        System.out.println(Arrays.toString(finalisedOrder));
+        //System.out.println(r);
         }
     }
 
