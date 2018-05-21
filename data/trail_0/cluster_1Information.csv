@@ -1,0 +1,51 @@
+Generate,1,Best genotype fitness,0.189482289265803
+Generate,2,Best genotype fitness,0.18977314771996237
+Generate,3,Best genotype fitness,0.18990865545329497
+Generate,4,Best genotype fitness,0.19077994127429865
+Generate,5,Best genotype fitness,0.19255356975002277
+Generate,6,Best genotype fitness,0.1883325990524891
+Generate,7,Best genotype fitness,0.1900817120135597
+Generate,8,Best genotype fitness,0.1906463277438417
+Generate,9,Best genotype fitness,0.1906463277438417
+Generate,10,Best genotype fitness,0.18844786623854634
+Generate,11,Best genotype fitness,0.18821821970507813
+Generate,12,Best genotype fitness,0.18886164352139787
+Generate,13,Best genotype fitness,0.19294849704528402
+Generate,14,Best genotype fitness,0.19075253923560673
+Generate,15,Best genotype fitness,0.18965480551816757
+Generate,16,Best genotype fitness,0.19009565928070296
+Generate,17,Best genotype fitness,0.19009565928070296
+Generate,18,Best genotype fitness,0.1894429190984991
+Generate,19,Best genotype fitness,0.19332999970529116
+Generate,20,Best genotype fitness,0.18786242320135318
+Best Genotype label chains: [88, 96, 92, 73, 74, 47, 95, 5, 27, 60, 13, 1, 101, 26, 70, 77, 3, 10, 86, 69, 103, 12, 122, 115, 80, 20, 109, 79, 48, 45, 33, 8, 36, 17, 53, 97, 110, 82, 0, 61, 114, 2, 84, 25, 35, 51, 50, 91, 63, 62, 15, 87, 42, 90, 111, 68, 40, 102, 117, 94, 16, 112, 104, 30, 37, 118, 71, 38, 19, 83, 121, 28, 75, 81, 64, 120, 22, 29, 113, 116, 99, 85, 123, 93, 124, 56, 106, 11, 32, 78, 49, 66, 39, 98, 108, 58, 67, 7, 31, 57, 54, 18, 41, 43, 52, 59, 14, 72, 23, 34, 100, 65, 6, 44, 4, 119, 125, 107, 89, 55, 105, 24, 76, 9, 21, 46]
+overall Stats: 
++---------------------------------------------------------------------------+
+|  Time statistics                                                          |
++---------------------------------------------------------------------------+
+|             Selection: sum=0.049188754000 s; mean=0.002459437700 s        |
+|              Altering: sum=0.013214612000 s; mean=0.000660730600 s        |
+|   Fitness calculation: sum=354.834785454000 s; mean=17.741739272700 s     |
+|     Overall execution: sum=374.422922974000 s; mean=18.721146148700 s     |
++---------------------------------------------------------------------------+
+|  Evolution statistics                                                     |
++---------------------------------------------------------------------------+
+|           Generations: 20                                                 |
+|               Altered: sum=4,201; mean=210.050000000                      |
+|                Killed: sum=0; mean=0.000000000                            |
+|              Invalids: sum=0; mean=0.000000000                            |
++---------------------------------------------------------------------------+
+|  Population statistics                                                    |
++---------------------------------------------------------------------------+
+|                   Age: max=1; mean=0.060000; var=0.056683                 |
+|               Fitness:                                                    |
+|                      min  = 0.179831383053                                |
+|                      max  = 0.193329999705                                |
+|                      mean = 0.186930007419                                |
+|                      var  = 0.000005506992                                |
+|                      std  = 0.002346698089                                |
++---------------------------------------------------------------------------+
+Population size: 10,Alterers: CompositeAlterer:
+   - SwapMutator[p=0.250000]
+   - PartiallyMatchedCrossover[p=1.000000],SurvivorsSelectors: EliteSelector[2, TournamentSelector[s=3]],Optimizer: MAXIMUM
+Total time 884

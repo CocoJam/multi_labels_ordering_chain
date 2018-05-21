@@ -32,6 +32,21 @@ public class CC_Util {
         return null;
     }
 
+    public static Instances filter(Instances source, int value, int threshold) {
+        SubsetByExpression subsetByExpression = new SubsetByExpression();
+        subsetByExpression.setExpression("ATT" + (source.attribute("Cluster").index() + 1) + "=" + value);
+        try {
+            subsetByExpression.setInputFormat(source);
+           Instances placeholder =SubsetByExpression.useFilter(source, subsetByExpression);
+            if (placeholder.numInstances()>threshold){
+                return placeholder;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public static void ccRun(String file, int clusterNum, int splitRate, int[] ints) throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(file);
         Instances data = source.getDataSet();
@@ -39,13 +54,13 @@ public class CC_Util {
         ccRunAndBuildAndEval(splitRate, data, ints);
     }
 
-    public static double ccRun(Cluster_CC_Builder cluster_cc_builder, int splitRate) throws Exception {
+    public static Result ccRun(Cluster_CC_Builder cluster_cc_builder, int splitRate) throws Exception {
         Instances data = cluster_cc_builder.parsedCluster;
 //        System.out.println(data);
         return ccRunAndBuildAndEval(splitRate, cluster_cc_builder.parsedCluster, cluster_cc_builder.sqeuenceChain);
     }
 
-    public static double ccRun(Cluster_CC_Builder cluster_cc_builder, int splitRate, int[] labelChainPrepared) throws Exception {
+    public static Result ccRun(Cluster_CC_Builder cluster_cc_builder, int splitRate, int[] labelChainPrepared) throws Exception {
         Instances data = cluster_cc_builder.parsedCluster;
 //        System.out.println(data);
         return ccRunAndBuildAndEval(splitRate, cluster_cc_builder.parsedCluster, labelChainPrepared);
@@ -89,7 +104,7 @@ public class CC_Util {
 //        result.getInfo("");
 //    }
 
-    private static double ccRunAndBuildAndEval(int splitRate, Instances data, int[] ints) throws Exception {
+    private static  Result ccRunAndBuildAndEval(int splitRate, Instances data, int[] ints) throws Exception {
         int trainSize = (int) (data.numInstances() * splitRate / 100.0);
         Instances train = new Instances(data, 0, trainSize);
         Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
@@ -103,6 +118,7 @@ public class CC_Util {
         long time1 = System.nanoTime();
 
         Base_CC cc = new Base_CC();
+
         cc.prepareChain(ints);
         MLUtils.prepareData(data);
 //        System.out.println("Building");
@@ -112,23 +128,10 @@ public class CC_Util {
         String top = "PCut1";
         String vop = "3";
         int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
-        Result result = Evaluation.cvModel(cc, data, 3, top, vop);
-//        System.out.println(result);
+        Result result = Evaluation.cvModel(cc, data, numOfCV, top, vop);
 //        System.out.println(Arrays.toString(cc.retrieveChain()));
         long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
-//        System.out.println(time2);
-//        for (String s : result.availableMetrics()) {
-//            System.out.print(s+": ");
-//            System.out.println(result.getMeasurement(s));
-//        }
-//        System.out.println(result.getMeasurement("Hamming score"));
-//        System.out.println(result.getMeasurement("Exact match"));
-//        System.out.println(result.getMeasurement("Accuracy"));
-        double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming score").toString());
-        double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
-        double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
-        double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
-        return averaging;
+        return result;
     }
 
     public static List<Integer[]> labelOrderChains(String file, int clusterAmount) throws Exception {

@@ -4,6 +4,8 @@ package Graph_Test_Ground;
  * Created by Administer on 19/05/2018.
  */
 
+import org.graphstream.algorithm.Kruskal;
+import org.graphstream.algorithm.TarjanStronglyConnectedComponents;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.implementations.DefaultGraph;
 
@@ -35,7 +37,15 @@ public class prim_Graph {
 
         prim.init(graph);
         prim.compute();
+
+//        Kruskal kruskal = new Kruskal("ui.class", "intree", "notintree");
+//        kruskal.init(graph);
+//        kruskal.compute();
+
+
+//        TarjanStronglyConnectedComponents tscc = new TarjanStronglyConnectedComponents();
+//        tscc.init(graph);
+//        tscc.compute();
+
     }
-
-
 }
