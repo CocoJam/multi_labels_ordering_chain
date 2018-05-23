@@ -26,7 +26,13 @@ public class Cluster_Fliter {
         subsetByExpression.setExpression("ATT"+(source.attribute("Cluster").index()+1)+"="+value);
         try {
             subsetByExpression.setInputFormat(source);
-            return SubsetByExpression.useFilter(source, subsetByExpression);
+            SubsetByExpression.useFilter(source, subsetByExpression);
+            Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+            Matcher matcher = pattern.matcher(source.relationName());
+            if (matcher.find()) {
+                source.setRelationName(matcher.group(0));
+            }
+            return source;
         } catch (Exception e) {
             e.printStackTrace();
         }
