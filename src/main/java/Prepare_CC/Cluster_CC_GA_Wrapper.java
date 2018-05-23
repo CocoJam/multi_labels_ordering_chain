@@ -1,6 +1,7 @@
 package Prepare_CC;
 
 import meka.classifiers.multilabel.Evaluation;
+import meka.core.MLUtils;
 import meka.core.Result;
 import weka.classifiers.lazy.IBk;
 import weka.clusterers.ClusterEvaluation;
@@ -92,6 +93,44 @@ public class Cluster_CC_GA_Wrapper {
         return feature_vectors;
     }
 
+    public List<Result> ResultsAndEvalution(List<Cluster_CC_Builder> listOfClusterBuilder) throws Exception {
+        List<Result> results = new ArrayList<>();
+        GA_CC ga_cc = null;
+        List<Feature_Vector> feature_vectors = new ArrayList<>();
+        List<GA_CC> ga_ccs = new ArrayList<>();
+        for (Cluster_CC_Builder cluster_cc_builder : listOfClusterBuilder) {
+            System.out.println("Building cluster cc builder");
+            try {
+                ga_cc = GA_CC.of(cluster_cc_builder, 20, 10);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            ga_cc.thread.start();
+            ga_ccs.add(ga_cc);
+        }
+        for (GA_CC ga_cc1 : ga_ccs) {
+            ga_cc1.thread.join();
+            String top = "PCut1";
+            String vop = "3";
+            Cluster_CC_Builder cluster_cc_builder = ga_cc1.cluster_cc_builder;
+            Base_CC cc = new Base_CC();
+            cc.prepareChain(ga_cc1.trainedChain);
+            MLUtils.prepareData(cluster_cc_builder.parsedCluster);
+            cc.buildClassifier(cluster_cc_builder.parsedCluster);
+            int numOfCV = cluster_cc_builder.parsedCluster.numInstances() > 10 ? 10 : cluster_cc_builder.parsedCluster.numInstances();
+            try {
+                Result result = Evaluation.cvModel(cc, ga_cc1.cluster_cc_builder.parsedCluster, numOfCV, top, vop);
+                results.add(result);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+        return results;
+    }
+
+
+
     public List<Result> EvaluationFeatureVector(List<Feature_Vector> feature_vectors) {
         List<Result> results = new ArrayList<>();
         for (Feature_Vector feature_vector : feature_vectors) {
@@ -111,13 +150,14 @@ public class Cluster_CC_GA_Wrapper {
 
     public static void main(String[] args) throws Exception {
         String overallCSV = "Hamming_Loss,Exact_match,Accuracy,Average";
-        for (int j = 20; j < 30; j++) {
+        for (int j = 0; j < 10; j++) {
             File file = new File("T_"+j);
             if (!file.exists()){
                 file.mkdir();
             }
-            Cluster_CC_GA_Wrapper cluster_cc_ga_wrapper = new Cluster_CC_GA_Wrapper("src/main/CAL500.arff",j);
-            List<Result> results = cluster_cc_ga_wrapper.EvaluationFeatureVector(cluster_cc_ga_wrapper.runAndReturn(cluster_cc_ga_wrapper.listOfClusterBuilder));
+            Cluster_CC_GA_Wrapper cluster_cc_ga_wrapper = new Cluster_CC_GA_Wrapper("src/main/CAL500_train.arff",j);
+//            List<Result> results = cluster_cc_ga_wrapper.EvaluationFeatureVector(cluster_cc_ga_wrapper.runAndReturn(cluster_cc_ga_wrapper.listOfClusterBuilder));
+            List<Result> results = cluster_cc_ga_wrapper.ResultsAndEvalution(cluster_cc_ga_wrapper.listOfClusterBuilder);
             double overallHamming_loss=0;
             double overallExact_match=0;
             double overallAccuracy = 0;
@@ -149,7 +189,7 @@ public class Cluster_CC_GA_Wrapper {
             bufferedWriter.write("Accuracy: "+overallAccuracy+"\n");
             bufferedWriter.write("Averaging: "+overallAverage);
             bufferedWriter.close();
-            overallCSV+=overallAverage+","+overallExact_match+","+overallHamming_loss+","+overallAccuracy+"\n";
+            overallCSV += overallAverage+","+overallExact_match+","+overallHamming_loss+","+overallAccuracy+"\n";
         }
         BufferedWriter bufferedWriter;
         bufferedWriter = new BufferedWriter(new FileWriter(new File("Overall.csv")));

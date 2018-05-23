@@ -31,32 +31,33 @@ public class Cluster_CC_Builder {
         this.dataSource = dataSource;
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(dataSource);
         Instances data = source.getDataSet();
-        if(clusterNum !=-1){
-        this.cluster = Cluster_Fliter.filter(data, clusterNum);}
-        else{
+        if (clusterNum != -1) {
+            this.cluster = Cluster_Fliter.filter(data, clusterNum);
+        } else {
             this.cluster = data;
         }
         this.parsedCluster = new Instances(this.cluster);
 
-        setUp(this.parsedCluster, threadshold);
+        setUp(this.parsedCluster, threadshold,true);
     }
 
     public Cluster_CC_Builder(int clusterNum, Instances data, double threadshold) throws Exception {
         this.clusterNum = clusterNum;
         this.cluster = Cluster_Fliter.filter(data, clusterNum);
         this.parsedCluster = new Instances(this.cluster);
-        setUp(this.parsedCluster, threadshold);
+        setUp(this.parsedCluster, threadshold, true);
     }
 
     public Cluster_CC_Builder(Instances data, double threadshold) throws Exception {
         this.parsedCluster = new Instances(data);
+        this.cluster = this.parsedCluster;
         CC cc = new CC();
         MLUtils.prepareData(data);
         cc.buildClassifier(data);
-        setUp(this.parsedCluster, threadshold);
+        setUp(this.parsedCluster, threadshold, false);
     }
 
-    private void setUp(Instances data, double threadshold) throws Exception {
+    private void setUp(Instances data, double threadshold, boolean clustered) throws Exception {
         Pattern pattern = Pattern.compile("((.+-C )(\\d+))");
         Matcher matcher = pattern.matcher(data.relationName());
         int numLabels = 0;
@@ -83,33 +84,43 @@ public class Cluster_CC_Builder {
         List<Integer> ListOfInt = new ArrayList<>();
         double degrees = (cluster.numInstances() * threadshold) * -1;
         int missingLabelCount = 0;
-
-        for (int i = listList.length - 1; i >= 0; i--) {
-            if (listList[i] < degrees) {
-                ListOfInt.add(i);
-            } else {
-                this.parsedCluster.deleteAttributeAt(i);
-                missingLabelCount++;
+        if (clustered) {
+            for (int i = listList.length - 1; i >= 0; i--) {
+                if (listList[i] < degrees) {
+                    ListOfInt.add(i);
+                } else {
+                    this.parsedCluster.deleteAttributeAt(i);
+                    missingLabelCount++;
+                }
             }
-        }
-        Collections.sort(ListOfInt);
-        int[] blah = Arrays.stream(listList).map(p -> {
-            if (p == 0) {
-                return p;
+            Collections.sort(ListOfInt);
+            int[] blah = Arrays.stream(listList).map(p -> {
+                if (p == 0) {
+                    return p;
+                }
+                return 1;
+            }).toArray();
+            data.setRelationName(group2 + (numLabels - (missingLabelCount)));
+            this.labelChain = Arrays.stream(ListOfInt.toArray(new Integer[ListOfInt.size()])).mapToInt(Integer::intValue).toArray();
+            parsedLabelNum = this.labelChain.length;
+            this.sqeuenceChain = new int[this.labelChain.length];
+            for (int i = 0; i < this.labelChain.length; i++) {
+                this.sqeuenceChain[i] = i;
             }
-            return 1;
-        }).toArray();
-        data.setRelationName(group2 + (numLabels - (missingLabelCount)));
-        this.labelChain = Arrays.stream(ListOfInt.toArray(new Integer[ListOfInt.size()])).mapToInt(Integer::intValue).toArray();
-        parsedLabelNum = this.labelChain.length;
-        this.sqeuenceChain = new int[this.labelChain.length];
-        for (int i = 0; i < this.labelChain.length; i++) {
-            this.sqeuenceChain[i] = i;
+        } else {
+            int[] labelChain = new int[numLabels];
+            for (int i = 0; i < numLabels; i++) {
+                labelChain[i]=i;
+            }
+            this.parsedCluster = data;
+            this.labelChain = labelChain;
+            this.parsedLabelNum = labelChain.length;
+            this.sqeuenceChain =labelChain;
         }
     }
 
     public static void main(String[] args) throws Exception {
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff",3,0);
+        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", 3, 0);
         System.out.println(cluster_cc_builder.labelChain.length);
 
         ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500.arff");
@@ -124,8 +135,8 @@ public class Cluster_CC_Builder {
 
         String top = "PCut1";
         String vop = "3";
-        int numOfCV = data.numInstances() > 10 ? 10 :  data.numInstances();
-        Result result = Evaluation.cvModel(baggingML,data, numOfCV, top, vop);
+        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
+        Result result = Evaluation.cvModel(baggingML, data, numOfCV, top, vop);
         double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming score").toString());
         double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
         double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
