@@ -26,7 +26,7 @@ public class Cluster_Fliter {
         subsetByExpression.setExpression("ATT"+(source.attribute("Cluster").index()+1)+"="+value);
         try {
             subsetByExpression.setInputFormat(source);
-            SubsetByExpression.useFilter(source, subsetByExpression);
+           source= SubsetByExpression.useFilter(source, subsetByExpression);
             Pattern pattern = Pattern.compile("(.+-C (\\d+))");
             Matcher matcher = pattern.matcher(source.relationName());
             if (matcher.find()) {
@@ -51,6 +51,7 @@ public class Cluster_Fliter {
 
     public static Instances knn_inference(Instances trainingSet, Instances testSet, int k) throws Exception {
         Instances dataCluster = new Instances(trainingSet);
+//        System.out.println(dataCluster.numAttributes());
         Instances dataTest = new Instances(testSet);
         Pattern pattern = Pattern.compile("(.+-C (\\d+))");
         Matcher matcher = pattern.matcher(dataTest.relationName());
@@ -66,22 +67,26 @@ public class Cluster_Fliter {
         Remove remove = new Remove();
         remove.setAttributeIndicesArray(blah);
         remove.setInputFormat(trainingSet);
-
+        trainingSet = Filter.useFilter(trainingSet, remove);
         IBk iBk = new IBk();
         trainingSet.setClassIndex(trainingSet.numAttributes()-1);
         iBk.buildClassifier(trainingSet);
         Attribute attribute = new Attribute("Cluster");
 
         testSet.insertAttributeAt(attribute,testSet.numAttributes());
+        remove.setInputFormat(testSet);
         testSet  = Filter.useFilter(testSet, remove);
         testSet.setClassIndex(testSet.numAttributes()-1);
-
+//        System.out.println(testSet.numAttributes());
+//        System.out.println(trainingSet.numAttributes());
         iBk.setKNN(k);
+        dataTest.insertAttributeAt(attribute,dataTest.numAttributes());
         for (int i = 0; i < dataTest.numInstances(); i++) {
             double d =iBk.classifyInstance(testSet.get(i));
-            System.out.println(Math.round(d));
+//            System.out.println(Math.round(d));
             dataTest.get(i).setValue(dataTest.get(i).attribute(dataTest.get(i).numAttributes()-1), Math.round(d));
         }
+//        System.out.println(dataTest.numAttributes());
         return dataTest;
     }
 

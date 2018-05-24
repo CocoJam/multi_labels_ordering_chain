@@ -1,8 +1,10 @@
 package Prepare_CC;
 
+import WEKA_Test_Ground.Cluster_Fliter;
 import io.jenetics.*;
 import io.jenetics.engine.*;
 import io.jenetics.util.*;
+import meka.classifiers.multilabel.CC;
 import meka.classifiers.multilabel.Evaluation;
 import meka.core.MLUtils;
 import meka.core.Result;
@@ -11,6 +13,9 @@ import scala.Int;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Remove;
+import weka.gui.experiment.ResultsPanel;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -182,7 +187,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         {
             int[] q = Arrays.stream(p.toArray(new Integer[p.size()])).mapToInt(Integer::intValue).toArray();
             try {
-//                System.out.println(Arrays.toString(q));
+                System.out.println(Arrays.toString(q));
 
                 result = (CC_Util.ccRun(cluster_cc_builder, 66, q));
                 double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming loss").toString());
@@ -272,39 +277,74 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
 
 
     public static void main(String[] args) throws Exception {
-//        long time1 = System.nanoTime();
-//        List<GA_CC> ga_ccs = new ArrayList<>();
-//        for (int i = 0; i < 8; i++) {
-//            Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", i, 0);
-//            GA_CC ga_cc = GA_CC.of(cluster_cc_builder, 20, 10);
-//            ga_cc.thread.start();
-//            ga_ccs.add(ga_cc);
+//        for (int i = 0; i < 10; i++) {
+//            Cluster_CC_GA_Wrapper cluster_cc_ga_wrapper = new Cluster_CC_GA_Wrapper("src/main/CAL500_train.arff",i);
+//            Instances data = (new ConverterUtils.DataSource("src/main/CAL500_test.arff")).getDataSet();
+//            Instances dataTest = new Instances(data);
+////        List<int[]> results = cluster_cc_ga_wrapper.ResultsChains(cluster_cc_ga_wrapper.listOfClusterBuilder);
+//            Instances testInstances  =  Cluster_Fliter.knn_inference(cluster_cc_ga_wrapper.clustered,dataTest,cluster_cc_ga_wrapper.clusterNumber);
+//            System.out.println(testInstances);
 //        }
 //
-//        for (GA_CC ga_cc : ga_ccs) {
-//            ga_cc.thread.join();
-//        }
-//        System.out.println("OverallTime: ");
-//        long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
-//        System.out.println(time2);
-        ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/main/CAL500_clustered_adjusted.arff");
-        Instances data = source.getDataSet();
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(data, 0);
-        GA_CC ga_cc = GA_CC.of(cluster_cc_builder, 30, 10);
-        ga_cc.thread.start();
-        ga_cc.join();
-        int[] labelchain = ga_cc.cluster_cc_builder.labelChain;
-        Base_CC cc = new Base_CC();
-        cc.prepareChain(labelchain);
-        MLUtils.prepareData(data);
-        cc.buildClassifier(data);
-        int numOfCV = cluster_cc_builder.parsedCluster.numInstances() > 10 ? 10 : cluster_cc_builder.parsedCluster.numInstances();
-        String top = "PCut1";
-        String vop = "3";
-        Result result = Evaluation.cvModel(cc, data, numOfCV, top, vop);
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("Overall_GA_CC_Results")));
-        bufferedWriter.write(result.toString());
+//        long time1 = System.nanoTime();
+        for (int i = 0; i < 2; i++) {
+            long time1 = System.nanoTime();
+            Instances train = (new ConverterUtils.DataSource("Train_Cluster_" + i + "/" + i + ".arff")).getDataSet();
+            Instances test = (new ConverterUtils.DataSource("src/main/CAL500_test.arff")).getDataSet();
+            int numberOfCluster = train.attributeStats(train.numAttributes() - 1).distinctCount - 1;
+//        System.out.println(train.attributeStats(train.numAttributes()-1).distinctCount);
+            List<Cluster_CC_Builder> cluster_cc_builders = new ArrayList<>();
+            for (int j = 0; j < numberOfCluster; j++) {
+                Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(j, train, 0);
+                cluster_cc_builders.add(cluster_cc_builder);
+            }
+            List<int[]> results = Cluster_CC_GA_Wrapper.ResultsChains(cluster_cc_builders);
+            System.out.println("One GA");
+            System.out.println(System.nanoTime()-time1);
+            for (int[] result : results) {
+                System.out.println(Arrays.toString(result));
+                System.out.println(result.length);
+            }
 
+            Instances testInstances = Cluster_Fliter.knn_inference(train, test, 5);
+            for (int j = 0; j < numberOfCluster; j++) {
+                Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(j, train, 0);
+                Instances clusterX = Cluster_Fliter.filter(testInstances, j);
+                Remove remove = new Remove();
+                remove.setAttributeIndicesArray(cluster_cc_builder.labelsDropped);
+                remove.setInputFormat(clusterX);
+                clusterX = Filter.useFilter(clusterX, remove);
+                Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+                Matcher matcher = pattern.matcher(clusterX.relationName());
+                if (matcher.find()) {
+                    clusterX.setRelationName(cluster_cc_builder.parsedCluster.relationName());
+                }
+                Base_CC cc = new Base_CC();
+                MLUtils.prepareData(cluster_cc_builder.parsedCluster);
+                MLUtils.prepareData(clusterX);
+                cc.prepareChain(results.get(j));
+                cc.buildClassifier(cluster_cc_builder.parsedCluster);
+//                System.out.println(clusterX.relationName());
+//                System.out.println(cluster_cc_builder.parsedCluster.relationName());
+                String top = "PCut1";
+                String vop = "3";
+                Result evaluateModel = Evaluation.evaluateModel(cc, cluster_cc_builder.parsedCluster, clusterX, top, vop);
+//                System.out.println(evaluateModel);
+            }
+            System.out.println("One trial: ");
+            System.out.println(System.nanoTime()-time1);
+//            System.out.println(Arrays.toString(cluster_cc_builder.sqeuenceChain));
+        }
+
+//        System.out.println(cluster_cc_builder.labelChain.length);
+//        System.out.println(cluster_cc_builder.sqeuenceChain.length);
+//        Base_CC cc = new Base_CC();
+//        MLUtils.prepareData(cluster_cc_builder.parsedCluster);
+//
+//        cc.prepareChain(cluster_cc_builder.labelChain);
+//        System.out.println(cluster_cc_builder.parsedCluster);
+
+//        System.out.println(testInstances);
     }
 
 }

@@ -108,27 +108,28 @@ public class CC_Util {
         int trainSize = (int) (data.numInstances() * splitRate / 100.0);
         Instances train = new Instances(data, 0, trainSize);
         Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
-        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
-        Matcher matcher = pattern.matcher(data.relationName());
-        int numLabels = 0;
-        if (matcher.find()) {
-            data.setRelationName(matcher.group(0));
-            numLabels = Integer.parseInt(matcher.group(2));
-        }
+//        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+//        Matcher matcher = pattern.matcher(data.relationName());
+//        int numLabels = 0;
+//        if (matcher.find()) {
+//            data.setRelationName(matcher.group(0));
+//            numLabels = Integer.parseInt(matcher.group(2));
+//        }
         long time1 = System.nanoTime();
 
         Base_CC cc = new Base_CC();
 
         cc.prepareChain(ints);
-        MLUtils.prepareData(data);
+        MLUtils.prepareData(train);
+        MLUtils.prepareData(test);
 //        System.out.println("Building");
-        cc.buildClassifier(data);
+        cc.buildClassifier(train);
 
 //        cc.rebuildClassifier(ints,data);
         String top = "PCut1";
         String vop = "3";
-        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
-        Result result = Evaluation.cvModel(cc, data, 3, top, vop);
+//        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
+        Result result = Evaluation.evaluateModel(cc, train, test, top, vop);
 //        System.out.println(Arrays.toString(cc.retrieveChain()));
         return result;
     }

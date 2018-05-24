@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 public class Cluster_CC_Builder {
     public int[] labelChain;
     public int[] sqeuenceChain;
+    public int[] labelsDropped;
     public Instances cluster;
     public Instances parsedCluster;
     public int clusterNum;
@@ -80,8 +81,10 @@ public class Cluster_CC_Builder {
                 }
             }
         }
+//        System.out.println(Arrays.toString(listList));
         this.featureVector = featureList;
         List<Integer> ListOfInt = new ArrayList<>();
+        List<Integer> LabelsDropped = new ArrayList<>();
         double degrees = (cluster.numInstances() * threadshold) * -1;
         int missingLabelCount = 0;
         if (clustered) {
@@ -90,9 +93,11 @@ public class Cluster_CC_Builder {
                     ListOfInt.add(i);
                 } else {
                     this.parsedCluster.deleteAttributeAt(i);
+                    LabelsDropped.add(i);
                     missingLabelCount++;
                 }
             }
+            System.out.println(missingLabelCount);
             Collections.sort(ListOfInt);
             int[] blah = Arrays.stream(listList).map(p -> {
                 if (p == 0) {
@@ -102,6 +107,8 @@ public class Cluster_CC_Builder {
             }).toArray();
             data.setRelationName(group2 + (numLabels - (missingLabelCount)));
             this.labelChain = Arrays.stream(ListOfInt.toArray(new Integer[ListOfInt.size()])).mapToInt(Integer::intValue).toArray();
+            this.labelsDropped = Arrays.stream(LabelsDropped.toArray(new Integer[LabelsDropped.size()])).mapToInt(Integer::intValue).toArray();
+//            System.out.println(Arrays.toString(this.labelChain));
             parsedLabelNum = this.labelChain.length;
             this.sqeuenceChain = new int[this.labelChain.length];
             for (int i = 0; i < this.labelChain.length; i++) {
