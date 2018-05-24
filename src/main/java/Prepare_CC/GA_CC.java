@@ -1,12 +1,21 @@
 package Prepare_CC;
 
+import WEKA_Test_Ground.Cluster_Fliter;
 import io.jenetics.*;
 import io.jenetics.engine.*;
 import io.jenetics.util.*;
+import meka.classifiers.multilabel.CC;
+import meka.classifiers.multilabel.Evaluation;
+import meka.core.MLUtils;
 import meka.core.Result;
 import mst.In;
 import scala.Int;
+import weka.core.Instance;
 import weka.core.Instances;
+import weka.core.converters.ConverterUtils;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Remove;
+import weka.gui.experiment.ResultsPanel;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -21,6 +30,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
 import static io.jenetics.engine.EvolutionResult.toBestEvolutionResult;
@@ -30,19 +41,119 @@ import static java.util.Objects.requireNonNull;
 
 public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Integer>, Double> {
     private final ISeq<Integer> _points;
-    public final Cluster_CC_Builder cluster_cc_builder;
+    public Cluster_CC_Builder cluster_cc_builder = null;
     public final Thread thread;
     public String trackingString = "";
     public Result result;
     public int[] trainedChain;
 
     public EvolutionStatistics<Double, ?> statistics;
-//    public File file;
-    public  BufferedWriter bufferedWriter;
+    //    public File file;
+    public BufferedWriter bufferedWriter;
 //    public static GA_CC of(Instances data, double threadhold, int iteration, int popSize) throws Exception {
 //        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(data, threadhold);
 //        return of(cluster_cc_builder, iteration, popSize);
 //    }
+
+    public static GA_CC of(Instances data, int iteration, int popSize) throws IOException {
+        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+        Matcher matcher = pattern.matcher(data.relationName());
+        int numLabels = 0;
+        if (matcher.find()) {
+            data.setRelationName(matcher.group(0));
+            numLabels = Integer.parseInt(matcher.group(2));
+        }
+        final MSeq<Integer> points = MSeq.ofLength(numLabels);
+        for (int i = 0; i < numLabels; ++i) {
+            points.set(i, i);
+        }
+        return new GA_CC(points.toISeq(), data, iteration, popSize);
+    }
+
+    public GA_CC(ISeq<Integer> _points, Instances instances, int iteration, int popSize) throws IOException {
+        this._points = requireNonNull(_points);
+
+
+        this.thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    trainedChain = getOptimalChain(instances, popSize, iteration);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+//        this.thread.start();
+    }
+
+
+    private int[] getOptimalChain(Instances instances, int popSize, int iterations) throws IOException {
+        long time1 = System.nanoTime();
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        GA_CC basic_ga = GA_CC.of(instances, iterations, popSize);
+        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(1)).executor(executorService).build();
+        statistics = EvolutionStatistics.ofNumber();
+        Phenotype<EnumGene<Integer>, Double> best = engine.stream().limit(iterations).peek(r ->
+                {
+                    trackingString += ("Generate," + r.getTotalGenerations() + ",Best genotype fitness," + r.getBestFitness() + "\n");
+                }
+        ).peek(statistics).collect(toBestPhenotype());
+        System.out.println(statistics);
+        Chromosome<EnumGene<Integer>> enumGene = best.getGenotype().getChromosome();
+        int[] blah = new int[enumGene.length()];
+        for (int i = 0; i < enumGene.length(); i++) {
+            blah[i] = Integer.parseInt(enumGene.getGene(i).toString());
+        }
+        System.out.println(Arrays.toString(blah));
+        trackingString += ("Best Genotype label chains: " + Arrays.toString(blah) + "\n");
+
+        long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
+        trackingString += ("overall Stats: \n");
+        trackingString += (statistics.toString() + "\n");
+        trackingString += ("Population size: " + engine.getPopulationSize() + ",Alterers: " + engine.getAlterer() + ",SurvivorsSelectors: " + engine.getSurvivorsSelector() + ",Optimizer: " + engine.getOptimize() + "\n");
+        trackingString += ("Total time " + time2 + "\n");
+//        trackingString+="Total time: "+time2;
+        System.out.println(time2);
+        bufferedWriter = new BufferedWriter(new FileWriter(new File("Non_clustered_GA_CC.csv")));
+        bufferedWriter.write(trackingString);
+        bufferedWriter.close();
+        return blah;
+    }
+
+    private int[] getOptimalChainEx(Cluster_CC_Builder cluster_cc_builder, int popSize, int iterations, int threads) throws IOException {
+        long time1 = System.nanoTime();
+        ExecutorService executorService = Executors.newFixedThreadPool(threads);
+        GA_CC basic_ga = GA_CC.of(cluster_cc_builder, iterations, popSize);
+        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(1)).executor(executorService).build();
+        statistics = EvolutionStatistics.ofNumber();
+        Phenotype<EnumGene<Integer>, Double> best = engine.stream().limit(iterations).peek(r ->
+                {
+                    trackingString += ("Generate," + r.getTotalGenerations() + ",Best genotype fitness," + r.getBestFitness() + "\n");
+
+                }
+        ).peek(statistics).collect(toBestPhenotype());
+        System.out.println(statistics);
+        Chromosome<EnumGene<Integer>> enumGene = best.getGenotype().getChromosome();
+        int[] blah = new int[enumGene.length()];
+        for (int i = 0; i < enumGene.length(); i++) {
+            blah[i] = Integer.parseInt(enumGene.getGene(i).toString());
+        }
+        System.out.println(Arrays.toString(blah));
+        bufferedWriter.write("Best Genotype label chains: " + Arrays.toString(blah) + "\n");
+
+        long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
+        trackingString += ("overall Stats: \n");
+        trackingString += (statistics.toString() + "\n");
+        trackingString += ("Population size: " + engine.getPopulationSize() + ",Alterers: " + engine.getAlterer() + ",SurvivorsSelectors: " + engine.getSurvivorsSelector() + ",Optimizer: " + engine.getOptimize() + "\n");
+        trackingString += ("Total time " + time2);
+//        trackingString+="Total time: "+time2;
+        System.out.println(time2);
+        bufferedWriter = new BufferedWriter(new FileWriter(new File("cluster_" + cluster_cc_builder.clusterNum + "Information.csv")));
+        bufferedWriter.write(trackingString);
+        bufferedWriter.close();
+        return blah;
+    }
 
     public static GA_CC of(Cluster_CC_Builder cluster_cc_builder, int iteration, int popSize) throws IOException {
         final MSeq<Integer> points = MSeq.ofLength(cluster_cc_builder.sqeuenceChain.length);
@@ -61,7 +172,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
             @Override
             public void run() {
                 try {
-                 trainedChain = getOptimalChain(cluster_cc_builder, popSize, iteration);
+                    trainedChain = getOptimalChain(cluster_cc_builder, popSize, iteration);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -76,14 +187,14 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         {
             int[] q = Arrays.stream(p.toArray(new Integer[p.size()])).mapToInt(Integer::intValue).toArray();
             try {
-//                System.out.println(Arrays.toString(q));
+                System.out.println(Arrays.toString(q));
 
                 result = (CC_Util.ccRun(cluster_cc_builder, 66, q));
                 double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming loss").toString());
                 double exact_match = Double.parseDouble(result.getMeasurement("Exact match").toString());
                 double accuracy = Double.parseDouble(result.getMeasurement("Accuracy").toString());
                 double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
-                trackingString+=( "Accuracy averages: " + averaging);
+                trackingString += ("Accuracy averages: " + averaging);
 //                this.trackingString +=
                 return averaging;
             } catch (Exception e) {
@@ -101,11 +212,11 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
     private int[] getOptimalChain(Cluster_CC_Builder cluster_cc_builder, int popSize, int iterations) throws IOException {
         long time1 = System.nanoTime();
         GA_CC basic_ga = GA_CC.of(cluster_cc_builder, iterations, popSize);
-        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(1)).build();
+        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(0.5)).build();
         statistics = EvolutionStatistics.ofNumber();
         Phenotype<EnumGene<Integer>, Double> best = engine.stream().limit(iterations).peek(r ->
                 {
-                        trackingString+=("Generate,"+r.getTotalGenerations() + ",Best genotype fitness," + r.getBestFitness()+"\n");
+                    trackingString += ("Generate," + r.getTotalGenerations() + ",Best genotype fitness," + r.getBestFitness() + "\n");
                 }
         ).peek(statistics).collect(toBestPhenotype());
         System.out.println(statistics);
@@ -115,72 +226,146 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
             blah[i] = Integer.parseInt(enumGene.getGene(i).toString());
         }
         System.out.println(Arrays.toString(blah));
-        trackingString +=("Best Genotype label chains: "+Arrays.toString(blah)+"\n");
+        trackingString += ("Best Genotype label chains: " + Arrays.toString(blah) + "\n");
 
         long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
-        trackingString +=( "overall Stats: \n");
-        trackingString +=(statistics.toString()+"\n");
-        trackingString +=("Population size: "+engine.getPopulationSize()+",Alterers: "+engine.getAlterer()+ ",SurvivorsSelectors: "+engine.getSurvivorsSelector()+",Optimizer: "+engine.getOptimize()+"\n");
-        trackingString +=("Total time "+time2);
+        trackingString += ("overall Stats: \n");
+        trackingString += (statistics.toString() + "\n");
+        trackingString += ("Population size: " + engine.getPopulationSize() + ",Alterers: " + engine.getAlterer() + ",SurvivorsSelectors: " + engine.getSurvivorsSelector() + ",Optimizer: " + engine.getOptimize() + "\n");
+        trackingString += ("Total time " + time2);
 //        trackingString+="Total time: "+time2;
         System.out.println(time2);
-        bufferedWriter = new BufferedWriter(new FileWriter(new File("cluster_"+cluster_cc_builder.clusterNum+"Information.csv")));
+        bufferedWriter = new BufferedWriter(new FileWriter(new File("cluster_" + cluster_cc_builder.clusterNum + "Information.csv")));
         bufferedWriter.write(trackingString);
         bufferedWriter.close();
         return blah;
     }
-
-    private int[] getOptimalChainEx(Cluster_CC_Builder cluster_cc_builder, int popSize, int iterations, int threads) throws IOException {
-        long time1 = System.nanoTime();
-        ExecutorService executorService = Executors.newFixedThreadPool(threads);
-        GA_CC basic_ga = GA_CC.of(cluster_cc_builder, iterations, popSize);
-        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(1)).executor(executorService).build();
-        statistics = EvolutionStatistics.ofNumber();
-        Phenotype<EnumGene<Integer>, Double> best = engine.stream().limit(iterations).peek(r ->
-                {
-                       trackingString +=("Generate,"+r.getTotalGenerations() + ",Best genotype fitness," + r.getBestFitness()+"\n");
-
-                }
-        ).peek(statistics).collect(toBestPhenotype());
-        System.out.println(statistics);
-        Chromosome<EnumGene<Integer>> enumGene = best.getGenotype().getChromosome();
-        int[] blah = new int[enumGene.length()];
-        for (int i = 0; i < enumGene.length(); i++) {
-            blah[i] = Integer.parseInt(enumGene.getGene(i).toString());
-        }
-        System.out.println(Arrays.toString(blah));
-        bufferedWriter.write("Best Genotype label chains: "+Arrays.toString(blah)+"\n");
-
-        long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
-        trackingString +=( "overall Stats: \n");
-        trackingString +=(statistics.toString()+"\n");
-        trackingString +=("Population size: "+engine.getPopulationSize()+",Alterers: "+engine.getAlterer()+ ",SurvivorsSelectors: "+engine.getSurvivorsSelector()+",Optimizer: "+engine.getOptimize()+"\n");
-        trackingString +=("Total time "+time2);
-//        trackingString+="Total time: "+time2;
-        System.out.println(time2);
-        bufferedWriter = new BufferedWriter(new FileWriter(new File("cluster_"+cluster_cc_builder.clusterNum+"Information.csv")));
-        bufferedWriter.write(trackingString);
-        bufferedWriter.close();
-        return blah;
-    }
+//
+//    private int[] getOptimalChainEx(Cluster_CC_Builder cluster_cc_builder, int popSize, int iterations, int threads) throws IOException {
+//        long time1 = System.nanoTime();
+//        ExecutorService executorService = Executors.newFixedThreadPool(threads);
+//        GA_CC basic_ga = GA_CC.of(cluster_cc_builder, iterations, popSize);
+//        Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(1)).executor(executorService).build();
+//        statistics = EvolutionStatistics.ofNumber();
+//        Phenotype<EnumGene<Integer>, Double> best = engine.stream().limit(iterations).peek(r ->
+//                {
+//                       trackingString +=("Generate,"+r.getTotalGenerations() + ",Best genotype fitness," + r.getBestFitness()+"\n");
+//
+//                }
+//        ).peek(statistics).collect(toBestPhenotype());
+//        System.out.println(statistics);
+//        Chromosome<EnumGene<Integer>> enumGene = best.getGenotype().getChromosome();
+//        int[] blah = new int[enumGene.length()];
+//        for (int i = 0; i < enumGene.length(); i++) {
+//            blah[i] = Integer.parseInt(enumGene.getGene(i).toString());
+//        }
+//        System.out.println(Arrays.toString(blah));
+//        bufferedWriter.write("Best Genotype label chains: "+Arrays.toString(blah)+"\n");
+//
+//        long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
+//        trackingString +=( "overall Stats: \n");
+//        trackingString +=(statistics.toString()+"\n");
+//        trackingString +=("Population size: "+engine.getPopulationSize()+",Alterers: "+engine.getAlterer()+ ",SurvivorsSelectors: "+engine.getSurvivorsSelector()+",Optimizer: "+engine.getOptimize()+"\n");
+//        trackingString +=("Total time "+time2);
+////        trackingString+="Total time: "+time2;
+//        System.out.println(time2);
+//        bufferedWriter = new BufferedWriter(new FileWriter(new File("cluster_"+cluster_cc_builder.clusterNum+"Information.csv")));
+//        bufferedWriter.write(trackingString);
+//        bufferedWriter.close();
+//        return blah;
+//    }
 
 
     public static void main(String[] args) throws Exception {
-        long time1 = System.nanoTime();
-        List<GA_CC> ga_ccs = new ArrayList<>();
-        for (int i = 0; i < 8; i++) {
-            Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", i, 0);
-            GA_CC ga_cc = GA_CC.of(cluster_cc_builder, 20, 10);
-            ga_cc.thread.start();
-            ga_ccs.add(ga_cc);
+//        for (int i = 0; i < 10; i++) {
+//            Cluster_CC_GA_Wrapper cluster_cc_ga_wrapper = new Cluster_CC_GA_Wrapper("src/main/CAL500_train.arff",i);
+//            Instances data = (new ConverterUtils.DataSource("src/main/CAL500_test.arff")).getDataSet();
+//            Instances dataTest = new Instances(data);
+////        List<int[]> results = cluster_cc_ga_wrapper.ResultsChains(cluster_cc_ga_wrapper.listOfClusterBuilder);
+//            Instances testInstances  =  Cluster_Fliter.knn_inference(cluster_cc_ga_wrapper.clustered,dataTest,cluster_cc_ga_wrapper.clusterNumber);
+//            System.out.println(testInstances);
+//        }
+//
+//        long time1 = System.nanoTime();
+        
+        for (int i = 0; i < 10; i++) {
+            long time1 = System.nanoTime();
+            Instances train = (new ConverterUtils.DataSource("Train_Cluster_" + i + "/" + i + ".arff")).getDataSet();
+            Instances test = (new ConverterUtils.DataSource("src/main/CAL500_test.arff")).getDataSet();
+            int numberOfCluster = train.attributeStats(train.numAttributes() - 1).distinctCount - 1;
+//        System.out.println(train.attributeStats(train.numAttributes()-1).distinctCount);
+            List<Cluster_CC_Builder> cluster_cc_builders = new ArrayList<>();
+            String ClusterTracking = "";
+            for (int j = 0; j < numberOfCluster; j++) {
+                Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(j, train, 0);
+                cluster_cc_builders.add(cluster_cc_builder);
+            }
+            List<int[]> results = Cluster_CC_GA_Wrapper.ResultsChains(cluster_cc_builders);
+            System.out.println("One GA");
+            System.out.println(System.nanoTime()-time1);
+            for (int j = 0; j < results.size(); j++) {
+                ClusterTracking +="Trial,"+i+ ",Cluster,"+j+",best result chain,"+Arrays.toString(results.get(j))+"\n";
+            }
+
+            double overallExact_match= 0;
+            double overallHamming_loss=0;
+            double overallAccuracy=0;
+            double overallAverage=0;
+            Instances testInstances = Cluster_Fliter.knn_inference(train, test, 5);
+            for (int j = 0; j < numberOfCluster; j++) {
+                Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(j, train, 0);
+                Instances clusterX = Cluster_Fliter.filter(testInstances, j);
+                Remove remove = new Remove();
+                remove.setAttributeIndicesArray(cluster_cc_builder.labelsDropped);
+                remove.setInputFormat(clusterX);
+                clusterX = Filter.useFilter(clusterX, remove);
+                Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+                Matcher matcher = pattern.matcher(clusterX.relationName());
+                if (matcher.find()) {
+                    clusterX.setRelationName(cluster_cc_builder.parsedCluster.relationName());
+                }
+                Base_CC cc = new Base_CC();
+                MLUtils.prepareData(cluster_cc_builder.parsedCluster);
+                MLUtils.prepareData(clusterX);
+                cc.prepareChain(results.get(j));
+                cc.buildClassifier(cluster_cc_builder.parsedCluster);
+//                System.out.println(clusterX.relationName());
+//                System.out.println(cluster_cc_builder.parsedCluster.relationName());
+                String top = "PCut1";
+                String vop = "3";
+                Result evaluateModel = Evaluation.evaluateModel(cc, cluster_cc_builder.parsedCluster, clusterX, top, vop);
+                double hamming_loss = Double.parseDouble(evaluateModel.getMeasurement("Hamming loss").toString());
+                double exact_match = Double.parseDouble(evaluateModel.getMeasurement("Exact match").toString());
+                double accuracy = Double.parseDouble(evaluateModel.getMeasurement("Accuracy").toString());
+                overallExact_match+=exact_match/ numberOfCluster;
+                overallHamming_loss+=hamming_loss/ numberOfCluster;
+                overallAccuracy+=accuracy/ numberOfCluster;
+
+                double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
+                overallAverage+= averaging/results.size();
+//                System.out.println(evaluateModel);
+            }
+           BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("T_"+i+".csv")));
+            bufferedWriter.write(ClusterTracking);
+            bufferedWriter.write("Hamming_loss, "+overallHamming_loss+"\n");
+            bufferedWriter.write("Exact_match, "+overallExact_match+"\n");
+            bufferedWriter.write("Accuracy, "+overallAccuracy+"\n");
+            bufferedWriter.write("Averaging, "+overallAverage);
+            bufferedWriter.close();
+            System.out.println("One trial: ");
+            System.out.println(System.nanoTime()-time1);
+//            System.out.println(Arrays.toString(cluster_cc_builder.sqeuenceChain));
         }
 
-        for (GA_CC ga_cc : ga_ccs) {
-            ga_cc.thread.join();
-        }
-        System.out.println("OverallTime: ");
-        long time2 = TimeUnit.SECONDS.convert(System.nanoTime() - time1, TimeUnit.NANOSECONDS);
-        System.out.println(time2);
+//        System.out.println(cluster_cc_builder.labelChain.length);
+//        System.out.println(cluster_cc_builder.sqeuenceChain.length);
+//        Base_CC cc = new Base_CC();
+//        MLUtils.prepareData(cluster_cc_builder.parsedCluster);
+//
+//        cc.prepareChain(cluster_cc_builder.labelChain);
+//        System.out.println(cluster_cc_builder.parsedCluster);
 
+//        System.out.println(testInstances);
     }
+
 }

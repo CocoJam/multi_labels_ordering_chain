@@ -31,31 +31,51 @@ import static java.lang.Float.NaN;
 
 
 
-public class cluster_trial {
-    public static void main(String[] args) throws Exception {
+public class Graph_processing {
 
 
-        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", 4, 0);
-        Instances cluster = cluster_cc_builder.cluster;
-        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
-        Matcher matcher = pattern.matcher(cluster.relationName());
-        int numLabels = 0;
-        if (matcher.find()) {
-            cluster.setRelationName(matcher.group(0));
-            numLabels = Integer.parseInt(matcher.group(2));
-            System.out.println(numLabels);
-        }
-        int[] labels =cluster_cc_builder.labelChain;
+    private Cluster_CC_Builder cluster_cc_builder;
+    private Instances cluster;
+    private int[] labels;
+    private int[] seqIndex;
+    private int intNum;
+    private int labNum;
+    int[] finalisedOrder;
+
+
+
+
+    public Graph_processing(Cluster_CC_Builder cc ){
+        this.cluster_cc_builder = cc;
+        cluster = cc.cluster;
+        labels =cc.labelChain;
+        seqIndex = cc.sqeuenceChain;
+        intNum = cluster.numInstances();
+        labNum = labels.length;
+        finalisedOrder = new int[labNum];
+
+    }
+
+
+
+    public int[] optimize_order() {
+
+
+//        Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder("src/main/CAL500_clustered_adjusted.arff", 4, 0);
+//        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
+//        Matcher matcher = pattern.matcher(cluster.relationName());
+//        int numLabels = 0;
+//        if (matcher.find()) {
+//            cluster.setRelationName(matcher.group(0));
+//            numLabels = Integer.parseInt(matcher.group(2));
+//            System.out.println(numLabels);
+//        }
 //        for (int i = 0; i < numLabels; i++) {
 //            labels[i] =i;
 //        }
 //        int[] labels = cluster_cc_builder.labelChain;
         System.out.println("Label chain: " + labels.length);
-        int[] seqIndex = cluster_cc_builder.sqeuenceChain;
 
-        int intNum = cluster.numInstances();
-        int labNum = labels.length;
-        int[] finalisedOrder = new int[labNum];
         //final double thres = 0.2;
         ArrayList<double[]> aug_inst = new ArrayList<>();
 
@@ -223,13 +243,13 @@ public class cluster_trial {
 
         //Pack to array
        for(int i =0; i < labNum; i++){
-           int ind = Integer.parseInt(nodeSet.get(i).getId());
-           finalisedOrder[i] = ind;
+           int ind = getArrayIndex(labels,Integer.parseInt(nodeSet.get(i).getId()));
+           finalisedOrder[i] = seqIndex[ind];
        }
         System.out.println(Arrays.toString(finalisedOrder));
 
-        graph.display();
-        tree.display();
+        //graph.display();
+        //tree.display();
 //        Base_CC cc = new Base_CC();
 //
 //        System.out.println(cluster);
@@ -243,6 +263,22 @@ public class cluster_trial {
 //        Result r = Evaluation.cvModel(cc, cluster,10,top, vop );
 //        System.out.println(Arrays.toString(finalisedOrder));
         //System.out.println(r);
+        return this.finalisedOrder;
+    }
+
+
+
+    private int getArrayIndex(int[] arr,int value) {
+
+        int k=-1;
+        for(int i=0;i<arr.length;i++){
+
+            if(arr[i]==value){
+                k=i;
+                break;
+            }
         }
+        return k;
+    }
     }
 
