@@ -187,7 +187,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         {
             int[] q = Arrays.stream(p.toArray(new Integer[p.size()])).mapToInt(Integer::intValue).toArray();
             try {
-                System.out.println(Arrays.toString(q));
+//                System.out.println(Arrays.toString(q));
 
                 result = (CC_Util.ccRun(cluster_cc_builder, 66, q));
                 double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming loss").toString());
@@ -290,8 +290,8 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         
         for (int i = 0; i < 10; i++) {
             long time1 = System.nanoTime();
-            Instances train = (new ConverterUtils.DataSource("Train_Cluster_" + i + "/" + i + ".arff")).getDataSet();
-            Instances test = (new ConverterUtils.DataSource("src/main/CAL500_test.arff")).getDataSet();
+            Instances train = (new ConverterUtils.DataSource("Split_" + i + "/CAL500_train.arff")).getDataSet();
+            Instances test = (new ConverterUtils.DataSource("Split_" + i + "/CAL500_test.arff")).getDataSet();
             int numberOfCluster = train.attributeStats(train.numAttributes() - 1).distinctCount - 1;
 //        System.out.println(train.attributeStats(train.numAttributes()-1).distinctCount);
             List<Cluster_CC_Builder> cluster_cc_builders = new ArrayList<>();
@@ -329,23 +329,29 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
                 MLUtils.prepareData(clusterX);
                 cc.prepareChain(results.get(j));
                 cc.buildClassifier(cluster_cc_builder.parsedCluster);
-//                System.out.println(clusterX.relationName());
-//                System.out.println(cluster_cc_builder.parsedCluster.relationName());
                 String top = "PCut1";
                 String vop = "3";
-                Result evaluateModel = Evaluation.evaluateModel(cc, cluster_cc_builder.parsedCluster, clusterX, top, vop);
+                Result evaluateModel;
+                try{ evaluateModel = Evaluation.evaluateModel(cc, cluster_cc_builder.parsedCluster, clusterX, top, vop);}
+                catch (ArrayIndexOutOfBoundsException e){
+                    System.out.println(e);
+                    continue;
+                }
                 double hamming_loss = Double.parseDouble(evaluateModel.getMeasurement("Hamming loss").toString());
+                System.out.println(hamming_loss);
                 double exact_match = Double.parseDouble(evaluateModel.getMeasurement("Exact match").toString());
+                System.out.println(exact_match);
                 double accuracy = Double.parseDouble(evaluateModel.getMeasurement("Accuracy").toString());
-                overallExact_match+=exact_match/ numberOfCluster;
-                overallHamming_loss+=hamming_loss/ numberOfCluster;
-                overallAccuracy+=accuracy/ numberOfCluster;
+                System.out.println(accuracy);
+                overallExact_match+=exact_match/ (testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);
+                overallHamming_loss+=hamming_loss/ (testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);
+                overallAccuracy+=accuracy/ (testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);
 
                 double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
-                overallAverage+= averaging/results.size();
+                overallAverage+= averaging/(testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);;
 //                System.out.println(evaluateModel);
             }
-           BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("T_"+i+".csv")));
+           BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("Split_"+i+"/GA_Results.csv")));
             bufferedWriter.write(ClusterTracking);
             bufferedWriter.write("Hamming_loss, "+overallHamming_loss+"\n");
             bufferedWriter.write("Exact_match, "+overallExact_match+"\n");

@@ -106,6 +106,9 @@ public class CC_Util {
 
     private static  Result ccRunAndBuildAndEval(int splitRate, Instances data, int[] ints) throws Exception {
         int trainSize = (int) (data.numInstances() * splitRate / 100.0);
+        Random random = new Random();
+        random.setSeed(System.currentTimeMillis());
+        data.randomize(random);
         Instances train = new Instances(data, 0, trainSize);
         Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
 //        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
