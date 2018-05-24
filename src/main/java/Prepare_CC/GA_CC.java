@@ -187,7 +187,7 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
         {
             int[] q = Arrays.stream(p.toArray(new Integer[p.size()])).mapToInt(Integer::intValue).toArray();
             try {
-                System.out.println(Arrays.toString(q));
+//                System.out.println(Arrays.toString(q));
 
                 result = (CC_Util.ccRun(cluster_cc_builder, 66, q));
                 double hamming_loss = Double.parseDouble(result.getMeasurement("Hamming loss").toString());
@@ -338,14 +338,17 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
                     continue;
                 }
                 double hamming_loss = Double.parseDouble(evaluateModel.getMeasurement("Hamming loss").toString());
+                System.out.println(hamming_loss);
                 double exact_match = Double.parseDouble(evaluateModel.getMeasurement("Exact match").toString());
+                System.out.println(exact_match);
                 double accuracy = Double.parseDouble(evaluateModel.getMeasurement("Accuracy").toString());
-                overallExact_match+=exact_match/ test.attributeStats(test.numAttributes() - 1).distinctCount - 1;
-                overallHamming_loss+=hamming_loss/ test.attributeStats(test.numAttributes() - 1).distinctCount - 1;
-                overallAccuracy+=accuracy/ test.attributeStats(test.numAttributes() - 1).distinctCount - 1;
+                System.out.println(accuracy);
+                overallExact_match+=exact_match/ (testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);
+                overallHamming_loss+=hamming_loss/ (testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);
+                overallAccuracy+=accuracy/ (testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);
 
                 double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
-                overallAverage+= averaging/results.size();
+                overallAverage+= averaging/(testInstances.attributeStats(testInstances.numAttributes() - 1).distinctCount - 1);;
 //                System.out.println(evaluateModel);
             }
            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("Split_"+i+"/GA_Results.csv")));

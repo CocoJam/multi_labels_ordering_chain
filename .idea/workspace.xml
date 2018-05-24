@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11408da1-acb1-4a46-8daa-99a25fc6754f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_0/0.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_1/1.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_2/2.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_3/3.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_4/4.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_5/5.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_6/6.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_7/7.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_8/8.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Train_Cluster_9/9.arff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/CC_Util.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" afterPath="$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/CAL500_TEST_Train_SPLIT.java" afterPath="$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/CAL500_TEST_Train_SPLIT.java" />
-      <change beforePath="$PROJECT_DIR$/yeast.arff" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,31 +16,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Cluster_Fliter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/Cluster_Fliter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GA_CC.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="324" column="63" lean-forward="false" selection-start-line="324" selection-start-column="63" selection-end-line="324" selection-end-column="63" />
+            <state relative-caret-position="-4667">
+              <caret line="126" column="33" lean-forward="false" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EM_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WEKA_Test_Ground/EM_test.java">
+      <file leaf-file-name="GA_Results.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Split_0/GA_Results.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+            <state relative-caret-position="409">
+              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GA_Results.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Split_1/GA_Results.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GA_Results.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Split_2/GA_Results.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-347">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,16 +61,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="52" column="39" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="52" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Floyd_Warshall.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Graph_Test_Ground/Floyd_Warshall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-259">
-              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -238,9 +225,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1038" />
+    <option name="x" value="376" />
+    <option name="y" value="77" />
+    <option name="width" value="1359" />
+    <option name="height" value="907" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -271,6 +259,31 @@
             <path>
               <item name="CC" type="b2602c69:ProjectViewProjectNode" />
               <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="Split_0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="Split_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="Split_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="Split_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
+              <item name="Split_4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -296,14 +309,6 @@
             </path>
             <path>
               <item name="CC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="WEKA_Test_Ground" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -316,7 +321,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A_Start" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -348,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CAL500_TEST_Train_SPLIT">
+  <component name="RunManager" selected="Application.GA_CC">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -832,8 +837,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CAL500_TEST_Train_SPLIT" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GA_CC" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GA_CC" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CAL500_TEST_Train_SPLIT" />
         <item index="2" class="java.lang.String" itemvalue="Application.Cluster_CC_Builder" />
         <item index="3" class="java.lang.String" itemvalue="Application.Knn_Inferencing" />
         <item index="4" class="java.lang.String" itemvalue="Application.Cluster_Fliter" />
@@ -876,7 +881,7 @@
       <workItem from="1527023818147" duration="834000" />
       <workItem from="1527043703046" duration="1956000" />
       <workItem from="1527073210200" duration="3144000" />
-      <workItem from="1527114034762" duration="11923000" />
+      <workItem from="1527114034762" duration="21486000" />
     </task>
     <task id="LOCAL-00001" summary="Testing on GA normal functions might require for custom alters but fuck it not now">
       <created>1524611550042</created>
@@ -1109,11 +1114,25 @@
       <option name="project" value="LOCAL" />
       <updated>1527125165091</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="readjusting the data">
+      <created>1527142664155</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1527142664155</updated>
+    </task>
+    <task id="LOCAL-00035" summary="readjusting the data">
+      <created>1527142688691</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1527142688691</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225475000" />
+    <option name="totallyTimeSpent" value="235038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1235,7 +1254,8 @@
     <MESSAGE value="Bencmarking it took around 1031 to run 8 cluster of CAL500 qith 10 individuals and 100 iterations." />
     <MESSAGE value="kNN inference" />
     <MESSAGE value="updated filter function" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated filter function" />
+    <MESSAGE value="readjusting the data" />
+    <option name="LAST_COMMIT_MESSAGE" value="readjusting the data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1248,9 +1268,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/T_0/Logging_4_results" />
-    <entry file="file://$PROJECT_DIR$/T_0/Logging_3_results" />
-    <entry file="file://$PROJECT_DIR$/T_0/Logging_2_results" />
     <entry file="file://$PROJECT_DIR$/T_0/Logging_1_results" />
     <entry file="file://$PROJECT_DIR$/T_28/Logging_0_results" />
     <entry file="file://$PROJECT_DIR$/T_28/Clustering_Log" />
@@ -1662,10 +1679,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Split_0/GA_Results.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Split_2/GA_Results.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Split_1/GA_Results.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Prepare_CC/GA_CC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="324" column="63" lean-forward="false" selection-start-line="324" selection-start-column="63" selection-end-line="324" selection-end-column="63" />
+        <state relative-caret-position="-4667">
+          <caret line="126" column="33" lean-forward="false" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
           <folding />
         </state>
       </provider>
