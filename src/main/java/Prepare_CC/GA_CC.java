@@ -287,13 +287,15 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
 //        }
 //
 //        long time1 = System.nanoTime();
-        for (int i = 0; i < 2; i++) {
+        
+        for (int i = 0; i < 10; i++) {
             long time1 = System.nanoTime();
             Instances train = (new ConverterUtils.DataSource("Train_Cluster_" + i + "/" + i + ".arff")).getDataSet();
             Instances test = (new ConverterUtils.DataSource("src/main/CAL500_test.arff")).getDataSet();
             int numberOfCluster = train.attributeStats(train.numAttributes() - 1).distinctCount - 1;
 //        System.out.println(train.attributeStats(train.numAttributes()-1).distinctCount);
             List<Cluster_CC_Builder> cluster_cc_builders = new ArrayList<>();
+            String ClusterTracking = "";
             for (int j = 0; j < numberOfCluster; j++) {
                 Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(j, train, 0);
                 cluster_cc_builders.add(cluster_cc_builder);
@@ -301,11 +303,14 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
             List<int[]> results = Cluster_CC_GA_Wrapper.ResultsChains(cluster_cc_builders);
             System.out.println("One GA");
             System.out.println(System.nanoTime()-time1);
-            for (int[] result : results) {
-                System.out.println(Arrays.toString(result));
-                System.out.println(result.length);
+            for (int j = 0; j < results.size(); j++) {
+                ClusterTracking +="Trial,"+i+ ",Cluster,"+j+",best result chain,"+Arrays.toString(results.get(j))+"\n";
             }
 
+            double overallExact_match= 0;
+            double overallHamming_loss=0;
+            double overallAccuracy=0;
+            double overallAverage=0;
             Instances testInstances = Cluster_Fliter.knn_inference(train, test, 5);
             for (int j = 0; j < numberOfCluster; j++) {
                 Cluster_CC_Builder cluster_cc_builder = new Cluster_CC_Builder(j, train, 0);
@@ -329,8 +334,24 @@ public class GA_CC extends Thread implements Problem<ISeq<Integer>, EnumGene<Int
                 String top = "PCut1";
                 String vop = "3";
                 Result evaluateModel = Evaluation.evaluateModel(cc, cluster_cc_builder.parsedCluster, clusterX, top, vop);
+                double hamming_loss = Double.parseDouble(evaluateModel.getMeasurement("Hamming loss").toString());
+                double exact_match = Double.parseDouble(evaluateModel.getMeasurement("Exact match").toString());
+                double accuracy = Double.parseDouble(evaluateModel.getMeasurement("Accuracy").toString());
+                overallExact_match+=exact_match/ numberOfCluster;
+                overallHamming_loss+=hamming_loss/ numberOfCluster;
+                overallAccuracy+=accuracy/ numberOfCluster;
+
+                double averaging = ((1 - hamming_loss) + exact_match + accuracy) / 3;
+                overallAverage+= averaging/results.size();
 //                System.out.println(evaluateModel);
             }
+           BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("T_"+i+".csv")));
+            bufferedWriter.write(ClusterTracking);
+            bufferedWriter.write("Hamming_loss, "+overallHamming_loss+"\n");
+            bufferedWriter.write("Exact_match, "+overallExact_match+"\n");
+            bufferedWriter.write("Accuracy, "+overallAccuracy+"\n");
+            bufferedWriter.write("Averaging, "+overallAverage);
+            bufferedWriter.close();
             System.out.println("One trial: ");
             System.out.println(System.nanoTime()-time1);
 //            System.out.println(Arrays.toString(cluster_cc_builder.sqeuenceChain));
