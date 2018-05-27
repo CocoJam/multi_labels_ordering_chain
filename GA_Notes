@@ -1,0 +1,12 @@
+Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).mapping(EvolutionResult.toUniquePopulation()).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(2)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(0.5)).build();
+GA_Results_CV_20iteration_10_Pop.csv
+Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(popSize/4)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(0.35)).build();
+CVSPLIT_GA_Results_CV_20iteration_10_Pop_Mut_025_Tournament_popDiv4.csv
+Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(4)).offspringSelector(new TournamentSelector<>(popSize/4)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(0.35)).build();
+CVSPLIT_GA_Results_CV_20iteration_10_Pop_Mut_025_Tournament_popDiv4_Elit_4.csv
+Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(2)).offspringSelector(new TournamentSelector<>(popSize/4)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(0.35)).build();
+CVSPLIT_GA_Results_CV_30iteration_20_Pop_Mut_025_Tournament_popDiv4.csv
+ Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(4)).offspringSelector(new TournamentSelector<>(popSize/4)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(0.35)).build(); NON_LABEL_DROP
+NON_LABEL_DROP_CVSPLIT_GA_Results_CV_20iteration_10_Pop_Mut_025_Tournament_popDiv4_Elit_4.csv
+ Engine<EnumGene<Integer>, Double> engine = Engine.builder(basic_ga).optimize(Optimize.MAXIMUM).populationSize(popSize).survivorsSelector(new EliteSelector<>(4)).offspringSelector(new TournamentSelector<>(popSize/4)).alterers(new SwapMutator<>(0.25), new PartiallyMatchedCrossover<>(0.35)).build(); NON_LABEL_DROP
+NON_LABEL_DROP_CVSPLIT_GA_Results_CV_30iteration_10_Pop_Mut_025_Tournament_popDiv4_Elit_4.csv
