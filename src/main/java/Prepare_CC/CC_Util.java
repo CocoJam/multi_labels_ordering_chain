@@ -66,6 +66,11 @@ public class CC_Util {
         return ccRunAndBuildAndEval(splitRate, cluster_cc_builder.parsedCluster, labelChainPrepared);
     }
 
+    public static Result ccRun(Instances data, int splitRate, int[] labelChainPrepared) throws Exception {
+//        System.out.println(data);
+        return ccRunAndBuildAndEval(splitRate, data, labelChainPrepared);
+    }
+
 //    private static void ccRunAndBuildAndEval(Cluster_CC_Builder cluster_cc_builder) throws Exception {
 //        Instances data = cluster_cc_builder.parsedCluster;
 //        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
@@ -105,12 +110,12 @@ public class CC_Util {
 //    }
 
     private static  Result ccRunAndBuildAndEval(int splitRate, Instances data, int[] ints) throws Exception {
-        int trainSize = (int) (data.numInstances() * splitRate / 100.0);
+//        int trainSize = (int) (data.numInstances() * splitRate / 100.0);
         Random random = new Random();
         random.setSeed(System.currentTimeMillis());
         data.randomize(random);
-        Instances train = new Instances(data, 0, trainSize);
-        Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
+//        Instances train = new Instances(data, 0, trainSize);
+//        Instances test = new Instances(data, trainSize, data.numInstances() - trainSize);
 //        Pattern pattern = Pattern.compile("(.+-C (\\d+))");
 //        Matcher matcher = pattern.matcher(data.relationName());
 //        int numLabels = 0;
@@ -123,16 +128,16 @@ public class CC_Util {
         Base_CC cc = new Base_CC();
 
         cc.prepareChain(ints);
-        MLUtils.prepareData(train);
-        MLUtils.prepareData(test);
+        MLUtils.prepareData(data);
+//        MLUtils.prepareData(test);
 //        System.out.println("Building");
-        cc.buildClassifier(train);
+        cc.buildClassifier(data);
 
 //        cc.rebuildClassifier(ints,data);
         String top = "PCut1";
         String vop = "3";
-//        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
-        Result result = Evaluation.evaluateModel(cc, train, test, top, vop);
+        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
+        Result result = Evaluation.cvModel(cc, data, 3, top, vop);
 //        System.out.println(Arrays.toString(cc.retrieveChain()));
         return result;
     }
