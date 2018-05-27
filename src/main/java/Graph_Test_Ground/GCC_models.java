@@ -3,6 +3,7 @@ package Graph_Test_Ground;
 import Prepare_CC.Base_CC;
 import Prepare_CC.Cluster_CC_Builder;
 import Prepare_CC.Cluster_CC_GA_Wrapper;
+import WEKA_Test_Ground.CAL500_TEST_Train_SPLIT;
 import WEKA_Test_Ground.Cluster_Fliter;
 import meka.classifiers.multilabel.Evaluation;
 import meka.core.MLUtils;
@@ -32,8 +33,8 @@ public class GCC_models {
         for (int i = 0; i < 10; i++) {
             List<int[]> results = new ArrayList<>();
             long time1 = System.nanoTime();
-            Instances train = (new ConverterUtils.DataSource("Train_Cluster_" + i + "/" + i + ".arff")).getDataSet();
-            Instances test = (new ConverterUtils.DataSource("src/main/CAL500_test.arff")).getDataSet();
+            Instances train = (new ConverterUtils.DataSource("Split_" + i + "/CAL500_train.arff")).getDataSet();
+            Instances test = (new ConverterUtils.DataSource("Split_" + i + "/CAL500_test.arff")).getDataSet();
             int numberOfCluster = train.attributeStats(train.numAttributes() - 1).distinctCount - 1;
 //        System.out.println(train.attributeStats(train.numAttributes()-1).distinctCount);
             //List<Cluster_CC_Builder> cluster_cc_builders = new ArrayList<>();
