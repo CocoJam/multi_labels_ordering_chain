@@ -136,8 +136,8 @@ public class CC_Util {
 //        cc.rebuildClassifier(ints,data);
         String top = "PCut1";
         String vop = "3";
-        int numOfCV = data.numInstances() > 10 ? 10 : data.numInstances();
-        Result result = Evaluation.cvModel(cc, data, 3, top, vop);
+        int numOfCV = data.numInstances() >= 5 ? 5 : data.numInstances();
+        Result result = Evaluation.cvModel(cc, data, numOfCV, top, vop);
 //        System.out.println(Arrays.toString(cc.retrieveChain()));
         return result;
     }

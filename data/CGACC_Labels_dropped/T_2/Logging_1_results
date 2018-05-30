@@ -1,0 +1,55 @@
+== Evaluation Info
+
+Classifier                     Prepare_CC.Base_CC
+Options                        [-S, 0, -W, weka.classifiers.trees.J48, --, -C, 0.25, -M, 2]
+Additional Info                [68, 47, 112, 5, 41, 71, 121, 19, 76, 42, 28, 2, 69, 105, 38, 127, 94, 82, 18, 51, 30, 15, 110, 125, 22, 56, 32, 89, 66, 64, 50, 73, 24, 92, 118, 26, 37, 45, 84, 80, 63, 61, 0, 10, 123, 106, 25, 120, 111, 35, 102, 48, 31, 128, 65, 4, 12, 55, 81, 95, 7, 70, 93, 104, 58, 20, 126, 27, 9, 54, 114, 29, 46, 34, 1, 33, 40, 91, 52, 3, 88, 107, 99, 117, 116, 72, 74, 103, 119, 49, 90, 23, 101, 83, 98, 11, 124, 97, 122, 96, 77, 21, 113, 43, 14, 115, 36, 53, 44, 79, 62, 17, 8, 109, 75, 13, 60, 39, 67, 6, 85, 108, 78, 16, 86, 59, 100, 87, 57]
+Dataset                        CAL500
+Number of labels (L)           129
+Type                           ML-CV
+Threshold                      0.5
+Verbosity                      3
+
+
+== Predictive Performance
+
+Number of test instances (N)   
+Accuracy                       0.32 
+Jaccard index                  0.32 
+Hamming score                  0.788
+Exact match                    0    
+Jaccard distance               0.68 
+Hamming loss                   0.212
+ZeroOne loss                   1    
+Harmonic score                 0.602
+One error                      0.02 
+Rank loss                      0.304
+Avg precision                  0.357
+Log Loss (lim. L)              1.03 
+Log Loss (lim. D)              0.833
+F1 (micro averaged)            0.481
+F1 (macro averaged by example) 0.479
+F1 (macro averaged by label)   0.186
+AUPRC (macro averaged)         0.221
+AUROC (macro averaged)         0.498
+Curve Data                     
+Macro Curve Data               
+Micro Curve Data               
+Label indices                  [     0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27    28    29    30    31    32    33    34    35    36    37    38    39    40    41    42    43    44    45    46    47    48    49    50    51    52    53    54    55    56    57    58    59    60    61    62    63    64    65    66    67    68    69    70    71    72    73    74    75    76    77    78    79    80    81    82    83    84    85    86    87    88    89    90    91    92    93    94    95    96    97    98    99   100   101   102   103   104   105   106   107   108   109   110   111   112   113   114   115   116   117   118   119   120   121   122   123   124   125   126   127   128 ]
+Accuracy (per label)           [ 0.980 0.490 0.549 0.647 0.706 0.588 0.863 0.569 0.373 0.961 0.667 0.569 0.392 0.569 0.725 0.647 0.529 0.765 0.627 0.980 0.490 0.765 0.686 0.647 0.529 0.706 0.843 0.471 0.941 0.922 0.980 0.824 0.922 0.824 0.980 0.922 0.961 0.725 0.667 0.843 0.804 0.686 0.725 0.784 0.765 0.647 0.843 0.882 0.765 0.980 0.627 0.686 0.569 0.765 0.980 0.765 0.961 0.980 0.549 0.980 0.431 0.902 0.824 0.922 0.980 0.980 0.824 0.627 0.843 0.882 0.588 0.529 0.608 0.922 0.490 0.608 0.843 0.549 0.745 0.706 0.706 0.686 0.686 0.980 0.922 0.549 0.843 0.725 0.902 0.922 0.529 0.980 0.980 0.961 0.686 0.549 0.980 0.745 0.725 0.961 0.863 0.961 0.980 0.941 0.961 0.980 0.510 0.980 0.941 0.941 0.980 0.961 0.686 0.961 0.843 0.745 0.980 0.843 0.980 0.922 0.980 0.765 0.980 0.980 0.922 0.980 0.882 0.863 0.941 ]
+Empty labelvectors (predicted) 0    
+Label cardinality (predicted)  25.176
+Levenshtein distance           0.173
+
+
+== Additional Measurements (averaged across folds)
+
+Number of training instances   51
+Number of test instances       51
+Label cardinality (train set)  27.49
+Label cardinality (test set)   27.46
+Build Time                     0.125
+Test Time                      0.015
+Total Time                     0.139
+
+
+Averaging: 0.3694325781020036

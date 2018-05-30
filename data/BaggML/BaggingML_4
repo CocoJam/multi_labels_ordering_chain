@@ -1,0 +1,56 @@
+== Evaluation Info
+
+Classifier                     meka.classifiers.multilabel.meta.BaggingML
+Options                        [-S, 4, -I, 10, -P, 100, -W, meka.classifiers.multilabel.CC, --, -S, 0, -W, weka.classifiers.trees.J48, --, -C, 0.25, -M, 2]
+Additional Info                
+Dataset                        CAL500
+Number of labels (L)           174
+Type                           ML-CV
+Threshold                      0.5
+Verbosity                      3
+
+
+== Predictive Performance
+
+Number of test instances (N)   
+Accuracy                       0.233
+Jaccard index                  0.233
+Hamming score                  0.85 
+Exact match                    0    
+Jaccard distance               0.767
+Hamming loss                   0.15 
+ZeroOne loss                   1    
+Harmonic score                 0.449
+One error                      0.227
+Rank loss                      0.226
+Avg precision                  0.424
+Log Loss (lim. L)              0.389
+Log Loss (lim. D)              0.416
+F1 (micro averaged)            0.373
+F1 (macro averaged by example) 0.371
+F1 (macro averaged by label)   0.103
+AUPRC (macro averaged)         0.164
+AUROC (macro averaged)         0.522
+Curve Data                     
+Macro Curve Data               
+Micro Curve Data               
+Label indices                  [     0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27    28    29    30    31    32    33    34    35    36    37    38    39    40    41    42    43    44    45    46    47    48    49    50    51    52    53    54    55    56    57    58    59    60    61    62    63    64    65    66    67    68    69    70    71    72    73    74    75    76    77    78    79    80    81    82    83    84    85    86    87    88    89    90    91    92    93    94    95    96    97    98    99   100   101   102   103   104   105   106   107   108   109   110   111   112   113   114   115   116   117   118   119   120   121   122   123   124   125   126   127   128   129   130   131   132   133   134   135   136   137   138   139   140   141   142   143   144   145   146   147   148   149   150   151   152   153   154   155   156   157   158   159   160   161   162   163   164   165   166   167   168   169   170   171   172   173 ]
+Accuracy (per label)           [ 0.906 0.602 0.625 0.781 0.954 0.566 0.691 0.673 0.763 0.616 0.765 0.600 0.618 0.845 0.741 0.683 0.675 0.685 0.751 0.631 0.809 0.554 0.835 0.490 0.576 0.855 0.715 0.721 0.602 0.869 0.880 0.538 0.785 0.552 0.845 0.490 0.793 0.984 0.988 0.982 0.799 0.986 0.968 0.974 0.988 0.958 0.982 0.978 0.986 0.932 0.954 0.984 0.950 0.900 0.942 0.990 0.980 0.952 0.934 0.880 0.940 0.952 0.932 0.855 0.928 0.661 0.958 0.878 0.934 0.659 0.586 0.906 0.572 0.685 0.853 0.803 0.976 0.980 0.964 0.657 0.988 0.823 0.934 0.954 0.912 0.960 0.785 0.976 0.984 0.958 0.982 0.592 0.833 0.924 0.552 0.675 0.701 0.717 0.763 0.534 0.797 0.618 0.886 0.616 0.845 0.554 0.974 0.823 0.781 0.882 0.982 0.580 0.635 0.675 0.797 0.908 0.861 0.488 0.871 0.972 0.912 0.675 0.956 0.940 0.876 0.926 0.960 0.960 0.960 0.984 0.934 0.984 0.990 0.922 0.928 0.960 0.970 0.988 0.791 0.978 0.976 0.928 0.946 0.988 0.958 0.970 0.980 0.851 0.886 0.914 0.906 0.980 0.982 0.944 0.990 0.984 0.982 0.918 0.986 0.960 0.982 0.954 0.974 0.912 0.968 0.988 0.958 0.924 0.986 0.988 0.920 0.972 0.980 0.988 ]
+Empty labelvectors (predicted) 0    
+Label cardinality (predicted)  15.48
+Levenshtein distance           0.127
+
+
+== Additional Measurements (averaged across folds)
+
+Number of training instances   502
+Number of test instances       502
+Label cardinality (train set)  26.044
+Label cardinality (test set)   26.04
+Build Time                     26.119
+Test Time                      3.449
+Total Time                     29.568
+
+
+
+0.1497114988322573,0.0,0.2333579589051973,0.36121548669098

@@ -90,7 +90,30 @@ public class Cluster_CC_GA_Wrapper {
         return feature_vectors;
     }
 
-    public static List<GA_CC> ResultsChains(List<Cluster_CC_Builder> listOfClusterBuilder) throws Exception {
+    public static List<GA_CC> ResultsChainsNONDropLabel(List<Cluster_CC_Builder> listOfClusterBuilder) throws Exception {
+        List<GA_CC> results = new ArrayList<>();
+        GA_CC ga_cc = null;
+        List<Feature_Vector> feature_vectors = new ArrayList<>();
+        List<GA_CC> ga_ccs = new ArrayList<>();
+        for (Cluster_CC_Builder cluster_cc_builder : listOfClusterBuilder) {
+            System.out.println("Building cluster cc builder");
+            try {
+                ga_cc = GA_CC.of(cluster_cc_builder.cluster, 20, 10);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            ga_cc.thread.start();
+            ga_ccs.add(ga_cc);
+        }
+        for (GA_CC ga_cc1 : ga_ccs) {
+            ga_cc1.thread.join();
+            results.add(ga_cc1);
+//            cc.prepareChain(ga_cc1.trainedChain);
+        }
+        return results;
+    }
+
+    public static List<GA_CC> ResultsChainsDropLabel(List<Cluster_CC_Builder> listOfClusterBuilder) throws Exception {
         List<GA_CC> results = new ArrayList<>();
         GA_CC ga_cc = null;
         List<Feature_Vector> feature_vectors = new ArrayList<>();
