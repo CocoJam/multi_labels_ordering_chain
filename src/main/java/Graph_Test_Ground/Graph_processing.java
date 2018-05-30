@@ -3,6 +3,7 @@ package Graph_Test_Ground;
 import Prepare_CC.Base_CC;
 import Prepare_CC.Cluster_CC_Builder;
 import WEKA_Test_Ground.Cluster_Fliter;
+import com.sun.deploy.util.ArrayUtil;
 import meka.classifiers.multilabel.Evaluation;
 import meka.core.MLUtils;
 import meka.core.Result;
@@ -13,6 +14,7 @@ import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.Path;
 import org.graphstream.graph.implementations.SingleGraph;
+import org.jfree.util.ArrayUtilities;
 import org.kramerlab.bmad.algorithms.Iter;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -52,7 +54,8 @@ public class Graph_processing {
         seqIndex = cc.sqeuenceChain;
         intNum = cluster.numInstances();
         labNum = labels.length;
-        finalisedOrder = new int[labNum];
+        //finalisedOrder = new int[labNum];
+
 
     }
 
@@ -78,6 +81,8 @@ public class Graph_processing {
 
         //final double thres = 0.2;
         ArrayList<double[]> aug_inst = new ArrayList<>();
+
+
 
 
         //preparing instances
@@ -242,27 +247,24 @@ public class Graph_processing {
         Collections.sort(nodeSet, Comparator.comparing(s -> s.getAttribute("dis")));
 
         //Pack to array
+        ArrayList<Integer> finalised = new ArrayList<>();
        for(int i =0; i < labNum; i++){
-           int ind = getArrayIndex(labels,Integer.parseInt(nodeSet.get(i).getId()));
-           finalisedOrder[i] = seqIndex[ind];
+           // this line for dropping
+           //int ind = getArrayIndex(labels,Integer.parseInt(nodeSet.get(i).getId()));
+           //this line for non dropping
+           int ind = Integer.parseInt(nodeSet.get(i).getId());
+           finalised.add(ind);
        }
-        System.out.println(Arrays.toString(finalisedOrder));
 
-        //graph.display();
-        //tree.display();
-//        Base_CC cc = new Base_CC();
-//
-//        System.out.println(cluster);
-//        System.out.println(finalisedOrder.length);
-//        cc.prepareChain(finalisedOrder);
-//        MLUtils.prepareData(cluster);
-//        cc.buildClassifier(cluster);
-//
-//        String top = "PCut1";
-//        String vop = "3";
-//        Result r = Evaluation.cvModel(cc, cluster,10,top, vop );
-//        System.out.println(Arrays.toString(finalisedOrder));
-        //System.out.println(r);
+        // comment out if don't want to drop
+//       for (int i = 0; i < 174;i++){
+//         if (!finalised.contains(i)){
+//             finalised.add(i);
+//         }
+//       }
+
+       finalisedOrder = convertIntegers(finalised);
+        System.out.println("final length: "+finalisedOrder.length);
         return this.finalisedOrder;
     }
 
@@ -280,5 +282,19 @@ public class Graph_processing {
         }
         return k;
     }
+
+
+    private int[] convertIntegers(List<Integer> integers)
+    {
+        int[] ret = new int[integers.size()];
+        Iterator<Integer> iterator = integers.iterator();
+        for (int i = 0; i < ret.length; i++)
+        {
+            ret[i] = iterator.next().intValue();
+        }
+        return ret;
+    }
+
+
     }
 
